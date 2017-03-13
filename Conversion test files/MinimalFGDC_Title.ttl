@@ -22,8 +22,11 @@ harvard:nCAMBRIDGE14PUBLICLIBRARIEStitle1 a bf:Title ;
 harvard:nCAMBRIDGE14PUBLICLIBRARIESwork1 a bf:Work ;
     bf:hasInstance harvard:nCAMBRIDGE14PUBLICLIBRARIESinstance1 ;
     bf:identifiedBy harvard:nCAMBRIDGE14PUBLICLIBRARIESidentifier1 ;
-    bf:hasTitle harvard:nCAMBRIDGE14PUBLICLIBRARIEStitle1 .
-    
+    bf:hasTitle harvard:nCAMBRIDGE14PUBLICLIBRARIEStitle2 .
+
+harvard:nCAMBRIDGE14PUBLICLIBRARIEStitle2 a bf:Title ;
+    rdfs:label "Public Libraries, Cambridge, Massachusetts, 2014" .
+	
 harvard:nCAMBRIDGE14PUBLICLIBRARIESidentifier1 a bf:Local ;
     rdf:value "CAMBRIDGE14PUBLICLIBRARIES" .
     
