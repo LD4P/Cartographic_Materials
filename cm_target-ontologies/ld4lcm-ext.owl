@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- http://ld4l.org/ontology/ld4lcm/ is a temporary namespace for the Cartographic Materials ontology extension -->
+<rdf:RDF
+    xmlns="http://ld4l.org/ontology/ld4lcm/"
+    xmlns:ld4l-ext="http://bib.ld4l.org/ontology/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"  
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:vann="http://purl.org/vocab/vann/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1#"
+    >
+    
+    <!-- ONTOLOGY DECLARATION -->
+    
+    <owl:Ontology rdf:about="http://ld4l.org/ontology/ld4lcm/">
+        
+    </owl:Ontology>
+    
+    
+    <!-- CLASSES -->
+    
+     <!-- Class http://id.loc.gov/ontologies/bibframe/Identifier -->
+        
+     <owl:Class rdf:about="http://ld4l.org/ontology/ld4lcm/EpsgCode">
+         <rdfs:label>EPSG Code</rdfs:label>
+         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+         <skos:definition xml:lang="en-us">EPSG Dataset Code</skos:definition>
+     </owl:Class>
+    
+    <!-- OBJECT PROPERTIES -->
+    
+    
+    
+    
+    
+    <!-- NAMED INDIVIDUALS -->
+
+  
+    
+    <!-- Type http://id.loc.gov/ontologies/bibframe/Projection 
+    Adding subtypes MARC coded projection types: https://www.loc.gov/marc/bibliographic/bd008p.html -->
+    
+    
+    <owl:NamedIndividual rdf:about="http://ld4l.org/ontology/ld4lcm/Mercator">
+       <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
+       <rdfs:label xml:lang="en">Mercator</rdfs:label>
+       <skos:definition xml:lang="en">a projection of a map of the world onto a cylinder in such a way that all the parallels of latitude have the same length as the equator, used especially for marine charts and certain climatological maps.</skos:definition>
+       <dcterms:issued></dcterms:issued>
+       <dcterms:modified></dcterms:modified>
+    </owl:NamedIndividual>
+
+
+    <!-- Type http://id.loc.gov/ontologies/bibframe/Identifier
+    Adding EPSG code identifiers for common projections: http://epsg.io/  -->
+    
+    
+    <owl:NamedIndividual rdf:about="http://ld4l.org/ontology/ld4lcm/EPSGCode">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+        <rdfs:label xml:lang="en">EPSG Code</rdfs:label>
+        <skos:definition xml:lang="en">Code associated with EPSG Geodetic Parameter Dataset is a structured dataset of Coordinate Reference Systems and Coordinate Transformations, accessible through this online registry (www.epsg-registry.org) or, as a downloadable zip files, through IOGP's EPSG home page at www.epsg.org.</skos:definition>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:NamedIndividual>
+    
+    
+    <!-- Type http://ld4l.org/ontology/ld4lcm/EPSGCode
+    Individuals of type EPSGCode -->
+    
+    
+    <owl:NamedIndividual rdf:about="http://ld4l.org/ontology/ld4lcm/EPSGCode4326">
+        <rdf:type rdf:resource="http://ld4l.org/ontology/ld4lcm/EPSGCode"/>
+        <rdfs:label xml:lang="en">WGS 84</rdfs:label>
+        <skos:definition xml:lang="en">World Geodetic System 1984</skos:definition>
+        <foaf:page>http://epsg.io/4326</foaf:page>
+        <rdf:value>4326</rdf:value>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:NamedIndividual>
+    
+
+    <!-- Type http://bib.ld4l.org/ontology/hasSource 
+    Adding subtypes of MARC coded cartographic data sources: https://www.loc.gov/standards/sourcelist/cartographic-data.html  -->
+    
+    
+    <owl:NamedIndividual rdf:about="http://ld4l.org/ontology/ld4lcm/Bound">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
+        <rdfs:label xml:lang="en">Bounding Box (Klokan Technologies)</rdfs:label>
+        <skos:definition xml:lang="en">Forthcoming.</skos:definition>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:NamedIndividual>
+    
+    
+    
+    
+
+    
+    
+
+    
+
+
+</rdf:RDF>
+
+
