@@ -17,9 +17,9 @@
     <!-- ONTOLOGY DECLARATION -->
     
     <owl:Ontology rdf:about="http://ld4l.org/ontology/ld4lcm/">
-        
+        <rdfs:label xml:lang="en">LD4L CM Extension</rdfs:label>
+        <vann:preferredNamespacePrefix>ld4lcm</vann:preferredNamespacePrefix>
     </owl:Ontology>
-    
     
     <!-- CLASSES -->
     
