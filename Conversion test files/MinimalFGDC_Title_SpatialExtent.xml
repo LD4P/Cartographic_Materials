@@ -1,20 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE metadata SYSTEM "http://www.fgdc.gov/metadata/fgdc-std-001-1998.dtd"><metadata layerid="CAMBRIDGE14PUBLICLIBRARIES">
-<!-- Minimal FGDC xml record. 1 core ontology element: Title, and 1 geospatial extension ontology set of elements: bounding box
--->
-<idinfo>
-<citation>
-<citeinfo>
-<title>Public Libraries, Cambridge, Massachusetts, 2014</title>
-<citeinfo>
-<spdom>
-<bounding>
-<!-- bounding box elements need to be converted to a single WKT statement
--->
-<westbc>-71.146912</westbc>
-<eastbc>-71.084684</eastbc>
-<northbc>42.392720</northbc>
-<southbc>42.363838</southbc>
-</bounding>
-</spdom>
-</idinfo>
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE metadata SYSTEM "http://www.fgdc.gov/metadata/fgdc-std-001-1998.dtd">
+<metadata layerid="CAMBRIDGE14PUBLICLIBRARIES">
+	<!-- Minimal FGDC xml record. 1 core ontology element: Title, and 1 geospatial 
+		extension ontology set of elements: bounding box -->
+	<idinfo>
+		<citation>
+			<citeinfo>
+				<title>Public Libraries, Cambridge, Massachusetts, 2014</title>
+			</citeinfo>
+		</citation>
+		<spdom>
+			<bounding>
+				<!-- bounding box elements need to be converted to a single WKT statement -->
+				<westbc>-71.146912</westbc>
+				<eastbc>-71.084684</eastbc>
+				<northbc>42.392720</northbc>
+				<southbc>42.363838</southbc>
+			</bounding>
+		</spdom>
+	</idinfo>
 </metadata>
