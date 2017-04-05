@@ -1,10 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE metadata SYSTEM "http://www.fgdc.gov/metadata/fgdc-std-001-1998.dtd"><metadata layerid="CAMBRIDGE14PUBLICLIBRARIES">
-<!-- Minimal FGDC xml record. 1 core ontology element: Title
--->
-<idinfo>
-<citation>
-<citeinfo>
-<title>Public Libraries, Cambridge, Massachusetts, 2014</title>
-<citeinfo>
-</idinfo>
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE metadata SYSTEM "http://www.fgdc.gov/metadata/fgdc-std-001-1998.dtd">
+<metadata layerid="CAMBRIDGE14PUBLICLIBRARIES">
+	<!-- Minimal FGDC xml record. 1 core ontology element: Title -->
+	<idinfo>
+		<citation>
+			<citeinfo>
+				<title>Public Libraries, Cambridge, Massachusetts, 2014</title>
+			</citeinfo>
+		</citation>
+	</idinfo>
 </metadata>
