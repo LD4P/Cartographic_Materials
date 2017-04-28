@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE metadata SYSTEM "http://www.fgdc.gov/metadata/fgdc-std-001-1998.dtd"><metadata layerid="CAMBRIDGE14PUBLICLIBRARIES">
+<idinfo>
+<citation>
+<citeinfo>
+<origin>Cambridge (Mass.). Geographic Information Systems</origin>
+<pubdate>2014</pubdate>
+<title>Public Libraries, Cambridge, Massachusetts, 2014</title>
+<geoform>vector digital data</geoform>
+<pubinfo>
+<pubplace>Cambridge, Massachusetts</pubplace>
+<publish>Cambridge (Mass.). Geographic Information Systems</publish>
+</pubinfo>
+<onlink>http://hgl.harvard.edu:8080/HGL/hgl.jsp?action=VColl&amp;VCollName=CAMBRIDGE14PUBLICLIBRARIES</onlink>
+<lworkcit>
+<citeinfo>
+<origin>Cambridge (Mass.). Geographic Information Systems</origin>
+<pubdate>2014</pubdate>
+<title>City of Cambridge MA GIS Data 2014</title>
+<geoform>digital data</geoform>
+<pubinfo>
+<pubplace>Cambridge, Massachusetts</pubplace>
+<publish>Cambridge (Mass.) Geographic Information Systems</publish>
+</pubinfo>
+</citeinfo>
+</lworkcit>
+</citeinfo>
+</citation>
+<descript>
+<abstract>This layer contains point features of all public libraries in Cambridge.</abstract>
+<purpose>Created for general use by City staff. Used for both mapping and specific identification of buildings with a similar use.</purpose>
+</descript>
+<timeperd>
+<timeinfo>
+<sngdate>
+<caldate>2014</caldate>
+</sngdate>
+</timeinfo>
+<current>publication date</current>
+</timeperd>
+<status>
+<progress>Complete</progress>
+<update>Unknown</update>
+</status>
+<spdom>
+<bounding>
+<westbc>-71.146912</westbc>
+<eastbc>-71.084684</eastbc>
+<northbc>42.392720</northbc>
+<southbc>42.363838</southbc>
+</bounding>
+</spdom>
+<keywords>
+<theme>
+<themekt>LCSH</themekt>
+<themekey>Libraries</themekey>
+<themekey>Public libraries</themekey>
+</theme>
+<theme>
+<themekt>ISO 19115 Topic Category</themekt>
+<themekey>structure</themekey>
+</theme>
+<theme>
+<themekt>None</themekt>
+<themekey>City of Cambridge</themekey>
+<themekey>Libraries</themekey>
+<themekey>public libraries</themekey>
+</theme>
+<place>
+<placekt>GNIS</placekt>
+<placekey>Massachusetts</placekey>
+<placekey>Cambridge</placekey>
+</place>
+</keywords>
+<accconst>Unrestricted Access Online</accconst>
+<useconst>None</useconst>
+<datacred>City of Cambridge GIS</datacred>
+<native>Microsoft Windows 7 Version 6.1 (Build 7601) Service Pack 1; Esri ArcGIS 10.2.2.3552</native>
+<ptcontac>
+<cntinfo>
+<cntorgp>
+<cntorg>City of Cambridge</cntorg>
+<cntper>Cambridge GIS</cntper>
+</cntorgp>
+<cntpos>GIS Data</cntpos>
+<cntaddr>
+<addrtype>mailing and physical</addrtype>
+<address>831 Massachusetts Ave</address>
+<city>Cambridge</city>
+<state>MA</state>
+<postal>02139</postal>
+<country>USA</country>
+</cntaddr>
+<cntvoice>617-349-4140</cntvoice>
+<cntemail>CambridgeGIS@cambridgema.gov</cntemail>
+</cntinfo>
+</ptcontac>
+</idinfo>
+<dataqual>
+<lineage>
+<procstep>
+<procdesc>The data was downloaded from the City of Cambridge GitHub repository (https://github.com/cambridgegis) as geojson files. The files were renamed to flatten the directory structure and add more identifying information. GeoJSON was processed to shapefile format using the GDAL command OGR2OGR with the –f “ESRI Shapefile” option and UTF-8 encoding, GDAL version 1.11.1 released 2014/09/24. ArcCatalog 10.1 was utilized to export the shapefile into an ArcSDE 9.3.1 database using the “Feature Class to Feature Class” export tool.</procdesc>
+<srcused>source vector dataset</srcused>
+<procdate>2014</procdate>
+<srcprod>Shapefile</srcprod>
+<proccont>
+<cntinfo>
+<cntorgp>
+<cntorg>Harvard Geospatial Library</cntorg>
+</cntorgp>
+<cntpos>Librarian for Geographic Information Services</cntpos>
+<cntaddr>
+<addrtype>mailing and physical address</addrtype>
+<address>Harvard Map Collection</address>
+<address>Pusey Library</address>
+<address>Harvard Yard</address>
+<city>Cambridge</city>
+<state>MA</state>
+<postal>02138</postal>
+<country>USA</country>
+</cntaddr>
+<cntvoice>617-495-2417</cntvoice>
+<cntfax>617-496-0440</cntfax>
+<cntemail>hgl_ref@hulmail.harvard.edu</cntemail>
+<hours>Monday - Friday, 9:00 am - 4:00 pm EST-USA</hours>
+</cntinfo>
+</proccont>
+</procstep>
+</lineage>
+</dataqual>
+<spdoinfo>
+<direct>Vector</direct>
+<ptvctinf>
+<sdtsterm>
+<sdtstype>Entity point</sdtstype>
+<ptvctcnt>7</ptvctcnt>
+</sdtsterm>
+</ptvctinf>
+</spdoinfo>
+<spref>
+<horizsys>
+<geograph>
+<latres>0.000001</latres>
+<longres>0.000001</longres>
+<geogunit>Decimal degrees</geogunit>
+</geograph>
+<geodetic>
+<horizdn>D North American 1983</horizdn>
+<ellips>GRS 1980</ellips>
+<semiaxis>6378137.0</semiaxis>
+<denflat>298.257222101</denflat>
+</geodetic>
+</horizsys>
+</spref>
+<eainfo>
+<detailed>
+<enttyp>
+<enttypl>Public Libraries, Cambridge, Massachusetts, 2014</enttypl>
+<enttypds>Cambridge (Mass.). Geographic Information Systems</enttypds>
+</enttyp>
+<attr>
+<attrlabl>OBJECTID</attrlabl>
+<attrdef>Internal feature number.</attrdef>
+<attrdefs>ESRI</attrdefs>
+<attrdomv>
+<udom>Sequential unique whole numbers that are automatically generated.</udom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>PHONE</attrlabl>
+<attrdef>Library phone number</attrdef>
+<attrdefs>Cambridge (Mass.). Geographic Information Systems</attrdefs>
+</attr>
+<attr>
+<attrlabl>SITE_NAME</attrlabl>
+<attrdef>Library name</attrdef>
+<attrdefs>Cambridge (Mass.). Geographic Information Systems</attrdefs>
+</attr>
+<attr>
+<attrlabl>GlobalID</attrlabl>
+</attr>
+<attr>
+<attrlabl>ADDRESS</attrlabl>
+<attrdef>Library address</attrdef>
+<attrdefs>Cambridge (Mass.). Geographic Information Systems</attrdefs>
+</attr>
+<attr>
+<attrlabl>SHAPE</attrlabl>
+<attrdef>Feature geometry.</attrdef>
+<attrdefs>ESRI</attrdefs>
+<attrdomv>
+<udom>Coordinates defining the features.</udom>
+</attrdomv>
+</attr>
+</detailed>
+</eainfo>
+<distinfo>
+<distrib>
+<cntinfo>
+<cntorgp>
+<cntorg>Harvard University Information Technology</cntorg>
+</cntorgp>
+<cntpos>Harvard Geospatial Library</cntpos>
+<cntaddr>
+<addrtype>mailing and physical address</addrtype>
+<address>Library Technology Services</address>
+<address>90 Mount Auburn Street</address>
+<city>Cambridge</city>
+<state>MA</state>
+<postal>02138</postal>
+<country>USA</country>
+</cntaddr>
+<cntvoice>617-495-2417</cntvoice>
+<cntfax>617-496-0440</cntfax>
+<cntemail>hgl_ref@hulmail.harvard.edu</cntemail>
+<hours>Monday - Friday, 9:00 am - 4:00 pm EST-USA</hours>
+</cntinfo>
+</distrib>
+<resdesc>Downloadable Data</resdesc>
+<distliab>Although this data is being distributed by Harvard University, no warranty expressed or implied is made by the University as to the accuracy of the data and related materials. The act of distribution shall not constitute any such warranty, and no responsibility is assumed by the University in the use of this data, or related materials.
+</distliab>
+<stdorder>
+<digform>
+<digtinfo>
+<formname>Shapefile</formname>
+<filedec>ZIP</filedec>
+</digtinfo>
+<digtopt>
+<onlinopt>
+<computer>
+<networka>
+<networkr>http://hgl.harvard.edu/</networkr>
+</networka>
+</computer>
+</onlinopt>
+</digtopt>
+</digform>
+<fees>None</fees>
+<ordering>Web-based distribution only</ordering>
+</stdorder>
+</distinfo>
+<metainfo>
+<metd>20140613</metd>
+<metc>
+<cntinfo>
+<cntorgp>
+<cntorg>Harvard Geospatial Library</cntorg>
+</cntorgp>
+<cntpos>Geospatial Metadata Librarian</cntpos>
+<cntaddr>
+<addrtype>mailing and physical address</addrtype>
+<address>Harvard University Information Technology</address>
+<address>Library Technology Services</address>
+<address>90 Mount Auburn Street</address>
+<city>Cambridge</city>
+<state>MA</state>
+<postal>02138</postal>
+<country>USA</country>
+</cntaddr>
+<cntvoice>617-495-2417</cntvoice>
+<cntfax>617-496-0440</cntfax>
+<cntemail>hgl_ref@hulmail.harvard.edu</cntemail>
+<hours>Monday - Friday, 9:00 am - 4:00 pm EST-USA</hours>
+</cntinfo>
+</metc>
+<metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+<metstdv>FGDC-STD-001-1998</metstdv>
+<mettc>local time</mettc>
+</metainfo>
+</metadata>

@@ -1,0 +1,74 @@
+## LD4L expected conversion output of CoreFGDC.xml ##
+
+## Notes:
+### URIs are examples, and will be different in the converter output.
+### OriginatorActivity associated with Work
+### PublisherActivity associated with Instance
+
+
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bib: <http://bibliotek-o.org/ontology/> .
+@prefix harvard: <http://data.ld4l.org/harvard/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdau: <http://rdaregistry.info/Elements/u/#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+
+
+harvard:nCAMBRIDGE14PUBLICLIBRARIESinstance1 a bf:Instance ;
+    bf:title harvard:nCAMBRIDGE14PUBLICLIBRARIEStitle1 ;
+	rdau:P60109 harvard:nCAMBRIDGE14PUBLICLIBRARIESgeometry1 ;
+    bf:instanceOf harvard:nCAMBRIDGE14PUBLICLIBRARIESwork1 ;
+    bib:hasActivity  harvard:nCAMBRIDGE14PUBLICLIBRARIESactivity2 .
+
+harvard:nCAMBRIDGE14PUBLICLIBRARIESwork1 a bf:Cartography ;
+	a bf:Dataset ;
+    bf:hasInstance harvard:nCAMBRIDGE14PUBLICLIBRARIESinstance1 ;
+    bf:identifiedBy harvard:nCAMBRIDGE14PUBLICLIBRARIESidentifier1 ;
+    bib:hasActivity harvard:nCAMBRIDGE14PUBLICLIBRARIESactivity1 ;
+    bf:hasTitle harvard:nCAMBRIDGE14PUBLICLIBRARIEStitle2 .
+	
+harvard:nCAMBRIDGE14PUBLICLIBRARIESgeometry1 a geo:geometry ;
+	geo:asWKT "POLYGON((-71.146912 42.392720, -71.084684 42.392720, -71.084684 42.363838, -71.146912 42.363838, -71.146912 42.392720))"^^geo:wktLiteral ;
+	cf:isGeometryOf harvard:nCAMBRIDGE14PUBLICLIBRARIESinstance1 .
+        
+harvard:nCAMBRIDGE14PUBLICLIBRARIEStitle1 a bf:Title ;
+    rdfs:label "Public Libraries, Cambridge, Massachusetts, 2014" ;
+    bib:isTitleOf harvard:nCAMBRIDGE14PUBLICLIBRARIESinstance1 .
+    
+harvard:nCAMBRIDGE14PUBLICLIBRARIEStitle2 a bf:Title ;
+    rdfs:label "Public Libraries, Cambridge, Massachusetts, 2014" ;
+    bib:isTitleOf harvard:nCAMBRIDGE14PUBLICLIBRARIESwork1 .
+	
+harvard:nCAMBRIDGE14PUBLICLIBRARIESidentifier1 a bf:Local ;
+    rdf:value "CAMBRIDGE14PUBLICLIBRARIES" .
+
+harvard:nCAMBRIDGE14PUBLICLIBRARIESactivity1 a bib:OriginatorActivity ;
+    bib:isActivityof harvard:nCAMBRIDGE14PUBLICLIBRARIESwork1 ;
+    bf:agent harvard:nCAMBRIDGE14PUBLICLIBRARIESagent1 ;
+    bf:agent harvard:nCAMBRIDGE14PUBLICLIBRARIESagent2 .
+ 
+harvard:nCAMBRIDGE14PUBLICLIBRARIESactivity2 a bib:PublisherActivity ;
+    bib:isActivityof harvard:nCAMBRIDGE14PUBLICLIBRARIESinstance1 ;
+    bf:agent harvard:nCAMBRIDGE14PUBLICLIBRARIESagent3 ; 
+    bib:atLocation harvard:nCAMBRIDGE14PUBLICLIBRARIESlocation1 ;
+    dcterms:date: "2014" . 
+    
+harvard:nCAMBRIDGE14PUBLICLIBRARIESagent1 a bf:Agent ;
+    rdfs:label "Cambridge (Mass.). Geographic Information Systems" ;
+    bib:isAgentOf  harvard:nCAMBRIDGE14PUBLICLIBRARIESactivity1 .
+
+harvard:nCAMBRIDGE14PUBLICLIBRARIESagent2 a bf:Agent ;
+    rdfs:label "Cambridge (Mass.). Public Library" ;
+    bib:isAgentOf  harvard:nCAMBRIDGE14PUBLICLIBRARIESactivity1 .
+        
+harvard:nCAMBRIDGE14PUBLICLIBRARIESagent3 a bf:Agent ;
+    rdfs:label "Cambridge (Mass.). Geographic Information Systems" ; 
+    bib:isAgentOf  harvard:nCAMBRIDGE14PUBLICLIBRARIESactivity2 .
+    
+harvard:nCAMBRIDGE14PUBLICLIBRARIESlocation1 a prov:Location ;
+    bib:isLocationOf harvard:nCAMBRIDGE14PUBLICLIBRARIESactivity2 ;
+    rdfs:label "Cambridge, Massachusetts" .
+   

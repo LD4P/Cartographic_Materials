@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE metadata SYSTEM "http://www.fgdc.gov/metadata/fgdc-std-001-1998.dtd">
+<!-- <layerid> is a Local Identifier -->
+<metadata layerid="CAMBRIDGE14PUBLICLIBRARIES">
+	<!-- Developmental FGDC xml record. 4 core ontology concepts: Local Identifier, Title, Originators Activity and Publication Activity 
+		and 1 geospatial extension ontology concept: bounding box -->
+	<idinfo>
+		<citation>
+			<citeinfo>
+				<!-- Each <origin> should have its own Originator activity -->
+				<origin>Cambridge (Mass.). Geographic Information Systems</origin>
+				<origin>Cambridge (Mass.). Public Library</origin>
+				<!-- <pubdate> is part of Publication activity -->
+				<pubdate>2014</pubdate>
+				<title>Public Libraries, Cambridge, Massachusetts, 2014</title>
+				<!-- <pubplace> and <publish> are part of Publication activity -->
+				<pubinfo>
+					<pubplace>Cambridge, Massachusetts</pubplace>
+					<publish>Cambridge (Mass.). Geographic Information Systems</publish>
+				</pubinfo>
+			</citeinfo>
+		</citation>
+		<spdom>
+			<bounding>
+				<!-- bounding box elements need to be converted to a single WKT statement -->
+				<westbc>-71.146912</westbc>
+				<eastbc>-71.084684</eastbc>
+				<northbc>42.392720</northbc>
+				<southbc>42.363838</southbc>
+			</bounding>
+		</spdom>
+	</idinfo>
+</metadata>
