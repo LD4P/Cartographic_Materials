@@ -16,6 +16,7 @@
 
 harvard:nCAMBRIDGE14PUBLICLIBRARIESinstance1 a bf:Instance ;
     bf:title harvard:nCAMBRIDGE14PUBLICLIBRARIEStitle1 ;
+	rdau:P60109 harvard:nCAMBRIDGE14PUBLICLIBRARIESgeometry1 ;
     bf:instanceOf harvard:nCAMBRIDGE14PUBLICLIBRARIESwork1 .
 	
 harvard:nCAMBRIDGE14PUBLICLIBRARIESgeometry1 a geo:geometry ;
@@ -27,7 +28,6 @@ harvard:nCAMBRIDGE14PUBLICLIBRARIEStitle1 a bf:Title ;
 harvard:nCAMBRIDGE14PUBLICLIBRARIESwork1 a bf:Cartography ;
 	a bf:Dataset ;
     bf:hasInstance harvard:nCAMBRIDGE14PUBLICLIBRARIESinstance1 ;
-    rdau:P60109 harvard:nCAMBRIDGE14PUBLICLIBRARIESgeometry1 ;
     bf:identifiedBy harvard:nCAMBRIDGE14PUBLICLIBRARIESidentifier1 ;
     bf:hasTitle harvard:nCAMBRIDGE14PUBLICLIBRARIEStitle2 .
 
