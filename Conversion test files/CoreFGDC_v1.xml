@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE metadata SYSTEM "http://www.fgdc.gov/metadata/fgdc-std-001-1998.dtd">
 <!-- <layerid> is a Local Identifier -->
 <metadata layerid="CAMBRIDGE14PUBLICLIBRARIES">
-	<!-- Developmental FGDC xml record. 4 core ontology concepts: Local Identifier, Title, Originators Activity and Publication Activity 
-		and 1 geospatial extension ontology concept: bounding box -->
+	<!-- Developmental FGDC xml record. Includes core ontology concepts: local Identifier, Title, and 1 geospatial extension ontology concept: bounding box
+		Added concepts to this version: Originators Activity and Publication Activity 
+		 -->
 	<idinfo>
 		<citation>
 			<citeinfo>

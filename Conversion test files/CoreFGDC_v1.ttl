@@ -1,13 +1,14 @@
-## LD4L expected conversion output of CoreFGDC.xml ##
+## LD4L expected conversion output of CoreFGDC_v1.xml ##
 
 ## Notes:
 ### URIs are examples, and will be different in the converter output.
-### OriginatorActivity associated with Work
-### PublisherActivity associated with Instance
+### Concepts included: identifier, title, spatial extent/bounding box
+###     new additons: Originator Activity, Publisher Activity
 
 
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix bib: <http://bibliotek-o.org/ontology/> .
+@prefix cart: <http://ld4l.org/ontology/cartotek-o/> .
 @prefix harvard: <http://data.ld4l.org/harvard/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -32,7 +33,7 @@ harvard:nCAMBRIDGE14PUBLICLIBRARIESwork1 a bf:Cartography ;
 	
 harvard:nCAMBRIDGE14PUBLICLIBRARIESgeometry1 a geo:geometry ;
 	geo:asWKT "POLYGON((-71.146912 42.392720, -71.084684 42.392720, -71.084684 42.363838, -71.146912 42.363838, -71.146912 42.392720))"^^geo:wktLiteral ;
-	cf:isGeometryOf harvard:nCAMBRIDGE14PUBLICLIBRARIESinstance1 .
+	cart:isGeometryOf harvard:nCAMBRIDGE14PUBLICLIBRARIESwork1 .
         
 harvard:nCAMBRIDGE14PUBLICLIBRARIEStitle1 a bf:Title ;
     rdfs:label "Public Libraries, Cambridge, Massachusetts, 2014" ;

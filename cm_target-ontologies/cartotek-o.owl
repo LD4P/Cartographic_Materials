@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- http://ld4l.org/ontology/ld4lcm/ is a temporary namespace for the Cartographic Materials ontology extension -->
+<!-- 
+    Note:  http://ld4l.org/ontology/cartotek-o/ is a temporary namespace for the LD4P/L Cartographic Materials ontology extension 
+  -->
+
 <rdf:RDF
-    xmlns="http://ld4l.org/ontology/ld4lcm/"
-    xmlns:ld4l-ext="http://bib.ld4l.org/ontology/"
+    xmlns="http://ld4l.org/ontology/cartotek-o/"
+    xmlns:bib="http://bibliotek-o.org/ontology/"
     xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
@@ -17,9 +20,11 @@
     
     <!-- ONTOLOGY DECLARATION -->
     
-    <owl:Ontology rdf:about="http://ld4l.org/ontology/ld4lcm/">
-        <rdfs:label xml:lang="en">LD4L CM Extension</rdfs:label>
-        <vann:preferredNamespacePrefix>ld4lcm</vann:preferredNamespacePrefix>
+    <owl:Ontology rdf:about="http://ld4l.org/ontology/cartotek-o">
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Version 0.0</owl:versionInfo>
+        <rdfs:label xml:lang="en">cartotek-o: extension ontology for describing cartographic materials</rdfs:label>
+        <vann:preferredNamespacePrefix>cart</vann:preferredNamespacePrefix>
+        <rdfs:comment xml:lang="en">cartotek-o is an extension ontology of the bibliotek-o BIBFRAME 2.0 extension ontology produced by the Linked Data for Libraries Cartographic Materials project for use in describing cartographic resources</rdfs:comment>
     </owl:Ontology>
     
     
@@ -27,7 +32,7 @@
     
     <!-- Class http://id.loc.gov/ontologies/bibframe/Identifier -->
     
-    <owl:Class rdf:about="http://ld4l.org/ontology/ld4lcm/EpsgCode">
+    <owl:Class rdf:about="http://ld4l.org/ontology/cartotek-o/EpsgCode">
         <rdfs:label>EPSG Code</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
         <skos:definition xml:lang="en-us">EPSG Dataset Code</skos:definition>
@@ -42,16 +47,16 @@
     <!-- Type http://id.loc.gov/ontologies/bibframe/Projection 
     Adding subtypes MARC coded projection types: https://www.loc.gov/marc/bibliographic/bd008p.html -->
     
-    <owl:NamedIndividual rdf:about="http://ld4l.org/ontology/ld4lcm/Mercator">
+    <owl:NamedIndividual rdf:about="http://ld4l.org/ontology/cartotek-o/Mercator">
         <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
-        <bf:identifiedBy rdf:resource="http://ld4l.org/ontology/ld4lcm/EpsgCode4326"/>
+        <bf:identifiedBy rdf:resource="http://ld4l.org/ontology/cartotek-o/EpsgCode4326"/>
         <rdfs:label xml:lang="en">Mercator</rdfs:label>
         <skos:definition xml:lang="en">a projection of a map of the world onto a cylinder in such a way that all the parallels of latitude have the same length as the equator, used especially for marine charts and certain climatological maps.</skos:definition>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
     </owl:NamedIndividual>
     
-    <owl:NamedIndividual rdf:about="http://ld4l.org/ontology/ld4lcm/Test-Projection">
+    <owl:NamedIndividual rdf:about="http://ld4l.org/ontology/cartotek-o/Test-Projection">
         <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
         <rdfs:label xml:lang="en">Test Projection</rdfs:label>
         <skos:definition xml:lang="en">a projection of a map of the world onto a cylinder in such a way that all the parallels of latitude have the same length as the equator, used especially for marine charts and certain climatological maps.</skos:definition>
@@ -60,13 +65,13 @@
     </owl:NamedIndividual>
 
     
-    <!-- Type http://ld4l.org/ontology/ld4lcm/EpsgCode
+    <!-- Type http://ld4l.org/ontology/cartotek-o/EpsgCode
     Individuals of type  EpsgCode -->
     
-    <owl:NamedIndividual rdf:about="http://ld4l.org/ontology/ld4lcm/EpsgCode4326">
-        <rdf:type rdf:resource="http://ld4l.org/ontology/ld4lcm/EpsgCode"/>
+    <owl:NamedIndividual rdf:about="http://ld4l.org/ontology/cartotek-o/EpsgCode4326">
+        <rdf:type rdf:resource="http://ld4l.org/ontology/cartotek-o/EpsgCode"/>
         <rdfs:label xml:lang="en">WGS 84</rdfs:label>
-        <bf:identifies rdf:resource="http://ld4l.org/ontology/ld4lcm/Mercator"/>
+        <bf:identifies rdf:resource="http://ld4l.org/ontology/cartotek-o/Mercator"/>
         <skos:definition xml:lang="en">World Geodetic System 1984</skos:definition>
         <foaf:page>http://epsg.io/4326</foaf:page>
         <rdf:value>4326</rdf:value>
@@ -78,7 +83,7 @@
     <!-- Type http://bib.ld4l.org/ontology/hasSource 
     Adding subtypes of MARC coded cartographic data sources: https://www.loc.gov/standards/sourcelist/cartographic-data.html  -->
     
-    <owl:NamedIndividual rdf:about="http://ld4l.org/ontology/ld4lcm/Bound">
+    <owl:NamedIndividual rdf:about="http://ld4l.org/ontology/cartotek-o/Bound">
         <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
         <rdfs:label xml:lang="en">Bounding Box (Klokan Technologies)</rdfs:label>
         <skos:definition xml:lang="en">The Klokan Technologies Bounding Box Tool.</skos:definition>
