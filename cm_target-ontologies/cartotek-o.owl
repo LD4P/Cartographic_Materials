@@ -58,15 +58,6 @@
         <dcterms:modified></dcterms:modified>
     </owl:NamedIndividual>
     
-    <owl:NamedIndividual rdf:about="http://ld4l.org/ontology/cartotek-o/Test-Projection">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
-        <rdfs:label xml:lang="en">Test Projection</rdfs:label>
-        <skos:definition xml:lang="en">a projection of a map of the world onto a cylinder in such a way that all the parallels of latitude have the same length as the equator, used especially for marine charts and certain climatological maps.</skos:definition>
-        <dcterms:issued></dcterms:issued>
-        <dcterms:modified></dcterms:modified>
-    </owl:NamedIndividual>
-
-    
     <!-- Type http://ld4l.org/ontology/cartotek-o/EpsgCode
     Individuals of type  EpsgCode -->
     
