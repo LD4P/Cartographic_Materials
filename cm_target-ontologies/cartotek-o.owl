@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- 
-    Note:  http://ld4l.org/ontology/cartotek-o/ is a temporary namespace for the LD4P/L Cartographic Materials ontology extension 
+    Note:  http://ld4l.org/ontology/cartotek-o/ is a placeholder (fake) namespace for the LD4P/L Cartographic Materials ontology extension until a proper home is found
   -->
 
 <rdf:RDF
@@ -40,6 +40,9 @@
     
     <!-- OBJECT PROPERTIES -->
     
+    <owl:ObjectProperty rdf:about="http://ld4l.org/ontology/cartotek-o/isGeometryof">
+        <rdfs:label xml:lang="en">is Geomtry of</rdfs:label>
+    </owl:ObjectProperty>
     
     
     <!-- NAMED INDIVIDUALS -->
@@ -49,7 +52,6 @@
     
     <owl:NamedIndividual rdf:about="http://ld4l.org/ontology/cartotek-o/Mercator">
         <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
-        <bf:identifiedBy rdf:resource="http://ld4l.org/ontology/cartotek-o/EpsgCode4326"/>
         <rdfs:label xml:lang="en">Mercator</rdfs:label>
         <skos:definition xml:lang="en">a projection of a map of the world onto a cylinder in such a way that all the parallels of latitude have the same length as the equator, used especially for marine charts and certain climatological maps.</skos:definition>
         <dcterms:issued></dcterms:issued>
@@ -71,7 +73,6 @@
     <owl:NamedIndividual rdf:about="http://ld4l.org/ontology/cartotek-o/EpsgCode4326">
         <rdf:type rdf:resource="http://ld4l.org/ontology/cartotek-o/EpsgCode"/>
         <rdfs:label xml:lang="en">WGS 84</rdfs:label>
-        <bf:identifies rdf:resource="http://ld4l.org/ontology/cartotek-o/Mercator"/>
         <skos:definition xml:lang="en">World Geodetic System 1984</skos:definition>
         <foaf:page>http://epsg.io/4326</foaf:page>
         <rdf:value>4326</rdf:value>
