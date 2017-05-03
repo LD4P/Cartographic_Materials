@@ -6,6 +6,7 @@
 
 <rdf:RDF
     xmlns="http://ld4l.org/ontology/cartotek-o/"
+    xmlns:bf="http://id.loc.gov/ontologies/bibframe/>"
     xmlns:bib="http://bibliotek-o.org/ontology/"
     xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -15,7 +16,6 @@
     xmlns:vann="http://purl.org/vocab/vann/"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:foaf="http://xmlns.com/foaf/0.1#"
-    xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
     >
     
     <!-- ONTOLOGY DECLARATION -->
@@ -44,6 +44,9 @@
         <rdfs:label xml:lang="en">is Geomtry of</rdfs:label>
     </owl:ObjectProperty>
     
+    <owl:ObjectProperty rdf:about="http://ld4l.org/ontology/cartotek-o/isProjectionOf">
+        <rdfs:label xml:lang="en">is Projection of</rdfs:label>
+    </owl:ObjectProperty>    
     
     <!-- NAMED INDIVIDUALS -->
     
@@ -57,7 +60,16 @@
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
     </owl:NamedIndividual>
-    
+
+    <owl:NamedIndividual rdf:about="http://ld4l.org/ontology/cartotek-o/ProjectionEpsg4326">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
+        <rdfs:label xml:lang="en">WGS 84</rdfs:label>
+        <skos:definition xml:lang="en">World Geodetic System 1984.</skos:definition>
+        <bf:identifiedBy rdf:resource="http://ld4l.org/ontology/cartotek-o/EpsgCode4326"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:NamedIndividual>
+
     <!-- Type http://ld4l.org/ontology/cartotek-o/EpsgCode
     Individuals of type  EpsgCode -->
     
@@ -65,6 +77,7 @@
         <rdf:type rdf:resource="http://ld4l.org/ontology/cartotek-o/EpsgCode"/>
         <rdfs:label xml:lang="en">WGS 84</rdfs:label>
         <skos:definition xml:lang="en">World Geodetic System 1984</skos:definition>
+        <bf:identifies rdf:resource="http://ld4l.org/ontology/cartotek-o/ProjectionEpsg4326"/>
         <foaf:page>http://epsg.io/4326</foaf:page>
         <rdf:value>4326</rdf:value>
         <dcterms:issued></dcterms:issued>

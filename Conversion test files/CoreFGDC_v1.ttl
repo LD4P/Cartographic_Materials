@@ -29,11 +29,16 @@ harvard:nCAMBRIDGE14PUBLICLIBRARIESwork1 a bf:Cartography ;
     rdau:P60109 harvard:nCAMBRIDGE14PUBLICLIBRARIESgeometry1 ;
     bf:identifiedBy harvard:nCAMBRIDGE14PUBLICLIBRARIESidentifier1 ;
     bib:hasActivity harvard:nCAMBRIDGE14PUBLICLIBRARIESactivity1 ;
+    bib:isSourceOf harvard:nCAMBRIDGE14PUBLICLIBRARIESgeometry1 ;
     bf:hasTitle harvard:nCAMBRIDGE14PUBLICLIBRARIEStitle2 .
 	
 harvard:nCAMBRIDGE14PUBLICLIBRARIESgeometry1 a geo:geometry ;
 	geo:asWKT "POLYGON((-71.146912 42.392720, -71.084684 42.392720, -71.084684 42.363838, -71.146912 42.363838, -71.146912 42.392720))"^^geo:wktLiteral ;
-	cart:isGeometryOf harvard:nCAMBRIDGE14PUBLICLIBRARIESwork1 .
+	cart:isGeometryOf harvard:nCAMBRIDGE14PUBLICLIBRARIESwork1 ;
+	bib:hasSource harvard:nCAMBRIDGE14PUBLICLIBRARIESwork1 ;
+	bf:projection cart:ProjectionEpsg4326 .
+	
+cart:ProjectionEpsg4326 cart:isProjectionOf harvard:nCAMBRIDGE14PUBLICLIBRARIESgeometry1 .
         
 harvard:nCAMBRIDGE14PUBLICLIBRARIEStitle1 a bf:Title ;
     rdfs:label "Public Libraries, Cambridge, Massachusetts, 2014" ;
