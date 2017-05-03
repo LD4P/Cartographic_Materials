@@ -20,7 +20,7 @@
     
     <!-- ONTOLOGY DECLARATION -->
     
-    <owl:Ontology rdf:about="http://ld4l.org/ontology/cartotek-o">
+    <owl:Ontology rdf:about="http://ld4l.org/ontology/cartotek-o/">
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Version 0.0</owl:versionInfo>
         <rdfs:label xml:lang="en">cartotek-o: extension ontology for describing cartographic materials</rdfs:label>
         <vann:preferredNamespacePrefix>cart</vann:preferredNamespacePrefix>
