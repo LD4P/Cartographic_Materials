@@ -6,7 +6,7 @@
 
 <rdf:RDF
     xmlns="http://ld4l.org/ontology/cartotek-o/"
-    xmlns:bf="http://id.loc.gov/ontologies/bibframe/>"
+    xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
     xmlns:bib="http://bibliotek-o.org/ontology/"
     xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
