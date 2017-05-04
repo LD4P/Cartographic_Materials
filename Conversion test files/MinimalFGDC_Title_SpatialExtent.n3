@@ -1,0 +1,38 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdau: <http://rdaregistry.info/Elements/u/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ld4l: <http://bib.ld4l.org/ontology/> .
+
+<http://localhost:8080/bibframe/individual/na88e05d0c83bce43>
+  rdf:value "CAMBRIDGE14PUBLICLIBRARIES" ;
+  a bf:Local .
+
+<http://localhost:8080/bibframe/individual/n47d3d35cb86ee131>
+  a bf:Cartography, bf:Dataset ;
+  rdau:P60109 <http://localhost:8080/bibframe/individual/n657e56292126dbf6> ;
+  bf:identifiedBy <http://localhost:8080/bibframe/individual/na88e05d0c83bce43> ;
+  bf:title <http://localhost:8080/bibframe/individual/n6600aeccbb46a333> ;
+  rdfs:label "Public Libraries, Cambridge, Massachusetts, 2014" .
+
+<http://localhost:8080/bibframe/individual/nf6d8ff46bc3c0c5b>
+  rdfs:label "Public Libraries, Cambridge, Massachusetts, 2014" ;
+  bf:title <http://localhost:8080/bibframe/individual/n1131aabf96d57dc4> ;
+  bf:instanceOf <http://localhost:8080/bibframe/individual/n47d3d35cb86ee131> ;
+  a bf:Instance .
+
+<http://localhost:8080/bibframe/individual/n1131aabf96d57dc4>
+  a bf:Title ;
+  rdfs:label "Public Libraries, Cambridge, Massachusetts, 2014" .
+
+<http://localhost:8080/bibframe/individual/n657e56292126dbf6>
+  bf:projection <http://ld4l.org/ontology/ld4lcm/ProjectionEpsg4326> ;
+  geo:asWKT "POLYGON((-71.146912 42.392720, -71.084684 42.392720, -71.084684 42.363838, -71.146912 42.363838, -71.146912 42.392720))^^geo:wktLiteral" ;
+  ld4l:hasSource <http://localhost:8080/bibframe/individual/n47d3d35cb86ee131> ;
+  a bf:Cartographic, geo:Geometry .
+
+<http://localhost:8080/bibframe/individual/n6600aeccbb46a333>
+  rdfs:label "Public Libraries, Cambridge, Massachusetts, 2014" ;
+  a bf:Title .
+
