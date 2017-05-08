@@ -40,12 +40,14 @@
     
     <!-- OBJECT PROPERTIES -->
     
-    <owl:ObjectProperty rdf:about="http://ld4l.org/ontology/cartotek-o/isGeometryof">
-        <rdfs:label xml:lang="en">is Geomtry of</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://ld4l.org/ontology/cartotek-o/isGeometryOf">
+        <rdfs:label xml:lang="en">is Geometry of</rdfs:label>
+        <owl:inverseOf rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
     </owl:ObjectProperty>
     
     <owl:ObjectProperty rdf:about="http://ld4l.org/ontology/cartotek-o/isProjectionOf">
         <rdfs:label xml:lang="en">is Projection of</rdfs:label>
+        <owl:inverseOf rdf:resource="http://id.loc.gov/ontologies/bibframe/projection"/>
     </owl:ObjectProperty>    
     
     <!-- NAMED INDIVIDUALS -->
