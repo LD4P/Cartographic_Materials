@@ -1,4 +1,0 @@
-<http://localhost:8080/bibframe/individual/n2890ce7bbd415fbc> <http://www.w3.org/2000/01/rdf-schema#label> "Public Libraries, Cambridge, Massachusetts, 2014" .
-<http://localhost:8080/bibframe/individual/n2890ce7bbd415fbc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Title> .
-<http://localhost:8080/bibframe/individual/nab41bab70e942cec> <http://id.loc.gov/ontologies/bibframe/title> <http://localhost:8080/bibframe/individual/n2890ce7bbd415fbc> .
-<http://localhost:8080/bibframe/individual/nab41bab70e942cec> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Cartography> .
