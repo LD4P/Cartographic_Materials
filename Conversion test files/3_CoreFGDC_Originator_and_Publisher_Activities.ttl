@@ -9,13 +9,15 @@
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix bib: <http://bibliotek-o.org/ontology/> .
 @prefix cart: <http://ld4l.org/ontology/cartotek-o/> .
-@prefix harvard: <http://data.ld4l.org/harvard/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix harvard: <http://data.ld4l.org/harvard/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdau: <http://rdaregistry.info/Elements/u/#> .
-@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+
 
 
 harvard:nCAMBRIDGE14PUBLICLIBRARIESwork1 a bf:Cartography ;
@@ -45,21 +47,21 @@ harvard:nCAMBRIDGE14PUBLICLIBRARIESidentifier1 a bf:Local ;
     rdf:value "CAMBRIDGE14PUBLICLIBRARIES" .
 
 harvard:nCAMBRIDGE14PUBLICLIBRARIESactivity1 a bib:OriginatorActivity ;
-    bf:agent harvard:nCAMBRIDGE14PUBLICLIBRARIESagent1 ;
-    bf:agent harvard:nCAMBRIDGE14PUBLICLIBRARIESagent2 .
+    bib:hasAgent harvard:nCAMBRIDGE14PUBLICLIBRARIESagent1 ;
+    bib:hasAgent harvard:nCAMBRIDGE14PUBLICLIBRARIESagent2 .
  
 harvard:nCAMBRIDGE14PUBLICLIBRARIESactivity2 a bib:PublisherActivity ;
-    bf:agent harvard:nCAMBRIDGE14PUBLICLIBRARIESagent3 ; 
+    bib:hasAgent harvard:nCAMBRIDGE14PUBLICLIBRARIESagent3 ; 
     bib:atLocation harvard:nCAMBRIDGE14PUBLICLIBRARIESlocation1 ;
     dcterms:date: "2014" . 
     
-harvard:nCAMBRIDGE14PUBLICLIBRARIESagent1 a bf:Agent ;
+harvard:nCAMBRIDGE14PUBLICLIBRARIESagent1 a foaf:Agent ;
     rdfs:label "Cambridge (Mass.). Geographic Information Systems" .
 
-harvard:nCAMBRIDGE14PUBLICLIBRARIESagent2 a bf:Agent ;
+harvard:nCAMBRIDGE14PUBLICLIBRARIESagent2 a foaf:Agent ;
     rdfs:label "Cambridge (Mass.). Public Library" .
         
-harvard:nCAMBRIDGE14PUBLICLIBRARIESagent3 a bf:Agent ;
+harvard:nCAMBRIDGE14PUBLICLIBRARIESagent3 a foaf:Agent ;
     rdfs:label "Cambridge (Mass.). Geographic Information Systems" .
     
 harvard:nCAMBRIDGE14PUBLICLIBRARIESlocation1 a prov:Location ;
