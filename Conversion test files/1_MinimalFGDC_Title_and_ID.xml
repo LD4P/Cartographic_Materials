@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE metadata SYSTEM "http://www.fgdc.gov/metadata/fgdc-std-001-1998.dtd">
+<!-- <layerid> is a Local Identifier -->
 <metadata layerid="CAMBRIDGE14PUBLICLIBRARIES">
-	<!-- Minimal FGDC xml record. 1 core ontology element: Title -->
+	<!-- Minimal FGDC xml record. Includes core ontology elements: Local Identifier and Title -->
 	<idinfo>
 		<citation>
 			<citeinfo>
