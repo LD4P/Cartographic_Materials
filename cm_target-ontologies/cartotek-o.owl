@@ -98,5 +98,17 @@
         <dcterms:modified></dcterms:modified>
     </owl:NamedIndividual>
     
+    <!-- Type "http://www.w3.org/ns/oa#Motivation  
+    Adding subtypes of Annotation Motivations   -->
+    
+    <owl:NamedIndividual rdf:about="http://cartotek-o.org/ontology/providingPurpose">
+        <rdf:type rdf:resource="http://www.w3.org/ns/oa#Motivation"/>
+        <rdfs:label xml:lang="en">providing purpose</rdfs:label>
+        <skos:definition xml:lang="en">The motivation for when the user intends to describe the Target by providing a purpose of its contents.</skos:definition>
+        <skos:broader rdf:resource="http://www.w3.org/ns/oa#describing"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:NamedIndividual>
+    
 </rdf:RDF>
 
