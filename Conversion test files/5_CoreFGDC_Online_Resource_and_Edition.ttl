@@ -1,9 +1,9 @@
-## LD4L expected conversion output of 4_CoreFGDC_Thematic_and_Place_Keywords ##
+## LD4L expected conversion output of 5_CoreFGDC_Online_Resource_and_Edition.xml ##
 
 ## Notes:
 ### URIs are examples, and will be different in the converter output.
-### Concepts included: identifier, title, spatial extent/bounding box, Originator Activity, Publisher Activity
-###     new additons: thematic keywords and place keywords
+### Concepts included: identifier, title, spatial extent/bounding box, originator activity, publisher activity
+###     new additons: online resource/electronicLocator, edition statement  
 
 
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
@@ -31,6 +31,7 @@ harvard:nCAMBRIDGE14PUBLICLIBRARIESwork1 a bf:Cartography ;
 harvard:nCAMBRIDGE14PUBLICLIBRARIESinstance1 a bf:Instance ;
     bf:title harvard:nCAMBRIDGE14PUBLICLIBRARIEStitle1 ;
     bib:hasActivity  harvard:nCAMBRIDGE14PUBLICLIBRARIESactivity2 ;
+    bf:editionStatement "2014 revised ed." ;
 	bf:hasItem harvard:nCAMBRIDGE14PUBLICLIBRARIESitem1 .
 	
 harvard:nCAMBRIDGE14PUBLICLIBRARIESitem1 a bf:Item ;

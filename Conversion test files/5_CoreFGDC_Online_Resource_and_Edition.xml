@@ -14,6 +14,7 @@
 				<!-- <pubdate> is part of Publication activity -->
 				<pubdate>2014</pubdate>
 				<title>Public Libraries, Cambridge, Massachusetts, 2014</title>
+				<edition>2014 revised ed.</edition>
 				<!-- <pubplace> and <publish> are part of Publication activity -->
 				<pubinfo>
 					<pubplace>Cambridge, Massachusetts</pubplace>
@@ -32,7 +33,5 @@
 				<southbc>42.363838</southbc>
 			</bounding>
 		</spdom>
-
-
 	</idinfo>
 </metadata>
