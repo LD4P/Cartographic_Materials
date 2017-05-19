@@ -13,6 +13,7 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix harvard: <http://data.ld4l.org/harvard/> .
+@prefix metal: <http://harvcore.org/ontology/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -48,7 +49,7 @@ harvard:nCAMBRIDGE14PUBLICLIBRARIEStitle1 a bf:Title ;
 harvard:nCAMBRIDGE14PUBLICLIBRARIEStitle2 a bf:Title ;
     rdfs:label "Public Libraries, Cambridge, Massachusetts, 2014" .
 	
-harvard:nCAMBRIDGE14PUBLICLIBRARIESidentifier1 a harvard:HGLID ;
+harvard:nCAMBRIDGE14PUBLICLIBRARIESidentifier1 a metal:HGLID ;
     rdf:value "CAMBRIDGE14PUBLICLIBRARIES" .
 
 harvard:nCAMBRIDGE14PUBLICLIBRARIESactivity1 a bib:OriginatorActivity ;
