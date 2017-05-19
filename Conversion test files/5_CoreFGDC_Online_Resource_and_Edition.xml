@@ -21,9 +21,14 @@
 					<publish>Cambridge (Mass.). Geographic Information Systems</publish>
 				</pubinfo>
 				<!-- onlink corresponds to the item electronicLocator -->
-				<onlink>http://hgl.harvard.edu:8080/HGL/hgl.jsp?action=VColl&amp;VCollName=CAMBRIDGE14PUBLICLIBRARIES</onlink>
+				<onlink>http://hgl.harvard.edu:8080/HGL/hgl.jsp?action=VColl&VCollName=CAMBRIDGE14PUBLICLIBRARIES</onlink>
 			</citeinfo>
 		</citation>
+		<descript>
+			<!-- <abstract> and <summary> go into separate Annotations -->
+			<abstract>This layer contains point features of all public libraries in Cambridge.</abstract>
+			<purpose>Created for general use by City staff. Used for both mapping and specific identification of buildings with a similar use.</purpose>
+		</descript>
 		<spdom>
 			<bounding>
 				<!-- bounding box elements need to be converted to a single WKT statement -->
