@@ -8,7 +8,7 @@
 
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix bib: <http://bibliotek-o.org/ontology/> .
-@prefix cart: <http://ld4l.org/ontology/cartotek-o/> .
+@prefix cart: <http://carto.biblioteko-o.org> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
