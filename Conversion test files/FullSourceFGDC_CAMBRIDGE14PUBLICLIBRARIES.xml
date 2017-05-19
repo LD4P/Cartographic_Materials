@@ -10,7 +10,7 @@
 <pubplace>Cambridge, Massachusetts</pubplace>
 <publish>Cambridge (Mass.). Geographic Information Systems</publish>
 </pubinfo>
-<onlink>http://hgl.harvard.edu:8080/HGL/hgl.jsp?action=VColl&VCollName=CAMBRIDGE14PUBLICLIBRARIES</onlink>
+<onlink>http://hgl.harvard.edu:8080/HGL/hgl.jsp?action=VColl&amp;VCollName=CAMBRIDGE14PUBLICLIBRARIES</onlink>
 <lworkcit>
 <citeinfo>
 <origin>Cambridge (Mass.). Geographic Information Systems</origin>

@@ -21,7 +21,7 @@
 					<publish>Cambridge (Mass.). Geographic Information Systems</publish>
 				</pubinfo>
 				<!-- onlink corresponds to the item electronicLocator -->
-				<onlink>http://hgl.harvard.edu:8080/HGL/hgl.jsp?action=VColl&VCollName=CAMBRIDGE14PUBLICLIBRARIES</onlink>
+				<onlink>http://hgl.harvard.edu:8080/HGL/hgl.jsp?action=VColl&amp;VCollName=CAMBRIDGE14PUBLICLIBRARIES</onlink>
 			</citeinfo>
 		</citation>
 		<descript>
