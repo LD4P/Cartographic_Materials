@@ -3,7 +3,7 @@
 <metadata layerid="CAMBRIDGE14PUBLICLIBRARIES">
 	<!-- Developmental FGDC xml record. Includes core ontology concepts: Local Identifier, Title, 
 		Originators Activity and Publication Activity and 1 geospatial extension ontology concept: bounding box;
-		Added concepts to this version: online resource
+		Added concepts to this version: online resource, edition
 		 -->
 	<idinfo>
 		<citation>
