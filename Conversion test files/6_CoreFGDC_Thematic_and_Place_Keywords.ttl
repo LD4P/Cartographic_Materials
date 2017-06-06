@@ -137,13 +137,13 @@ harvard:nCAMBRIDGE14PUBLICLIBRARIESgeographicCoverage3 a bf:GeographicCoverage ;
     bib:hasSource harvard:nCAMBRIDGE14PUBLICLIBRARIESsource4 .
 	
 harvard:nCAMBRIDGE14PUBLICLIBRARIESsource1 rdfs:label "LCSH" ;
-    skos:editorialNote “Harvard FGDC themekey derived from: LCSH” .
+    skos:editorialNote "Harvard FGDC themekey derived from: LCSH" .
 	
-harvard:nCAMBRIDGE14PUBLICLIBRARIESsource2 a rdfs:label "None" ;
-    skos:editorialNote “Harvard FGDC themekey derived from: None” .
+harvard:nCAMBRIDGE14PUBLICLIBRARIESsource2 rdfs:label "None" ;
+    skos:editorialNote "Harvard FGDC themekey derived from: None" .
 	
 harvard:nCAMBRIDGE14PUBLICLIBRARIESsource3 rdfs:label "GNIS" ;
-    skos:editorialNote “Harvard FGDC placekey derived from: GNIS” .
+    skos:editorialNote "Harvard FGDC placekey derived from: GNIS" .
 	
 harvard:nCAMBRIDGE14PUBLICLIBRARIESsource4 rdfs:label "LCNA" ;
-    skos:editorialNote “Harvard FGDC placekey derived from: LCNA” .
+    skos:editorialNote "Harvard FGDC placekey derived from: LCNA" .
