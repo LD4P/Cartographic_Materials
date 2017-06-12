@@ -53,7 +53,7 @@ harvard:nCAMBRIDGE14PUBLICLIBRARIESinstance1 a bf:Instance ;
 harvard:nCAMBRIDGE14PUBLICLIBRARIESitem1 a bf:Item ;
 	bf:electronicLocator <http://hgl.harvard.edu:8080/HGL/hgl.jsp?action=VColl&VCollName=CAMBRIDGE14PUBLICLIBRARIES> .	
 	
-harvard:nCAMBRIDGE14PUBLICLIBRARIESgeometry1 a geo:geometry ;
+harvard:nCAMBRIDGE14PUBLICLIBRARIESgeometry1 a geo:Geometry ;
 	geo:asWKT "POLYGON((-71.146912 42.392720, -71.084684 42.392720, -71.084684 42.363838, -71.146912 42.363838, -71.146912 42.392720))"^^geo:wktLiteral ;
 	bib:hasSource harvard:nCAMBRIDGE14PUBLICLIBRARIESwork1 ;
 	bf:projection cart:ProjectionEpsg4326 .
