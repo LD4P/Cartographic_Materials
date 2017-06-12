@@ -15,7 +15,7 @@
 <http://localhost:8080/bibframe/individual/n12573812c871fb93>
         a                      bf:Cartography , bf:Dataset ;
         rdfs:label             "Public Libraries, Cambridge, Massachusetts, 2014" ;
-        rdau:P60109            <http://localhost:8080/bibframe/individual/n774f59f31b0d8d93> .
+        rdau:P60109            <http://localhost:8080/bibframe/individual/n774f59f31b0d8d93> ;
         bib:hasActivity        <http://localhost:8080/bibframe/individual/n405d5da0b5e0c537> ;
         bib:isTargetOf         <http://localhost:8080/bibframe/individual/n6efd3a24eee2fb82> , 
         					   <http://localhost:8080/bibframe/individual/n2738c83169f31a0e> ;
@@ -34,7 +34,7 @@
         					   <http://localhost:8080/bibframe/individual/n275cf56418552bfc> , 
         					   <http://localhost:8080/bibframe/individual/n15633c9d697e6d38> ;
         					   
-        bf:genreForm           <http://id.loc.gov/authorities/genreForms/gf2011026297> ;
+        bf:genreForm           <http://id.loc.gov/authorities/genreForms/gf2011026297> .
 
 <http://localhost:8080/bibframe/individual/n517602af597027ef>
         a                    bf:Instance ;
