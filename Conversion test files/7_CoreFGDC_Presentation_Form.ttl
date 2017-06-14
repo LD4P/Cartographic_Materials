@@ -5,7 +5,7 @@
 ### Concepts included: identifier, title, spatial extent/bounding box, originator activity, publisher activity, 
 ###                    abstract, purpose, online resource/electronicLocator, edition statement,
 ### 				   thematic keywords and place keywords, genre/form
-###      new additons: presentation form (Work subtype)
+###      new additons: presentation form (Work subtype), Work language
 
 
 
@@ -28,6 +28,7 @@
 harvard:nCAMBRIDGE14PUBLICLIBRARIESwork1 a bf:Cartography ;
     a bf:Dataset ;
 	a cart:VectorData ;
+	bf:language <http://lexvo.org/id/iso639-3/eng> ;
     bf:hasInstance harvard:nCAMBRIDGE14PUBLICLIBRARIESinstance1 ;
     rdau:P60109 harvard:nCAMBRIDGE14PUBLICLIBRARIESgeometry1 ;
     bf:identifiedBy harvard:nCAMBRIDGE14PUBLICLIBRARIESidentifier1 ;
