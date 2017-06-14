@@ -1,6 +1,6 @@
 FGDC geoform text,cartotek-o mapping equivalent(s),label
-vector digital data,cart:VectorData,Vector Data
-map,"cart:Maps, cart:GeoreferencedCartographicResources","Map, Georeferenced Cartographic Resource"
-raster digital data,cart:RasterData,Raster Data
-SDE raster digital data,cart:RasterData,Raster Data
-remote-sensing image,cart:RemoteSensingImages,Remote Sensing Image
+vector digital data,VectorData,Vector Data
+map,"Maps, GeoreferencedCartographicResources","Map, Georeferenced Cartographic Resource"
+raster digital data,RasterData,Raster Data
+SDE raster digital data,RasterData,Raster Data
+remote-sensing image,RemoteSensingImages,Remote Sensing Image
