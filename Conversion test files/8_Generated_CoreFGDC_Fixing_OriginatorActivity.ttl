@@ -1,0 +1,167 @@
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix rdau:  <http://rdaregistry.info/Elements/u/> .
+@prefix bf:    <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix metal: <http://harvcore.org/ontology/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix bib:   <http://bib.ld4l.org/ontology/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix cart:  <http://ld4l.org/ontology/cartotek-o/> .
+
+<http://localhost:8080/bibframe/individual/n29616a2b27f29901>
+        a                      bf:Dataset , cart:VectorData , bf:Cartography ;
+        rdfs:label             "Public Libraries, Cambridge, Massachusetts, 2014" ;
+        bib:hasActivity        <http://localhost:8080/bibframe/individual/n4883a8e104dde887> , <http://localhost:8080/bibframe/individual/n48e3c37cc3ca8f87> ;
+        bib:isTargetOf         <http://localhost:8080/bibframe/individual/n29ea6c219b904fba> , <http://localhost:8080/bibframe/individual/nc3a8fafdc5cbd443> ;
+        bf:genreForm           <http://id.loc.gov/authorities/genreForms/gf2011026297> ;
+        bf:geographicCoverage  <http://localhost:8080/bibframe/individual/n846d87723bf0e4e0> , <http://localhost:8080/bibframe/individual/n43a1421ff9d58699> , <http://localhost:8080/bibframe/individual/n507638d21e71c476> ;
+        bf:hasInstance         <http://localhost:8080/bibframe/individual/n72b223bdf1e54ed9> ;
+        bf:identifiedBy        <http://localhost:8080/bibframe/individual/na9d42e1abf04b01c> ;
+        bf:title               <http://localhost:8080/bibframe/individual/n4e91bbdc5c48524c> ;
+        dcterms:language       <http://lexvo.org/id/iso639-3/eng> ;
+        dcterms:subject        <http://localhost:8080/bibframe/individual/nd25fedd19d6ddf20> , <http://localhost:8080/bibframe/individual/n92c3a28769c7b612> , <http://localhost:8080/bibframe/individual/nb80879c6f211d7b8> , <http://localhost:8080/bibframe/individual/n8d998603f640b909> , <http://localhost:8080/bibframe/individual/n7a3f7fc4fa4f145c> , <http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/structure> ;
+        rdau:P60109            <http://localhost:8080/bibframe/individual/n8a41d1701f2a0a7e> .
+
+<http://localhost:8080/bibframe/individual/n72b223bdf1e54ed9>
+        a                    bf:Instance ;
+        rdfs:label           "Public Libraries, Cambridge, Massachusetts, 2014" ;
+        bib:hasActivity      <http://localhost:8080/bibframe/individual/n67e78fed312dd543> ;
+        bf:editionStatement  "2014 revised ed." ;
+        bf:hasItem           <http://localhost:8080/bibframe/individual/n4522e4b54a27c593> ;
+        bf:title             <http://localhost:8080/bibframe/individual/n316a4c052b7fa202> .
+
+<http://localhost:8080/bibframe/individual/n4522e4b54a27c593>
+        a                     bf:Item ;
+        rdfs:label            "Public Libraries, Cambridge, Massachusetts, 2014" ;
+        bf:electronicLocator  <http://hgl.harvard.edu:8080/HGL/hgl.jsp?action=VColl&VCollName=CAMBRIDGE14PUBLICLIBRARIES> .
+
+<http://localhost:8080/bibframe/individual/n8a41d1701f2a0a7e>
+        a              geo:Geometry ;
+        bib:hasSource  <http://localhost:8080/bibframe/individual/n29616a2b27f29901> ;
+        bf:projection  cart:ProjectionEpsg4326 ;
+        geo:asWKT      "POLYGON((-71.146912 42.363838, -71.084684 42.363838, -71.084684 42.392720, -71.146912 42.392720, -71.146912 42.363838))"^^geo:wktLiteral .
+
+<http://localhost:8080/bibframe/individual/n316a4c052b7fa202>
+        a           bf:Title ;
+        rdfs:label  "Public Libraries, Cambridge, Massachusetts, 2014" .
+
+<http://localhost:8080/bibframe/individual/n4e91bbdc5c48524c>
+        a           bf:Title ;
+        rdfs:label  "Public Libraries, Cambridge, Massachusetts, 2014" .
+
+<http://localhost:8080/bibframe/individual/n29ea6c219b904fba>
+        a                oa:Annotation ;
+        dcterms:creator  <http://viaf.org/viaf/134059638> ;
+        oa:hasBody       <http://localhost:8080/bibframe/individual/n950acc40cc2a7de6> ;
+        oa:motivatedBy   bib:summarizing .
+
+<http://localhost:8080/bibframe/individual/nc3a8fafdc5cbd443>
+        a                oa:Annotation ;
+        dcterms:creator  <http://viaf.org/viaf/134059638> ;
+        oa:hasBody       <http://localhost:8080/bibframe/individual/n1a29087ecae1840> ;
+        oa:motivatedBy   bib:providingPurpose .
+
+<http://localhost:8080/bibframe/individual/n950acc40cc2a7de6>
+        a          oa:TextualBody ;
+        rdf:value  "This layer contains point features of all public libraries in Cambridge." .
+
+<http://localhost:8080/bibframe/individual/n1a29087ecae1840>
+        a          oa:TextualBody ;
+        rdf:value  "Created for general use by City staff. Used for both mapping and specific identification of buildings with a similar use." .
+
+<http://localhost:8080/bibframe/individual/na9d42e1abf04b01c>
+        a          metal:HGLID ;
+        rdf:value  "CAMBRIDGE14PUBLICLIBRARIES" .
+
+<http://localhost:8080/bibframe/individual/n4883a8e104dde887>
+        a             bib:OriginatorActivity ;
+        rdfs:label    "Originator" ;
+        bib:hasAgent  <http://localhost:8080/bibframe/individual/n17c0504f8815436f> .
+
+<http://localhost:8080/bibframe/individual/n67e78fed312dd543>
+        a               bib:PublisherActivity ;
+        rdfs:label      "Publisher" ;
+        bib:atLocation  <http://localhost:8080/bibframe/individual/n87111921a4cef7cf> ;
+        bib:hasAgent    <http://localhost:8080/bibframe/individual/n2b97cb06437b9e88> ;
+        dcterms:date    "2014" .
+
+<http://localhost:8080/bibframe/individual/n48e3c37cc3ca8f87>
+        a             bib:OriginatorActivity ;
+        rdfs:label    "Originator" ;
+        bib:hasAgent  <http://localhost:8080/bibframe/individual/nc68be00bfb1fd929> .
+
+<http://localhost:8080/bibframe/individual/n17c0504f8815436f>
+        a           foaf:Agent ;
+        rdfs:label  "Cambridge (Mass.). Geographic Information Systems" .
+
+<http://localhost:8080/bibframe/individual/n2b97cb06437b9e88>
+        a           foaf:Agent ;
+        rdfs:label  "Cambridge (Mass.). Geographic Information Systems" .
+
+<http://localhost:8080/bibframe/individual/nc68be00bfb1fd929>
+        a           foaf:Agent ;
+        rdfs:label  "Cambridge (Mass.). Public Library" .
+
+<http://localhost:8080/bibframe/individual/n87111921a4cef7cf>
+        a           prov:Location ;
+        rdfs:label  "Cambridge, Massachusetts" .
+
+<http://localhost:8080/bibframe/individual/n8d998603f640b909>
+        a              skos:Concept ;
+        rdfs:label     "Libraries" ;
+        bib:hasSource  <http://localhost:8080/bibframe/individual/n3b4a4ed036c213e0> .
+
+<http://localhost:8080/bibframe/individual/n92c3a28769c7b612>
+        a              skos:Concept ;
+        rdfs:label     "public libraries" ;
+        bib:hasSource  <http://localhost:8080/bibframe/individual/n3b4a4ed036c213e0> .
+
+<http://localhost:8080/bibframe/individual/nb80879c6f211d7b8>
+        a              skos:Concept ;
+        rdfs:label     "Public libraries" ;
+        bib:hasSource  <http://localhost:8080/bibframe/individual/na5d65ea2771e7dac> .
+
+<http://localhost:8080/bibframe/individual/n7a3f7fc4fa4f145c>
+        a              skos:Concept ;
+        rdfs:label     "City of Cambridge" ;
+        bib:hasSource  <http://localhost:8080/bibframe/individual/n3b4a4ed036c213e0> .
+
+<http://localhost:8080/bibframe/individual/nd25fedd19d6ddf20>
+        a              skos:Concept ;
+        rdfs:label     "Libraries" ;
+        bib:hasSource  <http://localhost:8080/bibframe/individual/na5d65ea2771e7dac> .
+
+<http://localhost:8080/bibframe/individual/n846d87723bf0e4e0>
+        a              bf:GeographicCoverage ;
+        rdfs:label     "Cambridge" ;
+        bib:hasSource  <http://localhost:8080/bibframe/individual/nd59f8b1f0b39987> .
+
+<http://localhost:8080/bibframe/individual/n43a1421ff9d58699>
+        a              bf:GeographicCoverage ;
+        rdfs:label     "Massachusetts" ;
+        bib:hasSource  <http://localhost:8080/bibframe/individual/nd59f8b1f0b39987> .
+
+<http://localhost:8080/bibframe/individual/n507638d21e71c476>
+        a              bf:GeographicCoverage ;
+        rdfs:label     "Cambridge (Mass.)" ;
+        bib:hasSource  <http://localhost:8080/bibframe/individual/nc3a5fcf1287d530c> .
+
+<http://localhost:8080/bibframe/individual/na5d65ea2771e7dac>
+        rdfs:label          "LCSH" ;
+        skos:editorialNote  "Harvard FGDC themekey derived from LCSH" .
+
+<http://localhost:8080/bibframe/individual/n3b4a4ed036c213e0>
+        rdfs:label          "None" ;
+        skos:editorialNote  "Harvard FGDC themekey derived from None" .
+
+<http://localhost:8080/bibframe/individual/nc3a5fcf1287d530c>
+        rdfs:label          "LCNA" ;
+        skos:editorialNote  "Harvard FGDC placekey derived from LCNA" .
+
+<http://localhost:8080/bibframe/individual/nd59f8b1f0b39987>
+        rdfs:label          "GNIS" ;
+        skos:editorialNote  "Harvard FGDC placekey derived from GNIS" .
