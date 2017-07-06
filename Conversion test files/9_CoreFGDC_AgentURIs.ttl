@@ -1,0 +1,150 @@
+## LD4L expected conversion output of 8_CoreFGDC_Fixing_OriginatorActivity.xml 
+##
+## Notes:
+### URIs are examples, and will be different in the converter output.
+### Concepts included: identifier, title, spatial extent/bounding box, originator activity, publisher activity, 
+###                    abstract, purpose, online resource/electronicLocator, edition statement,
+### 				   thematic keywords and place keywords, genre/form, presentation form (Work subtype), Work language
+###      new additons: Updated expected output for Originator, Publisher Agents to include URIs for names matched in  
+### 					Agents Concordance file.
+
+
+
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bib: <http://bibliotek-o.org/ontology/> .
+@prefix cart: <http://carto.biblioteko-o.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix harvard: <http://data.ld4l.org/harvard/> .
+@prefix metal: <http://harvcore.org/ontology/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdau: <http://rdaregistry.info/Elements/u/#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+
+harvard:nCAMBRIDGE14PUBLICLIBRARIESwork1 a bf:Cartography ;
+    a bf:Dataset ;
+	a cart:VectorData ;
+	dcterms:language <http://lexvo.org/id/iso639-3/eng> ;
+    bf:hasInstance harvard:nCAMBRIDGE14PUBLICLIBRARIESinstance1 ;
+    rdau:P60109 harvard:nCAMBRIDGE14PUBLICLIBRARIESgeometry1 ;
+    bf:identifiedBy harvard:nCAMBRIDGE14PUBLICLIBRARIESidentifier1 ;
+    bib:hasActivity harvard:nCAMBRIDGE14PUBLICLIBRARIESactivity1 ;
+    bib:hasActivity harvard:nCAMBRIDGE14PUBLICLIBRARIESactivity3 ;
+    bf:title harvard:nCAMBRIDGE14PUBLICLIBRARIEStitle2 ;
+    bib:isTargetOf harvard:nCAMBRIDGE14PUBLICLIBRARIESnote1 ;
+    bib:isTargetOf harvard:nCAMBRIDGE14PUBLICLIBRARIESnote2 ;
+    dcterms:subject <http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/structure> ;
+    dcterms:subject harvard:nCAMBRIDGE14PUBLICLIBRARIESsubject1 ;
+    dcterms:subject harvard:nCAMBRIDGE14PUBLICLIBRARIESsubject2 ;
+    dcterms:subject harvard:nCAMBRIDGE14PUBLICLIBRARIESsubject3 ;
+    dcterms:subject harvard:nCAMBRIDGE14PUBLICLIBRARIESsubject4 ;
+    dcterms:subject harvard:nCAMBRIDGE14PUBLICLIBRARIESsubject5 ;
+    bf:geographicCoverage harvard:nCAMBRIDGE14PUBLICLIBRARIESgeographicCoverage1 ;
+    bf:geographicCoverage harvard:nCAMBRIDGE14PUBLICLIBRARIESgeographicCoverage2 ;
+    bf:geographicCoverage harvard:nCAMBRIDGE14PUBLICLIBRARIESgeographicCoverage3 ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2011026297> .
+
+harvard:nCAMBRIDGE14PUBLICLIBRARIESinstance1 a bf:Instance ;
+    bf:title harvard:nCAMBRIDGE14PUBLICLIBRARIEStitle1 ;
+    bib:hasActivity  harvard:nCAMBRIDGE14PUBLICLIBRARIESactivity2 ;
+    bf:editionStatement "2014 revised ed." ;
+	bf:hasItem harvard:nCAMBRIDGE14PUBLICLIBRARIESitem1 .
+	
+harvard:nCAMBRIDGE14PUBLICLIBRARIESitem1 a bf:Item ;
+	bf:electronicLocator <http://hgl.harvard.edu:8080/HGL/hgl.jsp?action=VColl&VCollName=CAMBRIDGE14PUBLICLIBRARIES> .	
+	
+harvard:nCAMBRIDGE14PUBLICLIBRARIESgeometry1 a geo:Geometry ;
+	geo:asWKT "POLYGON((-71.146912 42.392720, -71.084684 42.392720, -71.084684 42.363838, -71.146912 42.363838, -71.146912 42.392720))"^^geo:wktLiteral ;
+	bib:hasSource harvard:nCAMBRIDGE14PUBLICLIBRARIESwork1 ;
+	bf:projection cart:ProjectionEpsg4326 .
+	
+harvard:nCAMBRIDGE14PUBLICLIBRARIEStitle1 a bf:Title ;
+    rdfs:label "Public Libraries, Cambridge, Massachusetts, 2014" .
+    
+harvard:nCAMBRIDGE14PUBLICLIBRARIEStitle2 a bf:Title ;
+    rdfs:label "Public Libraries, Cambridge, Massachusetts, 2014" .
+
+harvard:nCAMBRIDGE14PUBLICLIBRARIESnote1 a oa:Annotation ;
+    oa:motivatedBy bib:summarizing ; 
+    oa:hasBody harvard:nCAMBRIDGE14PUBLICLIBRARIESbody1 ;
+    dcterms:creator <http://viaf.org/viaf/134059638> .
+
+harvard:nCAMBRIDGE14PUBLICLIBRARIESnote2 a oa:Annotation ;
+    oa:motivatedBy bib:providingPurpose ;
+    oa:hasBody harvard:nCAMBRIDGE14PUBLICLIBRARIESbody2 ;
+    dcterms:creator  <http://viaf.org/viaf/134059638> .
+ 
+harvard:nCAMBRIDGE14PUBLICLIBRARIESbody1 a oa:TextualBody ;
+    rdf:value "This layer contains point features of all public libraries in Cambridge." .
+     
+harvard:nCAMBRIDGE14PUBLICLIBRARIESbody2 a oa:TextualBody ;
+    rdf:value "Created for general use by City staff. Used for both mapping and specific identification of buildings with a similar use." .
+	
+harvard:nCAMBRIDGE14PUBLICLIBRARIESidentifier1 a metal:HGLID ;
+    rdf:value "CAMBRIDGE14PUBLICLIBRARIES" .
+
+harvard:nCAMBRIDGE14PUBLICLIBRARIESactivity1 a bib:OriginatorActivity ;
+    bib:hasAgent http://id.loc.gov/authorities/names/no2009070869 .
+    
+harvard:nCAMBRIDGE14PUBLICLIBRARIESactivity2 a bib:PublisherActivity ;
+    bib:hasAgent http://id.loc.gov/authorities/names/no2009070869 ; 
+    bib:atLocation harvard:nCAMBRIDGE14PUBLICLIBRARIESlocation1 ;
+    dcterms:date: "2014" . 
+
+ harvard:nCAMBRIDGE14PUBLICLIBRARIESactivity3 a bib:OriginatorActivity ;   
+    bib:hasAgent harvard:nCAMBRIDGE14PUBLICLIBRARIESagent2 .
+    
+harvard:nCAMBRIDGE14PUBLICLIBRARIESagent2 a foaf:Agent ;
+    rdfs:label "Cambridge (Mass.). Public Library" .
+      
+harvard:nCAMBRIDGE14PUBLICLIBRARIESlocation1 a prov:Location ;
+    rdfs:label "Cambridge, Massachusetts" .
+
+harvard:nCAMBRIDGE14PUBLICLIBRARIESsubject1 a skos:Concept ;
+    rdfs:label "Libraries" ;
+    bib:hasSource harvard:nCAMBRIDGE14PUBLICLIBRARIESsource1 .
+	
+harvard:nCAMBRIDGE14PUBLICLIBRARIESsubject2 a skos:Concept ;
+    rdfs:label "Public libraries" ;
+    bib:hasSource harvard:nCAMBRIDGE14PUBLICLIBRARIESsource1 .
+
+harvard:nCAMBRIDGE14PUBLICLIBRARIESsubject3 a skos:Concept ;
+    rdfs:label "City of Cambridge" ;
+    bib:hasSource harvard:nCAMBRIDGE14PUBLICLIBRARIESsource2 .
+	
+harvard:nCAMBRIDGE14PUBLICLIBRARIESsubject4 a skos:Concept ;
+    rdfs:label "Libraries" ;
+    bib:hasSource harvard:nCAMBRIDGE14PUBLICLIBRARIESsource2 .
+	
+harvard:nCAMBRIDGE14PUBLICLIBRARIESsubject5 a skos:Concept ;
+    rdfs:label "public libraries" ;
+    bib:hasSource harvard:nCAMBRIDGE14PUBLICLIBRARIESsource2 .
+
+harvard:nCAMBRIDGE14PUBLICLIBRARIESgeographicCoverage1 a bf:GeographicCoverage ;
+    rdfs:label "Massachusetts" ;
+    bib:hasSource harvard:nCAMBRIDGE14PUBLICLIBRARIESsource3 .
+
+harvard:nCAMBRIDGE14PUBLICLIBRARIESgeographicCoverage2 a bf:GeographicCoverage ;
+    rdfs:label "Cambridge" ;
+    bib:hasSource harvard:nCAMBRIDGE14PUBLICLIBRARIESsource3 .
+
+harvard:nCAMBRIDGE14PUBLICLIBRARIESgeographicCoverage3 a bf:GeographicCoverage ;
+    rdfs:label "Cambridge (Mass.)" ;
+    bib:hasSource harvard:nCAMBRIDGE14PUBLICLIBRARIESsource4 .
+	
+harvard:nCAMBRIDGE14PUBLICLIBRARIESsource1 rdfs:label "LCSH" ;
+    skos:editorialNote "Harvard FGDC themekey derived from: LCSH" .
+	
+harvard:nCAMBRIDGE14PUBLICLIBRARIESsource2 rdfs:label "None" ;
+    skos:editorialNote "Harvard FGDC themekey derived from: None" .
+	
+harvard:nCAMBRIDGE14PUBLICLIBRARIESsource3 rdfs:label "GNIS" ;
+    skos:editorialNote "Harvard FGDC placekey derived from: GNIS" .
+	
+harvard:nCAMBRIDGE14PUBLICLIBRARIESsource4 rdfs:label "LCNA" ;
+    skos:editorialNote "Harvard FGDC placekey derived from: LCNA" .
