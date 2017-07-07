@@ -89,10 +89,10 @@ harvard:nCAMBRIDGE14PUBLICLIBRARIESidentifier1 a metal:HGLID ;
     rdf:value "CAMBRIDGE14PUBLICLIBRARIES" .
 
 harvard:nCAMBRIDGE14PUBLICLIBRARIESactivity1 a bib:OriginatorActivity ;
-    bib:hasAgent <http://id.loc.gov/authorities/names/no2009070869> .
+    bib:hasAgent <http://id.loc.gov/rwo/agents/no2009070869> .
     
 harvard:nCAMBRIDGE14PUBLICLIBRARIESactivity2 a bib:PublisherActivity ;
-    bib:hasAgent <http://id.loc.gov/authorities/names/no2009070869> ; 
+    bib:hasAgent <http://id.loc.gov/rwo/agents/no2009070869> ; 
     bib:atLocation harvard:nCAMBRIDGE14PUBLICLIBRARIESlocation1 ;
     dcterms:date: "2014" . 
 
