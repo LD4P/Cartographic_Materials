@@ -11,8 +11,8 @@
 		<citation>
 			<citeinfo>
 				<!-- Each <origin> should have its own Originator activity -->
-				<origin>Cambridge (Mass.). Geographic Information Systems</origin>
-				<origin>Cambridge (Mass.). Public Library</origin>
+				<origin>Cambridge (Mass.). Geographic Information Systems</origin> <!-- in concordance file -->
+				<origin>Cambridge (Mass.). Public Library</origin> <!-- NOT in concordance file -->
 				<!-- <pubdate> is part of Publication activity -->
 				<pubdate>2014</pubdate>
 				<title>Public Libraries, Cambridge, Massachusetts, 2014</title>
@@ -22,7 +22,7 @@
 				<!-- <pubplace> and <publish> are part of Publication activity -->
 				<pubinfo>
 					<pubplace>Cambridge, Massachusetts</pubplace>
-					<publish>Cambridge GIS</publish>
+					<publish>Cambridge GIS</publish> <!-- in concordance file -->
 				</pubinfo>
 				<!-- onlink corresponds to the item electronicLocator -->
 				<onlink>http://hgl.harvard.edu:8080/HGL/hgl.jsp?action=VColl&amp;VCollName=CAMBRIDGE14PUBLICLIBRARIES</onlink>
