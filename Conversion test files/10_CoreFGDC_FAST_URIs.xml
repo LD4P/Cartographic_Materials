@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE metadata SYSTEM "http://www.fgdc.gov/metadata/fgdc-std-001-1998.dtd">
+<!-- <@layerid> is a Local Identifier -->
+<metadata layerid="CAMBRIDGE14PUBLICLIBRARIES">
+	<!-- Developmental FGDC xml record. Includes core ontology concepts: Local Identifier, Title, 
+		Originators Activity and Publication Activity, online link, edition, thematic keywords and place keywords,
+		and 1 geospatial extension ontology concept: bounding box, Presentation form. 
+		
+		Added concepts to this version: Nothing new. Source file to test LCSH to FAST URI concordance mappings. 
+		 -->
+	<idinfo>
+		<citation>
+			<citeinfo>
+				<!-- Each <origin> should have its own Originator activity -->
+				<origin>Cambridge (Mass.). Geographic Information Systems</origin> <!-- in concordance file -->
+				<origin>Cambridge (Mass.). Public Library</origin> <!-- NOT in concordance file -->
+				<!-- <pubdate> is part of Publication activity -->
+				<pubdate>2014</pubdate>
+				<title>Public Libraries, Cambridge, Massachusetts, 2014</title>
+				<!-- geospatial data presentation form mapped to cartographic Work subtypes -->
+				<geoform>vector digital data</geoform>
+				<edition>2014 revised ed.</edition>
+				<!-- <pubplace> and <publish> are part of Publication activity -->
+				<pubinfo>
+					<pubplace>Cambridge, Massachusetts</pubplace>
+					<publish>Cambridge GIS</publish> <!-- in concordance file -->
+				</pubinfo>
+				<!-- onlink corresponds to the item electronicLocator -->
+				<onlink>http://hgl.harvard.edu:8080/HGL/hgl.jsp?action=VColl&amp;VCollName=CAMBRIDGE14PUBLICLIBRARIES</onlink>
+			</citeinfo>
+		</citation>
+		<descript>
+			<!-- <abstract> and <summary> go into separate Annotations -->
+			<abstract>This layer contains point features of all public libraries in Cambridge.</abstract>
+			<purpose>Created for general use by City staff. Used for both mapping and specific identification of buildings with a similar use.</purpose>
+		</descript>
+		<spdom>
+			<bounding>
+				<!-- bounding box elements need to be converted to a single WKT statement -->
+				<westbc>-71.146912</westbc>
+				<eastbc>-71.084684</eastbc>
+				<northbc>42.392720</northbc>
+				<southbc>42.363838</southbc>
+			</bounding>
+		</spdom>
+		<!-- Keywords section -->
+		<keywords>
+			<!-- Thematic keywords; <theme> sections can repeat; used here with 3 different thesauri sources:  LCSH, ISO and None  -->
+			<theme>
+				<themekt>LCSH</themekt>
+				<themekey>Libraries</themekey> <!-- NOT in concordance file -->
+				<themekey>Public libraries</themekey> <!-- in concordance file -->
+			</theme>
+			<theme>
+				<themekt>ISO 19115 Topic Category</themekt>
+				<themekey>structure</themekey> <!-- in concordance file -->
+			</theme>
+			<theme>
+				<themekt>None</themekt>
+				<themekey>City of Cambridge</themekey>
+				<themekey>Libraries</themekey>
+				<themekey>public libraries</themekey>
+			</theme>
+			<!-- Place keywords; <place> sections can repeat; used here with 2 different thesauri sources: GNIS and LCNA  -->
+			<place>
+				<placekt>GNIS</placekt>
+				<placekey>Massachusetts</placekey>
+				<placekey>Cambridge</placekey>
+			</place>
+			<place>
+				<placekt>LCNA</placekt>
+				<placekey>Cambridge (Mass.)</placekey>
+			</place>	
+		</keywords>
+	</idinfo>
+</metadata>
