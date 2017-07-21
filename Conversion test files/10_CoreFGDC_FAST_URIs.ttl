@@ -6,12 +6,13 @@
 ###                    abstract, purpose, online resource/electronicLocator, edition statement,
 ### 				   thematic keywords and place keywords, genre/form, presentation form (Work subtype), Work language
 ###      new additons: Updated expected output for LCSH themekeys to include URIs for names matched in  
-### 					FAST Concordance file.
+### 					FAST Concordance file; also updated the output of the geoform data to account for ###                     values not in the Geospatial Data Presentation Form concordance
 
 
 
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix bib: <http://bibliotek-o.org/ontology/> .
+@prefix bibdt: <http://bibliotek-o.org/datatypes/> .
 @prefix cart: <http://carto.biblioteko-o.org/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
@@ -26,9 +27,10 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 
+
 harvard:nCAMBRIDGE14PUBLICLIBRARIESwork1 a bf:Cartography ;
     a bf:Dataset ;
-	a cart:VectorData ;
+	rdfs:comment "geospatial data presentation form literal: geoform test value"^^bibdt:legacySourceData . 
 	dcterms:language <http://lexvo.org/id/iso639-3/eng> ;
     bf:hasInstance harvard:nCAMBRIDGE14PUBLICLIBRARIESinstance1 ;
     rdau:P60109 harvard:nCAMBRIDGE14PUBLICLIBRARIESgeometry1 ;

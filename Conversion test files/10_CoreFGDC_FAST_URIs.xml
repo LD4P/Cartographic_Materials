@@ -5,7 +5,7 @@
 		Originators Activity and Publication Activity, online link, edition, thematic keywords and place keywords,
 		and 1 geospatial extension ontology concept: bounding box, Presentation form. 
 		
-		Added concepts to this version: Nothing new. Source file to test LCSH to FAST URI concordance mappings. 
+		Added concepts to this version: Nothing new. Source file to test LCSH to FAST URI concordance mappings. Also update geoform value to one that is not found in the Geospatial Data Presentation Form concordance file.
 		 -->
 	<idinfo>
 		<citation>
@@ -17,7 +17,7 @@
 				<pubdate>2014</pubdate>
 				<title>Public Libraries, Cambridge, Massachusetts, 2014</title>
 				<!-- geospatial data presentation form mapped to cartographic Work subtypes -->
-				<geoform>vector digital data</geoform>
+				<geoform>geoform test value</geoform>
 				<edition>2014 revised ed.</edition>
 				<!-- <pubplace> and <publish> are part of Publication activity -->
 				<pubinfo>
