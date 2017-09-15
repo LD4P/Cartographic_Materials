@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+    WARNING:  THIS IS A WORKING DRAFT ONTOLOGY AND STILL UNDER DEVELOPMENT, this file will change frequently and significantly as development continues
+    
+    Note:  http://geocartframe.org is a placeholder (inactive) namespace for the LD4P/L Cartographic Materials "Geospatial and Cartographic Resources Ontology" extension until a proper home is found
+  -->
+
+<rdf:RDF
+    xmlns="http://geocartframe.org/"
+    xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+    xmlns:bib="http://bibliotek-o.org/ontology/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"  
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:vann="http://purl.org/vocab/vann/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1#"
+    >
+    
+    <!-- ONTOLOGY DECLARATION -->
+    
+    <owl:Ontology rdf:about="http://geocartframe.org/">
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Version 0.0</owl:versionInfo>
+        <rdfs:label xml:lang="en">Geospatial and Cartographic Resources Ontology: extension ontology for describing cartographic materials</rdfs:label>
+        <vann:preferredNamespacePrefix>gcro</vann:preferredNamespacePrefix>
+        <rdfs:comment xml:lang="en">Geospatial and Cartographic Resources Ontology is an extension ontology of the bibliotek-o BIBFRAME 2.0 extension ontology produced by the Linked Data for Libraries Cartographic Materials project for use in describing cartographic resources</rdfs:comment>
+    </owl:Ontology>
+    
+    
+    <!-- CLASSES -->
+    
+    <!-- Class http://id.loc.gov/ontologies/bibframe/Identifier -->
+    
+    <owl:Class rdf:about="http://geocartframe.org/EpsgCode">
+        <rdfs:label>EPSG Code</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+        <skos:definition xml:lang="en-us">EPSG Dataset Code</skos:definition>
+    </owl:Class>
+	
+	<!-- Class http://id.loc.gov/ontologies/bibframe/Cartography  
+    Adding subclasses of geospatial and cartographic data types -->
+	
+	<owl:Class rdf:about="http://geocartframe.org/Atlases">
+        <rdfs:label>Atlases</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Cartography"/>
+        <skos:definition xml:lang="en-us">a collection of maps designed to be kept (bound or loose) in a volume</skos:definition>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://geocartframe.org/CartographicModels">
+        <rdfs:label>Cartographic Model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Cartography"/>
+        <skos:definition xml:lang="en-us">a general category which denotes any three-dimensional representation of an object or geographic area, modeled in any size or medium [not including globes]</skos:definition>
+    </owl:Class>
+		
+	<owl:Class rdf:about="http://geocartframe.org/AstronomicalModels">
+        <rdfs:label>Astronomical Model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://geocartframe.org/CartographicModels"/>
+        <skos:definition xml:lang="en-us">Astronomical models</skos:definition>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://geocartframe.org/ReliefModels">
+        <rdfs:label>Relief Model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://geocartframe.org/CartographicModels"/>
+        <skos:definition xml:lang="en-us">a map whose surface is shaped to represent the topography in a region. Also called a terrain model</skos:definition>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://geocartframe.org/CartographicSections">
+        <rdfs:label>Cartographic Section</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Cartography"/>
+        <skos:definition xml:lang="en-us">A diagram or drawing that shows features transected by a given plane; specif. a vertical section drawn at right angles to the longer axis of a geologic feature, such as as the trend of an orebody, the mean direction of flow of a stream, or the axis of a fossil</skos:definition>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://geocartframe.org/CartographicProfiles">
+        <rdfs:label>Cartographic Profile</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://geocartframe.org/CartographicSections"/>
+        <skos:definition xml:lang="en-us">Profile definition</skos:definition>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://geocartframe.org/GeologicalCrossSections">
+        <rdfs:label>Geological Cross-section</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://geocartframe.org/CartographicSections"/>
+        <skos:definition xml:lang="en-us">A diagram or drawing that shows features transected by a given plane; specif. a vertical section drawn at right angles to the longer axis of a geologic feature, such as as the trend of an orebody, the mean direction of flow of a stream, or the axis of a fossil</skos:definition>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://geocartframe.org/CartographicViews">
+        <rdfs:label>Cartographic View</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Cartography"/>
+        <skos:definition xml:lang="en-us">A perspective representation of cities or landscapes</skos:definition>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://geocartframe.org/AerialViews">
+        <rdfs:label>Aerial View</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://geocartframe.org/CartographicViews"/>
+        <skos:definition xml:lang="en-us">Representations of cities or landscapes portrayed as if viewed from above</skos:definition>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://geocartframe.org/WormsEyeViews">
+        <rdfs:label>Worm's Eye View</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://geocartframe.org/CartographicViews"/>
+        <skos:definition xml:lang="en-us">Representations of cities or landscapes portrayed as if viewed from a very low viewpoint.</skos:definition>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://geocartframe.org/DigitalCartographicResources">
+        <rdfs:label>Digital Cartographic Resources</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Cartography"/>
+        <skos:definition xml:lang="en-us">Digital cartographic resource</skos:definition>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://geocartframe.org/ScannedCartographicResources">
+        <rdfs:label>Scanned Cartographic Resource</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://geocartframe.org/DigitalCartographicResources"/>
+        <skos:definition xml:lang="en-us">An analog resources that has been scanned for digital viewing as a static/non-interactive image</skos:definition>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://geocartframe.org/StaticDigitalCartographicResources">
+        <rdfs:label>Static Digital Cartographic Resource</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://geocartframe.org/DigitalCartographicResources"/>
+        <skos:definition xml:lang="en-us">Born-digital cartographic resource that is static</skos:definition>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://geocartframe.org/InteractiveDigitalCartographicResources">
+        <rdfs:label>Interactive Digital Cartographic Resource</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://geocartframe.org/DigitalCartographicResources"/>
+        <skos:definition xml:lang="en-us">Born-digital cartographic resource that is interactive</skos:definition>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://geocartframe.org/Ephemerides">
+        <rdfs:label>Ephemerides</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Cartography"/>
+        <skos:definition xml:lang="en-us">ephemeris plural ephemerides: a tabular statement of the assigned places of a celestial body for regular intervals. Table of the positions of celestial bodies at regular intervals, often with supplementary information. Constructed as early as the 4th century BC, ephemerides are still essential to astronomers and navigators. Modern ephemerides are calculated, with heavy computing and careful checking, after a mathematical description of a heavenly body's observed motion has been evolved. Various national ephemerides are published regularly; the U.S. ephemeris, first published in 1852, became the best and is now published jointly with the U.K. as The Astronomical Almanac.</skos:definition>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://geocartframe.org/Gazetteers">
+        <rdfs:label>Gazetteer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Cartography"/>
+        <skos:definition xml:lang="en-us">A gazetteer is a geographical dictionary or directory, an important reference for information about places and place names, used in conjunction with a map or a full atlas. It typically contains information concerning the geographical makeup of a country, region, or continent as well as the social statistics and physical features, such as mountains, waterways, or roads.</skos:definition>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://geocartframe.org/GeospatialDigitalData">
+        <rdfs:label>Geospatial Digital Data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Cartography"/>
+        <skos:definition xml:lang="en-us">Digital geospatial data</skos:definition>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://geocartframe.org/VectorData">
+        <rdfs:label>Vector Data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://geocartframe.org/GeospatialData"/>
+        <skos:definition xml:lang="en-us">A data structure used to represent linear geographic features. Features are made of ordered lists of x, y or x, y, z coordinates and are represented by points, lines, or polygons; points connect to become lines, and lines connect to become polygons. Attributes are associated with each feature.</skos:definition>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://geocartframe.org/RasterData">
+        <rdfs:label>Raster Data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://geocartframe.org/GeospatialData"/>
+        <skos:definition xml:lang="en-us">Data that are based on a cellular grid structure composed of rows and columns (a raster). Each grid cell or pixel is referenced by an x, y coordinate and is stored as an identifier to which additional attributes may be attached. Groups of cells with the same value represent map features.</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://geocartframe.org/GeoreferencedCartographicResources">
+        <rdfs:label>Georeferenced Cartographic Resource</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://geocartframe.org/GeospatialData"/>
+        <skos:definition xml:lang="en-us">A scanned, paper map or cartographic resource that has been fit to real world coordinates using a GIS and is enabled for spatial display in a digital environment</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://geocartframe.org/GeospatialDatabases">
+        <rdfs:label>Geospatial Database</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://geocartframe.org/GeospatialData"/>
+        <skos:definition xml:lang="en-us">A database with geospatial data</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://geocartframe.org/Globes">
+        <rdfs:label>Globe</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Cartography"/>
+        <skos:definition xml:lang="en-us">a spherical representation of the earth, a celestial body, or the heavens</skos:definition>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://geocartframe.org/CelestialGlobes">
+        <rdfs:label>Celestial Globe</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://geocartframe.org/Globes"/>
+        <skos:definition xml:lang="en-us">a spherical representation of a celestial body, or the heavens</skos:definition>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://geocartframe.org/TerrestrialGlobes">
+        <rdfs:label>Terrestrial Globe</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://geocartframe.org/Globes"/>
+        <skos:definition xml:lang="en-us">a spherical representation of the earth</skos:definition>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://geocartframe.org/Maps">
+        <rdfs:label>Map</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Cartography"/>
+        <skos:definition xml:lang="en-us">a graphic representation, usually on a plane surface and at an established scale, of natural and manmade features on or under the surface of the earth or other planetary body. The features are positioned as accurately as possible, usually relative to a coordinate reference system. Also, a graphic representation of a part or the whole of the celestial sphere) physical map</skos:definition>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://geocartframe.org/RemoteSensingImages">
+        <rdfs:label>Remote Sensing Image</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Cartography"/>
+        <skos:definition xml:lang="en-us">Images of planetary surfaces created by means of reflected or emitted electromagnetic energy</skos:definition>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://geocartframe.org/AerialPhotographs">
+        <rdfs:label>Aerial Photograph</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://geocartframe.org/RemoteSensingImages"/>
+        <skos:definition xml:lang="en-us">Images of planetary surfaces created by means of reflected or emitted electromagnetic energy</skos:definition>
+    </owl:Class>
+	
+		<!-- Class http://id.loc.gov/ontologies/bibframe/Scale 
+    Adding subclasses of cartographic scales -->
+	
+	<owl:Class rdf:about="http://geocartframe.org/HorizontalScale">
+        <rdfs:label>Horizontal Scale</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Scale"/>
+        <skos:definition xml:lang="en-us">Horizontal scale</skos:definition>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://geocartframe.org/VerticalScale">
+        <rdfs:label>Vertical Scale</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Scale"/>
+        <skos:definition xml:lang="en-us">Vertical scale</skos:definition>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://geocartframe.org/NotToScale">
+        <rdfs:label>Not to Scale</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Scale"/>
+        <skos:definition xml:lang="en-us">Not to scale</skos:definition>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://geocartframe.org/ScaleIndeterminable">
+        <rdfs:label>Scale Indeterminable</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Scale"/>
+        <skos:definition xml:lang="en-us">Scale indeterminable</skos:definition>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://geocartframe.org/ScaleNotDetermined">
+        <rdfs:label>Scale Not Determined</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Scale"/>
+        <skos:definition xml:lang="en-us">Scale not determined</skos:definition>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://geocartframe.org/ScalesDiffer">
+        <rdfs:label>Scale Differ</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Scale"/>
+        <skos:definition xml:lang="en-us">Scales differ</skos:definition>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://geocartframe.org/ScaleVaries">
+        <rdfs:label>Scale Varies</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Scale"/>
+        <skos:definition xml:lang="en-us">Scale varies</skos:definition>
+    </owl:Class>
+	
+	<!-- Class http://id.loc.gov/ontologies/bibframe/Scale 
+    Adding classes related to cartographic scales -->
+	
+	<owl:Class rdf:about="http://geocartframe.org/ScaleAccuracy">
+        <rdfs:label>Scale Accuracy</rdfs:label>
+        <skos:definition xml:lang="en-us">Scale accuracy</skos:definition>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://geocartframe.org/ScaleSource">
+        <rdfs:label>Scale Source</rdfs:label>
+        <skos:definition xml:lang="en-us">Scale source</skos:definition>
+    </owl:Class>
+		
+    <!-- OBJECT PROPERTIES -->
+    
+    <owl:ObjectProperty rdf:about="http://geocartframe.org/isGeometryOf">
+        <rdfs:label xml:lang="en">is Geometry of</rdfs:label>
+        <owl:inverseOf rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+    </owl:ObjectProperty>
+    
+    <owl:ObjectProperty rdf:about="http://geocartframe.org/isProjectionOf">
+        <rdfs:label xml:lang="en">is Projection of</rdfs:label>
+        <owl:inverseOf rdf:resource="http://id.loc.gov/ontologies/bibframe/projection"/>
+    </owl:ObjectProperty>    
+	
+	<owl:ObjectProperty rdf:about="http://geocartframe.org/scaleAccuracy">
+        <rdfs:label xml:lang="en">has scale accuracy</rdfs:label>
+        <skos:definition xml:lang="en">Accuracy of the scale statement.</skos:definition>
+        <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Scale"/> 
+		<rdfs:range rdf:resource="http://geocartframe.org/ScaleAccuracy"/>
+    </owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="http://geocartframe.org/scaleSource">
+        <rdfs:label xml:lang="en">Scale source</rdfs:label>
+        <skos:definition xml:lang="en">source of the map scale.</skos:definition>
+        <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Scale"/> 
+		<rdfs:range rdf:resource="http://geocartframe.org/ScaleSource"/>
+    </owl:ObjectProperty>
+	
+	<!-- DATA PROPERTIES -->
+    
+	<owl:DatatypeProperty rdf:about="http://geocartframe.org/representativeFractionDenominator">
+		<rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Scale"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <skos:definition>The denominator of the scale's representative fraction.</skos:definition>
+        <rdfs:label>Representative Fraction Denominator</rdfs:label>
+	</owl:DatatypeProperty>
+        
+    <!-- NAMED INDIVIDUALS -->
+    
+    <!-- Type http://id.loc.gov/ontologies/bibframe/Projection 
+    Adding Individuals MARC coded projection types: https://www.loc.gov/marc/bibliographic/bd008p.html -->
+    
+    <owl:NamedIndividual rdf:about="http://geocartframe.org/Mercator">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
+        <rdfs:label xml:lang="en">Mercator</rdfs:label>
+        <skos:definition xml:lang="en">a projection of a map of the world onto a cylinder in such a way that all the parallels of latitude have the same length as the equator, used especially for marine charts and certain climatological maps.</skos:definition>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://geocartframe.org/ProjectionEpsg4326">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
+        <rdfs:label xml:lang="en">WGS 84</rdfs:label>
+        <skos:definition xml:lang="en">World Geodetic System 1984.</skos:definition>
+        <bf:identifiedBy rdf:resource="http://geocartframe.org/EpsgCode4326"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:NamedIndividual>
+
+    <!-- Type http://geocartframe.org/EpsgCode
+    Individuals of type  EpsgCode -->
+    
+    <owl:NamedIndividual rdf:about="http://geocartframe.org/EpsgCode4326">
+        <rdf:type rdf:resource="http://geocartframe.org/EpsgCode"/>
+        <rdfs:label xml:lang="en">WGS 84</rdfs:label>
+        <skos:definition xml:lang="en">World Geodetic System 1984</skos:definition>
+        <bf:identifies rdf:resource="http://geocartframe.org/ProjectionEpsg4326"/>
+        <foaf:page>http://epsg.io/4326</foaf:page>
+        <rdf:value>4326</rdf:value>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:NamedIndividual>
+	
+    <!-- Type http://geocartframe.org/ScaleAccuracy
+    Individuals of type  ScaleAccuracy -->
+    
+    <owl:NamedIndividual rdf:about="http://geocartframe.org/explicitScale">
+        <rdf:type rdf:resource="http://geocartframe.org/ScaleAccuracy"/>
+        <rdfs:label xml:lang="en">Explicit scale</rdfs:label>
+        <skos:definition xml:lang="en">Scale as stated on the cartographic resource</skos:definition>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://geocartframe.org/approximateScale">
+        <rdf:type rdf:resource="http://geocartframe.org/ScaleAccuracy"/>
+        <rdfs:label xml:lang="en">Approximate scale</rdfs:label>
+        <skos:definition xml:lang="en">Approximate scale of cartographic resource</skos:definition>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://geocartframe.org/inaccurateScale">
+        <rdf:type rdf:resource="http://geocartframe.org/ScaleAccuracy"/>
+        <rdfs:label xml:lang="en">Inaccurate scale</rdfs:label>
+        <skos:definition xml:lang="en">Inaccurate scale of cartographic resource</skos:definition>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://geocartframe.org/scaleAccuracyUnknown">
+        <rdf:type rdf:resource="http://geocartframe.org/ScaleAccuracy"/>
+        <rdfs:label xml:lang="en">Scale accuracy unknown</rdfs:label>
+        <skos:definition xml:lang="en">Scale accuracy unknown</skos:definition>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:NamedIndividual>
+	
+	<!-- Type http://geocartframe.org/ScaleSource
+    Individuals of type  ScaleSource -->
+    
+    <owl:NamedIndividual rdf:about="http://geocartframe.org/representativeFraction">
+        <rdf:type rdf:resource="http://geocartframe.org/ScaleSource"/>
+        <rdfs:label xml:lang="en">Representative Fraction</rdfs:label>
+        <skos:definition xml:lang="en">Source of scale is the representative fraction</skos:definition>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://geocartframe.org/verbalStatement">
+        <rdf:type rdf:resource="http://geocartframe.org/ScaleSource"/>
+        <rdfs:label xml:lang="en">Verbal Statement</rdfs:label>
+        <skos:definition xml:lang="en">Source of scale is a verbal statement</skos:definition>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://geocartframe.org/scaleBar">
+        <rdf:type rdf:resource="http://geocartframe.org/ScaleSource"/>
+        <rdfs:label xml:lang="en">Scale Bar</rdfs:label>
+        <skos:definition xml:lang="en">Source of scale is the scale bar</skos:definition>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://geocartframe.org/calculatedFromPrimarySource">
+        <rdf:type rdf:resource="http://geocartframe.org/ScaleSource"/>
+        <rdfs:label xml:lang="en">Scale calculated</rdfs:label>
+        <skos:definition xml:lang="en">Source of scale is calculated from the primary source</skos:definition>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://geocartframe.org/derivedOther">
+        <rdf:type rdf:resource="http://geocartframe.org/ScaleSource"/>
+        <rdfs:label xml:lang="en">Scale derived</rdfs:label>
+        <skos:definition xml:lang="en">Source of scale is derived from an external resource</skos:definition>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:NamedIndividual>
+    
+    
+    <!-- Type http://bib.ld4l.org/ontology/hasSource 
+    Adding individuals of MARC coded cartographic data sources: https://www.loc.gov/standards/sourcelist/cartographic-data.html  -->
+    
+    <owl:NamedIndividual rdf:about="http://geocartframe.org/Bound">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
+        <rdfs:label xml:lang="en">Bounding Box (Klokan Technologies)</rdfs:label>
+        <skos:definition xml:lang="en">The Klokan Technologies Bounding Box Tool.</skos:definition>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:NamedIndividual>
+	
+
+  
+</rdf:RDF>
