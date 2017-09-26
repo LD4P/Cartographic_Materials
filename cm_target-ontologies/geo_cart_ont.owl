@@ -239,7 +239,7 @@
     </owl:Class>
 	
 	<owl:Class rdf:about="http://geocartframe.org/ScalesDiffer">
-        <rdfs:label>Scale Differ</rdfs:label>
+        <rdfs:label>Scales Differ</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Scale"/>
         <skos:definition xml:lang="en-us">Scales differ</skos:definition>
     </owl:Class>
