@@ -147,25 +147,25 @@
 	
 	<owl:Class rdf:about="http://geocartframe.org/VectorData">
         <rdfs:label>Vector Data</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://geocartframe.org/GeospatialData"/>
+        <rdfs:subClassOf rdf:resource="http://geocartframe.org/GeospatialDigitalData"/>
         <skos:definition xml:lang="en-us">A data structure used to represent linear geographic features. Features are made of ordered lists of x, y or x, y, z coordinates and are represented by points, lines, or polygons; points connect to become lines, and lines connect to become polygons. Attributes are associated with each feature.</skos:definition>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://geocartframe.org/RasterData">
         <rdfs:label>Raster Data</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://geocartframe.org/GeospatialData"/>
+        <rdfs:subClassOf rdf:resource="http://geocartframe.org/GeospatialDigitalData"/>
         <skos:definition xml:lang="en-us">Data that are based on a cellular grid structure composed of rows and columns (a raster). Each grid cell or pixel is referenced by an x, y coordinate and is stored as an identifier to which additional attributes may be attached. Groups of cells with the same value represent map features.</skos:definition>
 	</owl:Class>
 	
 	<owl:Class rdf:about="http://geocartframe.org/GeoreferencedCartographicResources">
         <rdfs:label>Georeferenced Cartographic Resource</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://geocartframe.org/GeospatialData"/>
+        <rdfs:subClassOf rdf:resource="http://geocartframe.org/GeospatialDigitalData"/>
         <skos:definition xml:lang="en-us">A scanned, paper map or cartographic resource that has been fit to real world coordinates using a GIS and is enabled for spatial display in a digital environment</skos:definition>
 	</owl:Class>
 	
 	<owl:Class rdf:about="http://geocartframe.org/GeospatialDatabases">
         <rdfs:label>Geospatial Database</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://geocartframe.org/GeospatialData"/>
+        <rdfs:subClassOf rdf:resource="http://geocartframe.org/GeospatialDigitalData"/>
         <skos:definition xml:lang="en-us">A database with geospatial data</skos:definition>
 	</owl:Class>
 	
