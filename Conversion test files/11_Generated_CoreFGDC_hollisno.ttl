@@ -1,0 +1,136 @@
+@prefix schema: <http://schema.org/> .
+@prefix hl:    <http://localhost:8080/bibframe/individual/> .
+@prefix bf:    <http://id.loc.gov/ontologies/bibframe/> .
+@prefix metal: <http://harvcore.org/ontology/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cart:  <http://ld4l.org/ontology/cartotek-o/> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix rdau:  <http://rdaregistry.info/Elements/u/> .
+@prefix isni:  <http://isni.org/isni/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix bib:   <http://bib.ld4l.org/ontology/> .
+@prefix mi:    <http://localhost/movingimage/> .
+@prefix bibdt: <http://bibliotek-o.org/datatypes/> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+hl:nc1fcd2e3bd31de35  a        bf:Dataset , bf:Cartography ;
+        rdfs:comment           "geospatial data presentation form literal: geoform test value"^^bibdt:legacySourceData ;
+        rdfs:label             "Public Libraries, Cambridge, Massachusetts, 2014" ;
+        bib:hasActivity        hl:nbbb973722d82cd79 , hl:n3f0d962eb8a06654 ;
+        bib:isTargetOf         hl:n73926249e6075669 , hl:n7cdb979d6f07e1cd ;
+        bf:genreForm           <http://id.loc.gov/authorities/genreForms/gf2011026297> ;
+        bf:geographicCoverage  hl:n9d7a9bd6669e9b2f , hl:ncf574398bf6526d6 , hl:n53e8881f39b31557 ;
+        bf:hasInstance         hl:nfff1fc491c634568 ;
+        bf:identifiedBy        hl:n93daa219aa796615 , hl:nbe4ff322cdef6811 ;
+        bf:title               hl:ncf66bccb55b411a3 ;
+        dcterms:language       <http://lexvo.org/id/iso639-3/eng> ;
+        dcterms:subject        hl:n5453dec50f52ac2c , <http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/structure> , hl:nd9bd8a87fecc3bf3 , hl:n5f64fde0e5410a51 , hl:nac1bc7055a7e949a , <http://id.worldcat.org/fast/1082640> ;
+        rdau:P60109            hl:n992ea54136f3bd4 .
+
+hl:nbe4ff322cdef6811  a  metal:HGLID ;
+        rdf:value  "CAMBRIDGE14PUBLICLIBRARIES" .
+
+hl:n93daa219aa796615  a  metal:HOLLISNumber ;
+        rdf:value  "014266502" .
+
+hl:n9c6569ea3f34b6d5  rdfs:label  "GNIS" ;
+        skos:editorialNote  "Harvard FGDC placekey derived from GNIS" .
+
+hl:n3bc778431945d4dd  a  bib:PublisherActivity ;
+        rdfs:label      "Publishing" ;
+        bib:atLocation  hl:n7a3fc9f1cd1f4aff ;
+        bib:hasAgent    <http://id.loc.gov/rwo/agents/no2009070869> ;
+        dcterms:date    "2014" .
+
+hl:nd6204fc3610321d4  a  foaf:Agent ;
+        rdfs:label  "Cambridge (Mass.). Public Library" .
+
+hl:ncf66bccb55b411a3  a  bf:Title ;
+        rdfs:label  "Public Libraries, Cambridge, Massachusetts, 2014" .
+
+hl:n3f0d962eb8a06654  a  bib:OriginatorActivity ;
+        rdfs:label    "Originator" ;
+        bib:hasAgent  <http://id.loc.gov/rwo/agents/no2009070869> .
+
+hl:n73926249e6075669  a  oa:Annotation ;
+        dcterms:creator  <http://viaf.org/viaf/134059638> ;
+        oa:hasBody       hl:n4174237cc200f608 ;
+        oa:motivatedBy   bib:summarizing .
+
+hl:ncf574398bf6526d6  a  bf:GeographicCoverage ;
+        rdfs:label     "Cambridge (Mass.)" ;
+        bib:hasSource  hl:n5b358c92a375ff06 .
+
+hl:n5453dec50f52ac2c  a  skos:Concept ;
+        rdfs:label     "City of Cambridge" ;
+        bib:hasSource  hl:nfa9672ce945f2033 .
+
+hl:nd9bd8a87fecc3bf3  a  skos:Concept ;
+        rdfs:label     "public libraries" ;
+        bib:hasSource  hl:nfa9672ce945f2033 .
+
+hl:n5f64fde0e5410a51  a  skos:Concept ;
+        rdfs:label     "Libraries" ;
+        bib:hasSource  hl:n28b7dd8b36e30a3a .
+
+hl:n28b7dd8b36e30a3a  rdfs:label  "LCSH" ;
+        skos:editorialNote  "Harvard FGDC themekey derived from LCSH" .
+
+hl:n7cdb979d6f07e1cd  a  oa:Annotation ;
+        dcterms:creator  <http://viaf.org/viaf/134059638> ;
+        oa:hasBody       hl:n85ae97c3f9ed687a ;
+        oa:motivatedBy   bib:providingPurpose .
+
+hl:n5b358c92a375ff06  rdfs:label  "LCNA" ;
+        skos:editorialNote  "Harvard FGDC placekey derived from LCNA" .
+
+hl:n85ae97c3f9ed687a  a  oa:TextualBody ;
+        rdf:value  "Created for general use by City staff. Used for both mapping and specific identification of buildings with a similar use." .
+
+hl:n53e8881f39b31557  a  bf:GeographicCoverage ;
+        rdfs:label     "Massachusetts" ;
+        bib:hasSource  hl:n9c6569ea3f34b6d5 .
+
+hl:ne778a2b6bb7a683e  a  bf:Title ;
+        rdfs:label  "Public Libraries, Cambridge, Massachusetts, 2014" .
+
+hl:n4174237cc200f608  a  oa:TextualBody ;
+        rdf:value  "This layer contains point features of all public libraries in Cambridge." .
+
+hl:n7a3fc9f1cd1f4aff  a  prov:Location ;
+        rdfs:label  "Cambridge, Massachusetts" .
+
+hl:n4c0ba6d052da018a  a       bf:Item ;
+        rdfs:label            "Public Libraries, Cambridge, Massachusetts, 2014" ;
+        bf:electronicLocator  <http://hgl.harvard.edu:8080/HGL/hgl.jsp?action=VColl&VCollName=CAMBRIDGE14PUBLICLIBRARIES> .
+
+hl:n9d7a9bd6669e9b2f  a  bf:GeographicCoverage ;
+        rdfs:label     "Cambridge" ;
+        bib:hasSource  hl:n9c6569ea3f34b6d5 .
+
+hl:nfa9672ce945f2033  rdfs:label  "None" ;
+        skos:editorialNote  "Harvard FGDC themekey derived from None" .
+
+hl:n992ea54136f3bd4  a  geo:Geometry ;
+        bib:hasSource  hl:nc1fcd2e3bd31de35 ;
+        bf:projection  cart:ProjectionEpsg4326 ;
+        geo:asWKT      "POLYGON((-71.146912 42.363838, -71.084684 42.363838, -71.084684 42.392720, -71.146912 42.392720, -71.146912 42.363838))"^^geo:wktLiteral .
+
+hl:nbbb973722d82cd79  a  bib:OriginatorActivity ;
+        rdfs:label    "Originator" ;
+        bib:hasAgent  hl:nd6204fc3610321d4 .
+
+hl:nfff1fc491c634568  a      bf:Instance ;
+        rdfs:label           "Public Libraries, Cambridge, Massachusetts, 2014" ;
+        bib:hasActivity      hl:n3bc778431945d4dd ;
+        bf:editionStatement  "2014 revised ed." ;
+        bf:hasItem           hl:n4c0ba6d052da018a ;
+        bf:title             hl:ne778a2b6bb7a683e .
+
+hl:nac1bc7055a7e949a  a  skos:Concept ;
+        rdfs:label     "Libraries" ;
+        bib:hasSource  hl:nfa9672ce945f2033 .
