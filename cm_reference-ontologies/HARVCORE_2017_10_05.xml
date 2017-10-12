@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rdf:RDF  
+    xmlns="http://harvcore.org/ontology/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"  
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:vann="http://purl.org/vocab/vann/"
+    > 
+    
+    <!-- ONTOLOGY DECLARATION -->
+    
+    <owl:Ontology rdf:about="http://harvcore.org/ontology/">
+        <owl:ontologyIRI rdf:resource="http://harvcore.org/ontology/"/>
+        <owl:versionIRI rdf:resource="http://harvcore.org/0.1/ontology/"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Version 0.0.1</owl:versionInfo>
+        <dcterms:issued>2017-00-00T00:00:00-00:00</dcterms:issued>
+        <dcterms:modified>2017-00-00T00:00:00-00:00</dcterms:modified>
+        <rdfs:label xml:lang="en">HARVCORE: a bibliotek-o and BIBFRAME 2.0 Ontology Extension</rdfs:label>
+        <rdfs:comment xml:lang="en">The HARVCORE ontology extension defines Harvard Specific additions and modifications to bibliotek-o and BIBFRAME 2, and is intended to be used as a supplement to bibliotek-o and the core BIBFRAME 2 ontology. It is product of the Mellon Foundation-funded Linked Data for Libraries - Labs and Linked Data for Production projects. See http://ld4l.org for more information on these projects.</rdfs:comment>        <vann:preferredNamespacePrefix>metal</vann:preferredNamespacePrefix>
+    </owl:Ontology>
+    
+    <!-- CLASSES -->
+    
+    <owl:Class rdf:about="http://harvcore.org/ontology/HarvardLocal">
+        <rdfs:label>Harvard Library local identifier</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Local"/>
+        <skos:definition>Identifier established locally at Harvard Library and not a standard number.</skos:definition>
+        <dcterms:modified>2017-05-19 (New)</dcterms:modified>
+    </owl:Class>
+    
+	<owl:Class rdf:about="http://harvcore.org/ontology/HOLLISNumber">
+        <rdfs:label>HOLLIS local identifier</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/HarvardLocal"/>
+        <skos:definition>HOLLIS (Harvard OnLine Library Information System) local catalog number that identifies a resource description.</skos:definition>
+        <dcterms:modified>2017-10-05 (New)</dcterms:modified>
+    </owl:Class>
+	
+    <owl:Class rdf:about="http://harvcore.org/ontology/HGLID">
+        <rdfs:label>Harvard Geospatial Library local identifier</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/HarvardLocal"/>
+        <skos:definition>Identifier established locally for the Harvard Geospatial Library and not a standard number.</skos:definition>
+        <dcterms:modified>2017-05-19 (New)</dcterms:modified>
+    </owl:Class>
+    	
+    <owl:Class rdf:about="http://harvcore.org/ontology/HFANumber">
+        <rdfs:label>Harvard Film Archive local identifier</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/HarvardLocal"/>
+        <skos:definition>Identifier established locally at Harvard Film Archive and not a standard number.</skos:definition>
+        <dcterms:modified>2017-05-19 (New)</dcterms:modified>
+    </owl:Class>
+    
+</rdf:RDF>
