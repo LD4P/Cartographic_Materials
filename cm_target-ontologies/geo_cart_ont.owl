@@ -290,84 +290,84 @@
         <rdfs:label xml:lang="en">Contours</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/LandRelief"/>
         <skos:definition xml:lang="en">Relief shown by contours</skos:definition>
-		<rdfs:comment>MARC Map format relief code: a</rdfs:comment>
+		<rdfs:comment xml:lang="en">MARC Map format relief code: a</rdfs:comment>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Shading">
         <rdfs:label xml:lang="en">Shading</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/LandRelief"/>
         <skos:definition xml:lang="en">Relief shown by shading (generally of a single color)</skos:definition>
-		<rdfs:comment>MARC Map format relief code: b</rdfs:comment>
+		<rdfs:comment xml:lang="en">MARC Map format relief code: b</rdfs:comment>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/GradientTints">
         <rdfs:label xml:lang="en">Gradient Tints</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/LandRelief"/>
         <skos:definition xml:lang="en">Relief shown by gradient tints</skos:definition>
-		<rdfs:comment>MARC Map format relief code: c</rdfs:comment>
+		<rdfs:comment xml:lang="en">MARC Map format relief code: c</rdfs:comment>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Hachures">
         <rdfs:label xml:lang="en">Hachures</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/LandRelief"/>
         <skos:definition xml:lang="en">Relief shown by hachures (short lines which follow the direction of maximum slope)</skos:definition>
-		<rdfs:comment>MARC Map format relief code: d</rdfs:comment>
+		<rdfs:comment xml:lang="en">MARC Map format relief code: d</rdfs:comment>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/FormLines">
         <rdfs:label xml:lang="en">Form Lines</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/LandRelief"/>
         <skos:definition xml:lang="en">Land relief shown by form lines</skos:definition>
-		<rdfs:comment>MARC Map format relief code: f</rdfs:comment>
+		<rdfs:comment xml:lang="en">MARC Map format relief code: f</rdfs:comment>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/SpotHeights">
         <rdfs:label xml:lang="en">Spot Heights</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/LandRelief"/>
         <skos:definition xml:lang="en">Relief shown by spot heights</skos:definition>
-		<rdfs:comment>MARC Map format relief code: g</rdfs:comment>
+		<rdfs:comment xml:lang="en">MARC Map format relief code: g</rdfs:comment>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Pictorially">
         <rdfs:label xml:lang="en">Pictorially</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/LandRelief"/>
         <skos:definition xml:lang="en">Land forms and other topographic features shown in the correct planimetric position by pictorial symbols representing their appearance from a high oblique view</skos:definition>
-		<rdfs:comment>MARC Map format relief code: i</rdfs:comment>
+		<rdfs:comment xml:lang="en">MARC Map format relief code: i</rdfs:comment>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/LandForms">
         <rdfs:label xml:lang="en">Land Forms</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/LandRelief"/>
         <skos:definition xml:lang="en">Relief shown by land forms</skos:definition>
-		<rdfs:comment>MARC Map format relief code: j</rdfs:comment>
+		<rdfs:comment xml:lang="en">MARC Map format relief code: j</rdfs:comment>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/RockDrawings">
         <rdfs:label xml:lang="en">Rock Drawings</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/LandRelief"/>
         <skos:definition xml:lang="en">Relief rock drawing</skos:definition>
-		<rdfs:comment>MARC Map format relief code: m</rdfs:comment>
+		<rdfs:comment xml:lang="en">MARC Map format relief code: m</rdfs:comment>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/WaterRelief">
         <rdfs:label xml:lang="en">Water Relief</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Relief"/>
         <skos:definition xml:lang="en">The depiction or indication of underwater topography, or the depths and shapes of underwater terrain</skos:definition>
-		<rdfs:comment>MARC Map format relief code: </rdfs:comment>
+		<rdfs:comment xml:lang="en">MARC Map format relief code: </rdfs:comment>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/BathymetricTints">
         <rdfs:label xml:lang="en">Bathymetric Tints</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/WaterRelief"/>
         <skos:definition xml:lang="en">Underwater relief shown by bathymetric tints</skos:definition>
-		<rdfs:comment>MARC Map format relief code: c</rdfs:comment>
+		<rdfs:comment xml:lang="en">MARC Map format relief code: c</rdfs:comment>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/BathymetricIsolines">
         <rdfs:label xml:lang="en">Bathymetric Isolines</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/WaterRelief"/>
         <skos:definition xml:lang="en">Underwater relief (depth) shown by isolines (lines that represent constant depths)</skos:definition>
-		<rdfs:comment>MARC Map format relief code: k</rdfs:comment>
+		<rdfs:comment xml:lang="en">MARC Map format relief code: k</rdfs:comment>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/BathymetricSoundings">
@@ -375,21 +375,21 @@
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/WaterRelief"/>
 		<skos:altLabel xml:lang="en">Bathymetry/Soundings</skos:altLabel>
         <skos:definition xml:lang="en">Underwater relief (depth) shown by soundings</skos:definition>
-		<rdfs:comment>MARC Map format relief code: e</rdfs:comment>
+		<rdfs:comment xml:lang="en">MARC Map format relief code: e</rdfs:comment>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/BathymetricFormLines">
         <rdfs:label xml:lang="en">Bathymetric Form Lines</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/WaterRelief"/>
         <skos:definition xml:lang="en">Underwater relief shown by form lines</skos:definition>
-		<rdfs:comment>MARC Map format relief code: f</rdfs:comment>
+		<rdfs:comment xml:lang="en">MARC Map format relief code: f</rdfs:comment>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/NoRelief">
         <rdfs:label xml:lang="en">No Relief</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Relief"/>
         <skos:definition xml:lang="en">No relief shown</skos:definition>
-		<rdfs:comment>MARC Map format relief code: #</rdfs:comment>
+		<rdfs:comment xml:lang="en">MARC Map format relief code: #</rdfs:comment>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/NoLandRelief">
@@ -408,14 +408,14 @@
         <rdfs:label xml:lang="en">Other Relief</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Relief"/>
         <skos:definition xml:lang="en">None of the other defined codes are appropriate</skos:definition>
-		<rdfs:comment>MARC Map format relief code: z</rdfs:comment>
+		<rdfs:comment xml:lang="en">MARC Map format relief code: z</rdfs:comment>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/NoAttemptToCode">
         <rdfs:label xml:lang="en">No Attempt To Code</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Relief"/>
         <skos:definition xml:lang="en">Relief not determined</skos:definition>
-		<rdfs:comment>MARC Map format relief code: ||||</rdfs:comment>
+		<rdfs:comment xml:lang="en">MARC Map format relief code: ||||</rdfs:comment>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ReliefNotDetermined">
