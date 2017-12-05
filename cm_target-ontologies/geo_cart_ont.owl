@@ -5,7 +5,7 @@
     
     Note:  http://ontology.library.harvard.edu/geo/ is a placeholder (inactive) namespace for the LD4P/L Cartographic Materials "Geospatial and Cartographic Resources Ontology" extension until a proper home is found
 	
-	last revised: 2017-11-22
+	last revised: 2017-12-06
   -->
 
 <rdf:RDF
@@ -716,6 +716,380 @@
         <rdfs:label xml:lang="en">Relief Not Determined</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Relief"/>
         <skos:definition xml:lang="en">Relief not determined</skos:definition>
+    </owl:Class>
+	
+	<!-- Class http://id.loc.gov/ontologies/bibframe/Projection 
+    Adding subclasses of projection (based primarily on MARC Map format projection codes (008/22-23) / (006/05-06) -->
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/AzimuthalProjection">
+	    <rdfs:label xml:lang="en">Azimuthal Projection</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
+        <skos:definition xml:lang="en">In standard presentation, azimuthal projections map meridians as straight lines and parallels as complete, concentric circles. They are radially symmetrical. In any presentation (or aspect), they preserve directions from the center point. This means great circles through the central point are represented by straight lines on the map</skos:definition>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/CylindricalProjection">
+	    <rdfs:label xml:lang="en">Cylindrical Projection</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
+        <skos:definition xml:lang="en">In standard presentation, these map regularly-spaced meridians to equally spaced vertical lines, and parallels to horizontal lines</skos:definition>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ConicalProjection">
+	    <rdfs:label xml:lang="en">Conical Projection</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
+		<skos:altLabel xml:lang="en">Conic Projection</skos:altLabel>
+        <skos:definition xml:lang="en">In standard presentation, conic (or conical) projections map meridians as straight lines, and parallels as arcs of circles</skos:definition>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/UnclassifiedProjection">
+	    <rdfs:label xml:lang="en">Unclassified Projection</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
+        <skos:definition xml:lang="en">Named projections that are not azimuthal, cylindrical, or conic</skos:definition>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/OtherProjection">
+	    <rdfs:label xml:lang="en">Other Projection</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
+        <skos:definition xml:lang="en">None of the other named projections are appropriate</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: zz</rdfs:comment>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ProjectionNotSpecified">
+	    <rdfs:label xml:lang="en">Projection Not Specified</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
+        <skos:definition xml:lang="en">Used for most globes</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: ##</rdfs:comment>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/NoAttemptToCode">
+	    <rdfs:label xml:lang="en">No Attempt To Code</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
+        <skos:definition xml:lang="en">No attempt to assign a projection to the resource</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: ||</rdfs:comment>
+    </owl:Class>
+	
+	<!-- Subclasses of the above Projection subclasses representing MARC coded projection types: https://www.loc.gov/marc/bibliographic/bd008p.html -->
+	
+	<!-- Subclasses of AzimuthalProjection -->
+	
+	<:Class rdf:about="http://ontology.library.harvard.edu/geo/Aitoff">
+	    <rdfs:label xml:lang="en">Aitoff</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
+        <skos:definition xml:lang="en">Aitoff</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: aa</rdfs:comment>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Gnomic">
+		<rdfs:label xml:lang="en">Gnomic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
+        <skos:definition xml:lang="en">Gnomic</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: ab</rdfs:comment>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/LambertsAzimuthalEqualArea">
+		<rdfs:label xml:lang="en">Lambert's Azimuthal Equal Aread</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
+        <skos:definition xml:lang="en">Lambert's azimuthal equal area</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: ac</rdfs:comment>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Orthographic">
+		<rdfs:label xml:lang="en">Orthographic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
+        <skos:definition xml:lang="en">Orthographic</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: ad</rdfs:comment>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/AzimuthalEquidistant">
+		<rdfs:label xml:lang="en">Azimuthal Equidistant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
+        <skos:definition xml:lang="en">Azimuthal equidistant</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: ae</rdfs:comment>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Stereographic">
+		<rdfs:label xml:lang="en">Stereographic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
+        <skos:definition xml:lang="en"Stereographic</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: af</rdfs:comment>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/GeneralVerticalNearSided">
+		<rdfs:label xml:lang="en">General Vertical Near-Sided</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
+        <skos:definition xml:lang="en">General vertical near-sided</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: ag</rdfs:comment>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ModifiedStereographicForAlaska">
+		<rdfs:label xml:lang="en">Modified Stereographic For Alaska</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
+        <skos:definition xml:lang="en">Modified stereographic for Alaska</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: am</rdfs:comment>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ChamberlinTrimetric">
+		<rdfs:label xml:lang="en">Chamberlin Trimetric</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
+        <skos:definition xml:lang="en">Chamberlin trimetric</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: an</rdfs:comment>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/PolarStereographic">
+		<rdfs:label xml:lang="en">Polar Stereographic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
+        <skos:definition xml:lang="en">Polar stereographic</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: ap</rdfs:comment>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/AzimuthalSpecificTypeUnknown">
+		<rdfs:label xml:lang="en">Azimuthal Specific Type Unknown</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
+        <skos:definition xml:lang="en">Only the projection type (azimuthal) is known, not the specific projection</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: au</rdfs:comment>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/AzimuthalOther">
+		<rdfs:label xml:lang="en">Azimuthal Other</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
+        <skos:definition xml:lang="en">Azimuthal projection for which none of the other defined codes are appropriate</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: az</rdfs:comment>
+    </owl:Class>
+	
+	<!--Subclasses of CylindricalProjection -->
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Gall">
+		<rdfs:label xml:lang="en">Gall</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
+        <skos:definition xml:lang="en">Gall</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: ba</rdfs:comment>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/GoodesHomolographic">
+		<rdfs:label xml:lang="en">Goode's Homolographic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
+        <skos:definition xml:lang="en">Goode's homalographic</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: bb</rdfs:comment>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/LambertsCylindricalEqualArea">
+		<rdfs:label xml:lang="en">Lambert's Cylindrical Equal Area</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
+        <skos:definition xml:lang="en">Lambert's cylindrical equal area</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: bc</rdfs:comment>
+    </owl:Class>
+    
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Mercator">
+		<rdfs:label xml:lang="en">Mercator</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
+        <skos:definition xml:lang="en">Mercator</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: bd</rdfs:comment>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Miller">
+		<rdfs:label xml:lang="en">Miller</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
+        <skos:definition xml:lang="en">Miller</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: be</rdfs:comment>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Mollweide">
+		<rdfs:label xml:lang="en">Mollweide</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
+        <skos:definition xml:lang="en">Mollweide</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: bf</rdfs:comment>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Sinusoidal">
+		<rdfs:label xml:lang="en">Sinusoidal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
+        <skos:definition xml:lang="en">Sinusoidal</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: bg</rdfs:comment>  
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/TransverseMercator">
+		<rdfs:label xml:lang="en">Transverse Mercator></rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
+        <skos:definition xml:lang="en">Transverse Mercator</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: bh</rdfs:comment>    
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/GaussKruger">
+		<rdfs:label xml:lang="en">Gauss-Kruger</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
+        <skos:definition xml:lang="en">Gauss-Kruger</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: bi</rdfs:comment>  
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Equirectangular">
+		<rdfs:label xml:lang="en">Equirectangular</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
+        <skos:definition xml:lang="en">Equirectangular></skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: bj</rdfs:comment> 
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Krovak">
+		<rdfs:label xml:lang="en">Krovak</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
+        <skos:definition xml:lang="en">Krovak</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: bk</rdfs:comment>  
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/CassiniSoldner">
+		<rdfs:label xml:lang="en">Cassini-Soldner</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
+        <skos:definition xml:lang="en">Cassini-Soldner</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: bl</rdfs:comment>  
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ObliqueMercator">
+		<rdfs:label xml:lang="en">Oblique Mercator</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
+        <skos:definition xml:lang="en">Oblique Mercator</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: bo</rdfs:comment>   
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Robinson">
+		<rdfs:label xml:lang="en">Robinson</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
+        <skos:definition xml:lang="en">Robinson</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: br</rdfs:comment>  
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/SpaceObliqueMercator">
+		<rdfs:label xml:lang="en">Space Oblique Mercator</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
+        <skos:definition xml:lang="en">Space oblique Mercator</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: bs</rdfs:comment>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/CylindricalSpecificTypeUnknown">
+		<rdfs:label xml:lang="en">Cylindrical Specific Type Unknown</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
+        <skos:definition xml:lang="en">Only the projection type (cylindrical) is known, not the specific projection</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: bu</rdfs:comment> 
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/CylindricalOther">
+		<rdfs:label xml:lang="en">Cylindrical Other</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
+        <skos:definition xml:lang="en">Cylindrical projection for which none of the other defined codes are appropriate</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: bz</rdfs:comment>   
+    </owl:Class>
+	
+	<!--Subclasses of ConicalProjection -->
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/AlbersEqualArea">
+		<rdfs:label xml:lang="en">Albers Equal Area</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/ConicalProjection"/>
+        <skos:definition xml:lang="en">Albers equal area</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: ca</rdfs:comment> 
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Bonne">
+		<rdfs:label xml:lang="en">Bonne</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/ConicalProjection"/>
+        <skos:definition xml:lang="en">Bonne</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: cb</rdfs:comment>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/LambertsConformalConic">
+		<rdfs:label xml:lang="en">Lambert's Conformal Conic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/ConicalProjection"/>
+        <skos:definition xml:lang="en">Lambert's conformal conic</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: cc</rdfs:comment>    
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/EquidistantConic">
+		<rdfs:label xml:lang="en">Equidistant Conic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/ConicalProjection"/>
+        <skos:definition xml:lang="en">Equidistant conic</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: ce</rdfs:comment>    
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Polyconic">
+		<rdfs:label xml:lang="en">Polyconic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/ConicalProjection"/>
+        <skos:definition xml:lang="en">Polyconic</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: cp</rdfs:comment>    
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ConicSpecificTypeUnknown">
+		<rdfs:label xml:lang="en">Conic Specific Type Unknown</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/ConicalProjection"/>
+        <skos:definition xml:lang="en">Only the projection type (conic) is known, not the specific projection</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: cu</rdfs:comment>    
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ConicOther">
+		<rdfs:label xml:lang="en">Conic Other</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/ConicalProjection"/>
+        <skos:definition xml:lang="en">Conic projection for which none of the other defined codes are appropriate</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: cz</rdfs:comment>    
+    </owl:Class>
+	
+	<!--Subclasses of UnclassifiedProjection -->
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Armadillo">
+		<rdfs:label xml:lang="en">Armadillo</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/UnclassifiedProjection"/>
+        <skos:definition xml:lang="en">Armadillo</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: da</rdfs:comment>    
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Butterfly">
+		<rdfs:label xml:lang="en">Butterfly</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/UnclassifiedProjection"/>
+        <skos:definition xml:lang="en">Butterfly</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: db</rdfs:comment>    
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Eckert">
+		<rdfs:label xml:lang="en">Eckert</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/UnclassifiedProjection"/>
+        <skos:definition xml:lang="en">Eckert</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: dc</rdfs:comment>    
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/GoodesHomolosine">
+		<rdfs:label xml:lang="en">Goode's Homolosine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/UnclassifiedProjection"/>
+        <skos:definition xml:lang="en">Goode's homolosine</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: dd</rdfs:comment>    
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/MillersBipolarObliqueConformalConic">
+		<rdfs:label xml:lang="en">Miller's Bipolar Oblique Conformal Conic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/UnclassifiedProjection"/>
+        <skos:definition xml:lang="en">Miller's bipolar oblique conformal conic</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: de</rdfs:comment>    
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/VanDerGrinten">
+		<rdfs:label xml:lang="en">Van Der Grinten</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/UnclassifiedProjection"/>
+        <skos:definition xml:lang="en">Van Der Grinten</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: df</rdfs:comment>    
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Dimaxion">
+		<rdfs:label xml:lang="en">Dimaxion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/UnclassifiedProjection"/>
+        <skos:definition xml:lang="en">Dimaxion</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: dg</rdfs:comment>    
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Cordiform">
+		<rdfs:label xml:lang="en">Cordiform</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/UnclassifiedProjection"/>
+        <skos:definition xml:lang="en">Cordiform</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: dh</rdfs:comment>    
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/LambertConformal">
+		<rdfs:label xml:lang="en">Lambert Conformal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/UnclassifiedProjection"/>
+        <skos:definition xml:lang="en">Lambert conformal</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: dl</rdfs:comment>    
     </owl:Class>
 		
     <!-- OBJECT PROPERTIES -->
