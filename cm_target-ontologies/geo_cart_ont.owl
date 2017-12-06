@@ -1125,6 +1125,13 @@
 		<rdfs:range rdf:resource="http://ontology.library.harvard.edu/geo/Relief"/>
     </owl:ObjectProperty>	
 	
+	<owl:ObjectProperty rdf:about="http://ontology.library.harvard.edu/geo/primeMeridian">
+        <rdfs:label xml:lang="en">Has prime meridian</rdfs:label>
+        <skos:definition xml:lang="en">The meridian on the Earth’s surface from which longitude is measured. Since 1884, the meridian of Greenwich, England, has, by general consent, been recognized as the prime meridian (DCRM-C). The prime meridian is the north-south reference line on the earth’s surface (i.e., 0º longitude) from which longitude is measured.
+		For resources produced prior to 1884, meridians other than Greenwich were often adopted. Resources published in the United States frequently used Philadelphia, Washington, or New York as the prime meridian. In some instances resources identify two different prime meridians. (Cartographic Resources Manual).</skos:definition>
+		<rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Cartography"/>
+    </owl:ObjectProperty>
+	
 	<!-- DATA PROPERTIES -->
     
 	<owl:DatatypeProperty rdf:about="http://ontology.library.harvard.edu/geo/representativeFractionDenominator">
