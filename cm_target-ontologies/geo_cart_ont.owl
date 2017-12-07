@@ -1092,6 +1092,14 @@
         <skos:definition xml:lang="en">Lambert conformal</skos:definition>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: dl</rdfs:comment>    
     </owl:Class>
+	
+	<!-- Subclass of http://id.loc.gov/ontologies/bibframe/Source -->
+    
+    <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/CartSource">
+        <rdfs:label xml:lang="en">Cartographic Data Source</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
+        <skos:definition xml:lang="en">Identifies the source for mathematical cartographic data,including scale, projection, and/or coordinates</skos:definition>
+    </owl:Class>
 		
     <!-- OBJECT PROPERTIES -->
     
@@ -1145,16 +1153,8 @@
     <!-- NAMED INDIVIDUALS -->
     
     <!-- Type http://id.loc.gov/ontologies/bibframe/Projection 
-    Adding Individuals MARC coded projection types: https://www.loc.gov/marc/bibliographic/bd008p.html -->
+    Adding Individual Epsg coded projection types -->
     
-    <owl:NamedIndividual rdf:about="http://ontology.library.harvard.edu/geo/Mercator">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
-        <rdfs:label xml:lang="en">Mercator</rdfs:label>
-        <skos:definition xml:lang="en">A projection of a map of the world onto a cylinder in such a way that all the parallels of latitude have the same length as the equator, used especially for marine charts and certain climatological maps.</skos:definition>
-        <dcterms:issued></dcterms:issued>
-        <dcterms:modified></dcterms:modified>
-    </owl:NamedIndividual>
-
     <owl:NamedIndividual rdf:about="http://ontology.library.harvard.edu/geo/ProjectionEpsg4326">
         <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
         <rdfs:label xml:lang="en">WGS 84</rdfs:label>
@@ -1257,15 +1257,56 @@
     </owl:NamedIndividual>
     
     
-    <!-- Type http://bib.ld4l.org/ontology/hasSource 
-    Adding individuals of MARC coded cartographic data sources: https://www.loc.gov/standards/sourcelist/cartographic-data.html  -->
+    <!-- Subtype of http://id.loc.gov/ontologies/bibframe/Source
+    Adding selected individuals of MARC coded cartographic data sources: https://www.loc.gov/standards/sourcelist/cartographic-data.html  -->
     
     <owl:NamedIndividual rdf:about="http://ontology.library.harvard.edu/geo/Bound">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
+        <rdf:type rdf:resource="http://ontology.library.harvard.edu/geo/CartSource"/>
         <rdfs:label xml:lang="en">Bounding Box (Klokan Technologies)</rdfs:label>
         <skos:definition xml:lang="en">The Klokan Technologies Bounding Box Tool.</skos:definition>
-        <dcterms:issued></dcterms:issued>
-        <dcterms:modified></dcterms:modified>
+		<rdfs:comment xml:lang="en">MARC Cartographic Data Source Code: bound</rdfs:comment> 
     </owl:NamedIndividual>
 	
+    <owl:NamedIndividual rdf:about="http://ontology.library.harvard.edu/geo/GeoNames">
+        <rdf:type rdf:resource="http://ontology.library.harvard.edu/geo/CartSource"/>
+        <rdfs:label xml:lang="en">GeoNames</rdfs:label>
+        <skos:definition xml:lang="en">GeoNames.org geographical database</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Cartographic Data Source Code: geonames</rdfs:comment> 
+    </owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://ontology.library.harvard.edu/geo/GNS">
+        <rdf:type rdf:resource="http://ontology.library.harvard.edu/geo/CartSource"/>
+        <rdfs:label xml:lang="en">GNS</rdfs:label>
+        <skos:definition xml:lang="en">NGA GEOnet Names Server (GNS) (National Geospatial-Intelligence Agency)</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Cartographic Data Source Code: geonet</rdfs:comment> 
+    </owl:NamedIndividual>
+
+	<owl:NamedIndividual rdf:about="http://ontology.library.harvard.edu/geo/GettyTGN">
+        <rdf:type rdf:resource="http://ontology.library.harvard.edu/geo/CartSource"/>
+        <rdfs:label xml:lang="en">Getty TGN</rdfs:label>
+        <skos:definition xml:lang="en">Getty Thesaurus of Geographic Names Online (J. Paul Getty Trust)</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Cartographic Data Source Code: gettytgn</rdfs:comment> 
+    </owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://ontology.library.harvard.edu/geo/GNIS">
+        <rdf:type rdf:resource="http://ontology.library.harvard.edu/geo/CartSource"/>
+        <rdfs:label xml:lang="en">GNIS</rdfs:label>
+        <skos:definition xml:lang="en">Geographic Names Information System (GNIS) (United States Geological Survey, Board on Geographic Names)</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Cartographic Data Source Code: gnis</rdfs:comment> 
+    </owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://ontology.library.harvard.edu/geo/GooEarth">
+        <rdf:type rdf:resource="http://ontology.library.harvard.edu/geo/CartSource"/>
+        <rdfs:label xml:lang="en">Google Earth</rdfs:label>
+        <skos:definition xml:lang="en">Google Earth</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Cartographic Data Source Code: gooearth</rdfs:comment> 
+    </owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://ontology.library.harvard.edu/geo/Wikiped">
+        <rdf:type rdf:resource="http://ontology.library.harvard.edu/geo/CartSource"/>
+        <rdfs:label xml:lang="en">Wikipedia</rdfs:label>
+        <skos:definition xml:lang="en">Wikipedia</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Cartographic Data Source Code: wikiped</rdfs:comment> 
+    </owl:NamedIndividual>
+		
 </rdf:RDF>
