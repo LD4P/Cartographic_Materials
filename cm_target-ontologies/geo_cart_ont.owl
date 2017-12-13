@@ -713,12 +713,6 @@
 		<rdfs:comment xml:lang="en">MARC Map format relief code: ||||</rdfs:comment>
     </owl:Class>
 	
-	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ReliefNotDetermined">
-        <rdfs:label xml:lang="en">Relief Not Determined</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Relief"/>
-        <skos:definition xml:lang="en">Relief not determined</skos:definition>
-    </owl:Class>
-	
 	<!-- Class http://id.loc.gov/ontologies/bibframe/Projection 
     Adding subclasses of projection (based primarily on MARC Map format projection codes (008/22-23) / (006/05-06) -->
 	
