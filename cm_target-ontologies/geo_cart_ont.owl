@@ -336,7 +336,7 @@
     </owl:Class>
 	
  	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/MilitaryMaps">
-	    <rdfs:label xml:lang="en"Military Maps></rdfs:label>
+	    <rdfs:label xml:lang="en">Military Maps</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
         <skos:definition xml:lang="en">A map designed particularly for military use</skos:definition>
     </owl:Class>
@@ -772,7 +772,7 @@
 	
 	<!-- Subclasses of AzimuthalProjection -->
 	
-	<:Class rdf:about="http://ontology.library.harvard.edu/geo/Aitoff">
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Aitoff">
 	    <rdfs:label xml:lang="en">Aitoff</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
         <skos:definition xml:lang="en">Aitoff</skos:definition>
@@ -810,7 +810,7 @@
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Stereographic">
 		<rdfs:label xml:lang="en">Stereographic</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
-        <skos:definition xml:lang="en"Stereographic</skos:definition>
+        <skos:definition xml:lang="en">Stereographic</skos:definition>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: af</rdfs:comment>
     </owl:Class>
 	
