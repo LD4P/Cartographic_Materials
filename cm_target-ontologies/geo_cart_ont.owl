@@ -801,7 +801,7 @@ Remaining definitions were supplied by Linked Data for Libraries Production - Ca
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/LambertsAzimuthalEqualArea">
-		<rdfs:label xml:lang="en">Lambert's Azimuthal Equal Aread</rdfs:label>
+		<rdfs:label xml:lang="en">Lambert's Azimuthal Equal Area</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
         <skos:definition xml:lang="en">Lambert's azimuthal equal area</skos:definition>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: ac</rdfs:comment>
