@@ -122,7 +122,7 @@ Non-English language terms taken from: Multilingual dictionary of technical term
         <skos:definition xml:lang="en">Representations of cities or landscapes portrayed as if viewed from above (LCGFT)</skos:definition>
     </owl:Class>
 	
-	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Panorama">
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Panoramas">
 	    <skos:prefLabel xml:lang="en">Panoramas</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CartographicViews"/>
         <skos:definition xml:lang="en">A perspective representation of the landscape in which the detail is shown as if projected onto a vertical plane or onto the insides of a cylinder centered vertically on the observer (Ency. Dict. of Cart.)</skos:definition>
