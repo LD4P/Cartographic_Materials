@@ -5,7 +5,7 @@
     
     Note:  http://ontology.library.harvard.edu/geo/ is a placeholder (inactive) namespace for the LD4P/L Cartographic Materials "Geospatial and Cartographic Resources Ontology" extension until a proper home is found
 	
-	last revised: 2017-12-06
+	last revised: 2018-01-26
   -->
 
 <rdf:RDF
@@ -535,47 +535,54 @@ Non-English language terms taken from: Multilingual dictionary of technical term
 		<!-- Class http://id.loc.gov/ontologies/bibframe/Scale 
     Adding subclasses of cartographic scales -->
 	
-	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/HorizontalScale">
-	    <skos:prefLabel xml:lang="en">Horizontal Scale</skos:prefLabel>
+    <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/HorizontalScale">
+        <skos:prefLabel xml:lang="en">Horizontal Scale</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Scale"/>
-        <skos:definition xml:lang="en">Horizontal scale</skos:definition>
+        <skos:prefLabel xml:lang="fr">Echelle des longueurs</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">Escala horizontal</skos:prefLabel>
+        <skos:definition xml:lang="en">The ratio of distances on a map to the corresponding horizontal distance in nature (Ency. Dict. of Cart.)</skos:definition>
     </owl:Class>
+    
 	
-	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/VerticalScale">
-	    <skos:prefLabel xml:lang="en">Vertical Scale</skos:prefLabel>
+    <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/VerticalScale">
+        <skos:prefLabel xml:lang="en">Vertical Scale</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Scale"/>
-        <skos:definition xml:lang="en">Vertical scale</skos:definition>
-    </owl:Class>
+        <skos:prefLabel xml:lang="fr">Echelle des hauteurs</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">Escala vertical</skos:prefLabel>
+        <skos:definition xml:lang="en">The ratio of vertical distances on Profiles, Sections, Block Diagrams or three-dimensional representations to the corresponding distances in nature (Ency. Dict. of Cart.)</skos:definition>
+    </owl:Class>    
 	
-	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/NotToScale">
-	    <skos:prefLabel xml:lang="en">Not to Scale</skos:prefLabel>
+    <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/NotDrawnToScale">
+        <skos:prefLabel xml:lang="en">Not Drawn to Scale</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Scale"/>
-        <skos:definition xml:lang="en">Not to scale</skos:definition>
-    </owl:Class>
+        <skos:definition xml:lang="en">Used to describe a cartographic resource when it is not drawn to scale</skos:definition>
+    </owl:Class>    
 	
-	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ScaleIndeterminable">
-	    <skos:prefLabel xml:lang="en">Scale Indeterminable</skos:prefLabel>
+    <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ScaleIndeterminable">
+        <skos:prefLabel xml:lang="en">Scale Indeterminable</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Scale"/>
-        <skos:definition xml:lang="en">Scale indeterminable</skos:definition>
+        <skos:definition xml:lang="en">Used to describe a cartographic resource when an effort to determine the scale of a resource is impossible, for example, when there is a bar scale but no units of measurement are given</skos:definition>
     </owl:Class>
-	
-	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ScaleNotDetermined">
-	    <skos:prefLabel xml:lang="en">Scale Not Determined</skos:prefLabel>
+    	
+    <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ScaleNotDetermined">
+        <skos:prefLabel xml:lang="en">Scale Not Determined</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Scale"/>
-        <skos:definition xml:lang="en">Scale not determined</skos:definition>
+        <skos:definition xml:lang="en">Use when scale is represented verbally or graphically in the material, but cannot be expressed as a representative fraction, e.g., because of lack of legibility or with unfamiliar units of measure</skos:definition>
     </owl:Class>
-	
-	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ScalesDiffer">
-	    <skos:prefLabel xml:lang="en">Scales Differ</skos:prefLabel>
+    	
+    <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ScalesDiffer">
+        <skos:prefLabel xml:lang="en">Scales Differ</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Scale"/>
-        <skos:definition xml:lang="en">Scales differ</skos:definition>
+        <skos:definition xml:lang="en">Used to describe a cartographic resource in which the main maps, etc., are of more than one scale</skos:definition>
     </owl:Class>
-	
-	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ScaleVaries">
-	    <skos:prefLabel xml:lang="en">Scale Varies</skos:prefLabel>
+    	
+    <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ScaleVaries">
+        <skos:prefLabel xml:lang="en">Scale Varies</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Scale"/>
-        <skos:definition xml:lang="en">Scale varies</skos:definition>
+        <skos:definition xml:lang="en">Used to describe one map/diagram/plan, etc. that is drawn on a variable scale</skos:definition>
+        <!-- RDA definition: A scale designation for a resource whose scale is variable across the resource, when the range of values cannot be determined -->
     </owl:Class>
+    
 	
 	<!-- Class http://id.loc.gov/ontologies/bibframe/Scale 
     Adding classes related to cartographic scales -->
@@ -604,105 +611,112 @@ Non-English language terms taken from: Multilingual dictionary of technical term
         <skos:definition xml:lang="en">Inequalities of elevation and the configuration of land features on the surface of the Earth that may be represented on maps or charts by contours, hypsometric tints, shading, spot elevations, or hachures (Cartographic Materials)</skos:definition>
     </owl:Class>
 	
-	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Contours">
+    <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Contours">
         <skos:prefLabel xml:lang="en">Contours</skos:prefLabel>
+        <skos:altLabel xml:lang="en">Contour lines</skos:altLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/LandRelief"/>
-        <skos:definition xml:lang="en">Relief shown by contours</skos:definition>
-		<rdfs:comment xml:lang="en">MARC Map format relief code: a</rdfs:comment>
+        <skos:definition xml:lang="en">Relief shown by contours. A contour is a line joining points of equal vertical distance above or below a datum. Such a line on a map is a type of isoline (MARC21; Cartographic Materials)</skos:definition>
+        <rdfs:comment xml:lang="en">MARC Map format relief code: a</rdfs:comment>
     </owl:Class>
-	
-	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Shading">
+    	
+    <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Shading">
         <skos:prefLabel xml:lang="en">Shading</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/LandRelief"/>
-        <skos:definition xml:lang="en">Relief shown by shading (generally of a single color)</skos:definition>
-		<rdfs:comment xml:lang="en">MARC Map format relief code: b</rdfs:comment>
+        <skos:definition xml:lang="en">Relief shown by shading, generally of a single color. Shading is a relief method that provides an apparent three-dimensional configuration of the terrain by the use of shadows (MARC21; Cartographic Resources Manual)</skos:definition>
+        <rdfs:comment xml:lang="en">MARC Map format relief code: b</rdfs:comment>
     </owl:Class>
-	
-	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/GradientTints">
+    	
+    <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/GradientTints">
         <skos:prefLabel xml:lang="en">Gradient Tints</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/LandRelief"/>
-        <skos:definition xml:lang="en">Relief shown by gradient tints</skos:definition>
-		<rdfs:comment xml:lang="en">MARC Map format relief code: c</rdfs:comment>
+        <skos:altLabel xml:lang="en">Hypsometric Tints</skos:altLabel>
+        <skos:altLabel xml:lang="en">Altitude Tints</skos:altLabel>
+        <skos:definition xml:lang="en">Relief shown by gradient tints. Gradient tints, also known as hypsometric or altitude tints, are colors applied to the area between two selected contours when relief is depicted by a system of layers (MARC21; Cartographic Resources Manual)</skos:definition>
+        <rdfs:comment xml:lang="en">MARC Map format relief code: c</rdfs:comment>
     </owl:Class>
-	
-	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Hachures">
+    	
+    <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Hachures">
         <skos:prefLabel xml:lang="en">Hachures</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/LandRelief"/>
-        <skos:definition xml:lang="en">Relief shown by hachures (short lines which follow the direction of maximum slope)</skos:definition>
-		<rdfs:comment xml:lang="en">MARC Map format relief code: d</rdfs:comment>
+        <skos:definition xml:lang="en">Relief shown by hachures, which are short lines which follow the direction of maximum slope (MARC21; Cartographic Resources Manual)</skos:definition>
+        <rdfs:comment xml:lang="en">MARC Map format relief code: d</rdfs:comment>
     </owl:Class>
-	
-	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/FormLines">
+    	
+    <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/FormLines">
         <skos:prefLabel xml:lang="en">Form Lines</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/LandRelief"/>
-        <skos:definition xml:lang="en">Land relief shown by form lines</skos:definition>
-		<rdfs:comment xml:lang="en">MARC Map format relief code: f</rdfs:comment>
+        <skos:altLabel xml:lang="en">Formlines</skos:altLabel>
+        <skos:definition xml:lang="en">Land relief shown by form lines. Form lines, also called formlines, are lines, similar to contours, which depict the configuration of the ground without numerical indication of altitude (MARC21; Cartographic Resources Manual)</skos:definition>
+        <rdfs:comment xml:lang="en">MARC Map format relief code: f</rdfs:comment>
     </owl:Class>
-	
-	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/SpotHeights">
+    	
+    <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/SpotHeights">
         <skos:prefLabel xml:lang="en">Spot Heights</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/LandRelief"/>
-        <skos:definition xml:lang="en">Relief shown by spot heights</skos:definition>
-		<rdfs:comment xml:lang="en">MARC Map format relief code: g</rdfs:comment>
+        <skos:definition xml:lang="en">Relief shown by spot heights. Spot Heights are points on a cartographic resource which represent the position of an indicated altitude (MARC21; Cartographic Resources Manual)</skos:definition>
+        <rdfs:comment xml:lang="en">MARC Map format relief code: g</rdfs:comment>
     </owl:Class>
-	
-	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Pictorially">
+    	
+    <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Pictorially">
         <skos:prefLabel xml:lang="en">Pictorially</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/LandRelief"/>
-        <skos:definition xml:lang="en">Land forms and other topographic features shown in the correct planimetric position by pictorial symbols representing their appearance from a high oblique view</skos:definition>
-		<rdfs:comment xml:lang="en">MARC Map format relief code: i</rdfs:comment>
+        <skos:definition xml:lang="en">Land forms and other topographic features shown in the correct planimetric position by pictorial symbols representing their appearance from a high oblique view. Pictorial relief is not truly physiographic but usually consists of generalized drawings of hills, mountains, and bluffs. It was widely used before 1800. (MARC21; Cartographic Resources Manual)</skos:definition>
+        <rdfs:comment xml:lang="en">MARC Map format relief code: i</rdfs:comment>
     </owl:Class>
-	
-	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/LandForms">
+    	
+    <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/LandForms">
         <skos:prefLabel xml:lang="en">Land Forms</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/LandRelief"/>
-        <skos:definition xml:lang="en">Relief shown by land forms</skos:definition>
-		<rdfs:comment xml:lang="en">MARC Map format relief code: j</rdfs:comment>
+        <skos:altLabel xml:lang="en">Landform Drawings</skos:altLabel>
+        <skos:definition xml:lang="en">Relief shown by land form drawings, which is a method of relief that shows landforms by the systematic application of a standardized set of simplified pictorial symbols that represent the appearances such forms would have if viewed obliquely from the air at an angle of about 45º (MARC21; Cartographic Resources Manual)</skos:definition>
+        <rdfs:comment xml:lang="en">MARC Map format relief code: j</rdfs:comment>
     </owl:Class>
-	
-	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/RockDrawings">
+    	
+    <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/RockDrawings">
         <skos:prefLabel xml:lang="en">Rock Drawings</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/LandRelief"/>
-        <skos:definition xml:lang="en">Relief rock drawing</skos:definition>
-		<rdfs:comment xml:lang="en">MARC Map format relief code: m</rdfs:comment>
+        <skos:definition xml:lang="en">Relief shown by rock drawings, which are the stylized representation of steep rock faces which cannot be portrayed by other methods of representing relief (MARC21; Cartographic Resources Manual)</skos:definition>
+        <rdfs:comment xml:lang="en">MARC Map format relief code: m</rdfs:comment>
     </owl:Class>
-	
-	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/WaterRelief">
+    	
+    <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/WaterRelief">
         <skos:prefLabel xml:lang="en">Water Relief</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Relief"/>
         <skos:definition xml:lang="en">The depiction or indication of underwater topography, or the depths and shapes of underwater terrain (NOAA)</skos:definition>
-		<rdfs:comment xml:lang="en">MARC Map format relief code: </rdfs:comment>
     </owl:Class>
-	
-	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/BathymetricTints">
+    	
+    <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/BathymetricTints">
         <skos:prefLabel xml:lang="en">Bathymetric Tints</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/WaterRelief"/>
-        <skos:definition xml:lang="en">Underwater relief shown by bathymetric tints</skos:definition>
-		<rdfs:comment xml:lang="en">MARC Map format relief code: c</rdfs:comment>
+        <skos:altLabel xml:lang="en">Hypsometric Tints</skos:altLabel>
+        <skos:definition xml:lang="en">Underwater relief shown by bathymetric tints, which is a color applied to the area between two selected contours where relief is depicted by a system of layers, specifically as applied to the depiction of water depth (MARC21; DCRM-C)</skos:definition>
+        <rdfs:comment xml:lang="en">MARC Map format relief code: c</rdfs:comment>
     </owl:Class>
-	
-	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/BathymetricIsolines">
+    	
+    <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/BathymetricIsolines">
         <skos:prefLabel xml:lang="en">Bathymetric Isolines</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/WaterRelief"/>
-        <skos:definition xml:lang="en">Underwater relief (depth) shown by isolines (lines that represent constant depths)</skos:definition>
-		<rdfs:comment xml:lang="en">MARC Map format relief code: k</rdfs:comment>
+        <skos:definition xml:lang="en">Underwater relief (depth) shown by isolines (lines that represent constant depths) (MARC21)</skos:definition>
+        <rdfs:comment xml:lang="en">MARC Map format relief code: k</rdfs:comment>
     </owl:Class>
-	
-	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/BathymetricSoundings">
+    	
+    <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/BathymetricSoundings">
         <skos:prefLabel xml:lang="en">Bathymetric Soundings</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/WaterRelief"/>
-		<skos:altLabel xml:lang="en">Bathymetry/Soundings</skos:altLabel>
-        <skos:definition xml:lang="en">Underwater relief (depth) shown by soundings</skos:definition>
-		<rdfs:comment xml:lang="en">MARC Map format relief code: e</rdfs:comment>
+        <skos:altLabel xml:lang="en">Bathymetry/Soundings</skos:altLabel>
+        <skos:altLabel xml:lang="en">Soundings</skos:altLabel>
+        <skos:altLabel xml:lang="en">Sounding</skos:altLabel>
+        <skos:definition xml:lang="en">Underwater depth shown by soundings. A sounding is a measurement of the depth of water, usually expressed in feet or fathoms (MARC21; Cartographic Materials)</skos:definition>
+        <rdfs:comment xml:lang="en">MARC Map format relief code: e</rdfs:comment>
     </owl:Class>
-	
-	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/BathymetricFormLines">
+    
+    <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/BathymetricFormLines">
         <skos:prefLabel xml:lang="en">Bathymetric Form Lines</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/WaterRelief"/>
-        <skos:definition xml:lang="en">Underwater relief shown by form lines</skos:definition>
-		<rdfs:comment xml:lang="en">MARC Map format relief code: f</rdfs:comment>
+        <skos:definition xml:lang="en">Underwater relief shown by form lines, also called formlines, which are lines, similar to contours, which depict the configuration of the underwater land without numerical indication of altitude (MARC21; adapted from Cartographic Resources Manual)</skos:definition>
+        <rdfs:comment xml:lang="en">MARC Map format relief code: f</rdfs:comment>
     </owl:Class>
-	
+    	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/NoRelief">
         <skos:prefLabel xml:lang="en">No Relief</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Relief"/>
