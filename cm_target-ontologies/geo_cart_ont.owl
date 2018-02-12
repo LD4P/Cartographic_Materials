@@ -1244,6 +1244,16 @@ Non-English language terms taken from: Multilingual dictionary of technical term
 		<rdfs:comment>Type: Pseudoconical, cordiform</rdfs:comment>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: cb</rdfs:comment>
     </owl:Class>
+
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Krovak">
+        <skos:prefLabel xml:lang="en">Krovak</skos:prefLabel>
+        <skos:altLabel xml:lang="en">Křovák's projection</skos:altLabel>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/ConicalProjection"/>
+        <skos:definition xml:lang="en">The projection is based on Bessel ellipsoid and it was made for the best projection of Czechoslovakia. It is used for State maps of the Czech Republic (Wikipedia, Křovák's projection)</skos:definition>
+        <projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/Conformal"/>
+        <rdfs:comment>Type: Conic</rdfs:comment>
+        <rdfs:comment xml:lang="en">MARC Map format projection code: bk; classed in MARC21 as a cylindrical projection</rdfs:comment>  
+    </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/LambertsConformalConic">
 		<skos:prefLabel xml:lang="en">Lambert's Conformal Conic</skos:prefLabel>
