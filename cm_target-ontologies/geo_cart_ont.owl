@@ -5,7 +5,7 @@
     
     Note:  http://ontology.library.harvard.edu/geo/ is a placeholder (inactive) namespace for the LD4P/L Cartographic Materials "Geospatial and Cartographic Resources Ontology" extension until a proper home is found
 	
-	last revised: 2018-01-26
+	last revised: 2018-02-12
   -->
 
 <rdf:RDF
@@ -809,101 +809,148 @@ Non-English language terms taken from: Multilingual dictionary of technical term
     Adding subclasses of projection (based primarily on MARC Map format projection codes (008/22-23) / (006/05-06) -->
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/AzimuthalProjection">
-	    <skos:prefLabel xml:lang="en">Azimuthal Projection</skos:prefLabel>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
-        <skos:definition xml:lang="en">In standard presentation, azimuthal projections map meridians as straight lines and parallels as complete, concentric circles. They are radially symmetrical. In any presentation (or aspect), they preserve directions from the center point. This means great circles through the central point are represented by straight lines on the map (Wikipedia, List of Map Projections)</skos:definition>
-    </owl:Class>
-	
+		<skos:prefLabel xml:lang="en">Azimuthal Projection</skos:prefLabel>
+		<skos:prefLabel xml:lang="fr">Projection azimutale</skos:prefLabel>
+		<skos:prefLabel xml:lang="es">Proyección acimutal</skos:prefLabel>
+		<rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
+		<skos:definition xml:lang="en">In standard presentation, azimuthal projections map meridians as straight lines and parallels as complete, concentric circles. They are radially symmetrical. In any presentation (or aspect), they preserve directions from the center point. This means great circles through the central point are represented by straight lines on the map (Wikipedia, List of Map Projections)</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: a- (e.g. "aa," etc.)</rdfs:comment>
+	</owl:Class>
+
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/CylindricalProjection">
-	    <skos:prefLabel xml:lang="en">Cylindrical Projection</skos:prefLabel>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
-	    <skos:definition xml:lang="en">In standard presentation, these map regularly-spaced meridians to equally spaced vertical lines, and parallels to horizontal lines (Wikipedia, List of Map Projections)</skos:definition>
-    </owl:Class>
-	
+		<skos:prefLabel xml:lang="en">Cylindrical Projection</skos:prefLabel>
+		<skos:prefLabel xml:lang="fr">Projection cylindrique</skos:prefLabel>
+		<skos:prefLabel xml:lang="es">Proyección cilíndrica</skos:prefLabel>
+		<rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
+		<skos:definition xml:lang="en">In standard presentation, these map regularly-spaced meridians to equally spaced vertical lines, and parallels to horizontal lines (Wikipedia, List of Map Projections)</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: b- (e.g. "ba," etc.)</rdfs:comment>
+	</owl:Class>
+
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ConicalProjection">
-	    <skos:prefLabel xml:lang="en">Conical Projection</skos:prefLabel>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
+		<skos:prefLabel xml:lang="en">Conical Projection</skos:prefLabel>
+		<skos:prefLabel xml:lang="fr">Projection conique</skos:prefLabel>
+		<skos:prefLabel xml:lang="es">Proyección cónica</skos:prefLabel>
+		<rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
 		<skos:altLabel xml:lang="en">Conic Projection</skos:altLabel>
-	    <skos:definition xml:lang="en">In standard presentation, conic (or conical) projections map meridians as straight lines, and parallels as arcs of circles (Wikipedia, List of Map Projections)</skos:definition>
-    </owl:Class>
-	
+		<skos:definition xml:lang="en">In standard presentation, conic (or conical) projections map meridians as straight lines, and parallels as arcs of circles (Wikipedia, List of Map Projections)</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: c- (e.g. "ca," etc.)</rdfs:comment>
+	</owl:Class>
+
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/UnclassifiedProjection">
-	    <skos:prefLabel xml:lang="en">Unclassified Projection</skos:prefLabel>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
-        <skos:definition xml:lang="en">Named projections that are not azimuthal, cylindrical, or conic</skos:definition>
-    </owl:Class>
-	
+		<skos:prefLabel xml:lang="en">Unclassified Projection</skos:prefLabel>
+		<rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
+		<skos:definition xml:lang="en">Named projections that are not azimuthal, cylindrical, or conic</skos:definition>
+		<rdfs:comment xml:lang="en">MARC Map format projection code: d- (e.g. "da," etc.)</rdfs:comment>
+	</owl:Class>
+
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/OtherProjection">
-	    <skos:prefLabel xml:lang="en">Other Projection</skos:prefLabel>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
-        <skos:definition xml:lang="en">None of the other named projections are appropriate (MARC 21)</skos:definition>
+		<skos:prefLabel xml:lang="en">Other Projection</skos:prefLabel>
+		<rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
+		<skos:definition xml:lang="en">None of the other named projections are appropriate (MARC 21)</skos:definition>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: zz</rdfs:comment>
-    </owl:Class>
-	
+	</owl:Class>
+
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ProjectionNotSpecified">
-	    <skos:prefLabel xml:lang="en">Projection Not Specified</skos:prefLabel>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
-        <skos:definition xml:lang="en">Used for most globes (MARC 21)</skos:definition>
+		<skos:prefLabel xml:lang="en">Projection Not Specified</skos:prefLabel>
+		<rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
+		<skos:definition xml:lang="en">Used for most globes (MARC 21)</skos:definition>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: ##</rdfs:comment>
-    </owl:Class>
-	
+	</owl:Class>
+
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/NoAttemptToCode">
-	    <skos:prefLabel xml:lang="en">No Attempt To Code</skos:prefLabel>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
-        <skos:definition xml:lang="en">No attempt to assign a projection to the resource</skos:definition>
+		<skos:prefLabel xml:lang="en">No Attempt To Code</skos:prefLabel>
+		<rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
+		<skos:definition xml:lang="en">No attempt to assign a projection to the resource</skos:definition>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: ||</rdfs:comment>
-    </owl:Class>
-	
-	<!-- Subclasses of the above Projection subclasses representing MARC coded projection types: https://www.loc.gov/marc/bibliographic/bd008p.html -->
+	</owl:Class>
+
+<!-- Subclasses of the above Projection subclasses representing MARC coded projection types: https://www.loc.gov/marc/bibliographic/bd008p.html -->
+    
+    <!-- Specific projection "types" from: Wikipedia, List of Map Projections -->
 	
 	<!-- Subclasses of AzimuthalProjection -->
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Aitoff">
 	    <skos:prefLabel xml:lang="en">Aitoff</skos:prefLabel>
+	    <skos:prefLabel xml:lang="fr">Transformation d’Aitoff appliqué à la projection méridienne de G. Postel</skos:prefLabel>
+	    <skos:prefLabel xml:lang="es">Proyección de Aitoff</skos:prefLabel>
+	    <skos:altfLabel xml:lang="en">Aitoff's projection</skos:altfLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
-        <skos:definition xml:lang="en">Aitoff</skos:definition>
+	    <skos:definition xml:lang="en">Stretching of modified equatorial azimuthal equidistant map. Boundary is 2:1 ellipse. Largely superseded by Hammer (Wikipedia, List of Map Projections)</skos:definition>
+	    <projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/Compromise"/>
+	    <rdfs:comment>Type: Pseudoazimuthal</rdfs:comment>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: aa</rdfs:comment>
     </owl:Class>
 	
-	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Gnomic">
-		<skos:prefLabel xml:lang="en">Gnomic</skos:prefLabel>
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Gnomonic">
+	    <skos:prefLabel xml:lang="en">Gnomonic</skos:prefLabel>
+	    <skos:prefLabel xml:lang="fr">Projection gnomonique</skos:prefLabel>
+	    <skos:prefLabel xml:lang="es">Proyección gnomónica</skos:prefLabel>
+	    <skos:altfLabel xml:lang="en">Gnomic</skos:altfLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
-        <skos:definition xml:lang="en">Gnomic</skos:definition>
+	    <skos:definition xml:lang="en">All great circles are straight lines (Wikipedia, List of Map Projections)</skos:definition>
+	    <projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/Gnomonic"/>
+	    <rdfs:comment>Type: Gnomonic</rdfs:comment>
+	    <rdfs:comment>MARC21 uses the term, "Gnomic"</rdfs:comment>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: ab</rdfs:comment>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/LambertsAzimuthalEqualArea">
 		<skos:prefLabel xml:lang="en">Lambert's Azimuthal Equal Area</skos:prefLabel>
+	    <skos:prefLabel xml:lang="fr">Projection de Lorgna</skos:prefLabel>
+	    <skos:prefLabel xml:lang="es">Proyección acimutal equivalente de Lambert</skos:prefLabel>
+	    <skos:altfLabel xml:lang="en">Lambert azimuthal equal-area</skos:altfLabel>
+	    <skos:altfLabel xml:lang="en">Lambert zenithal equal-area</skos:altfLabel>
+	    <skos:altfLabel xml:lang="fr">Projection azimutale équivalente de Lambert</skos:altfLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
-        <skos:definition xml:lang="en">Lambert's azimuthal equal area</skos:definition>
-		<rdfs:comment xml:lang="en">MARC Map format projection code: ac</rdfs:comment>
+	    <skos:definition xml:lang="en">The straight-line distance between the central point on the map to any other point is the same as the straight-line 3D distance through the globe between the two points (Wikipedia, List of Map Projections)</skos:definition>
+	    <projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/EqualArea"/>
+	    <rdfs:comment>Type: Azimuthal</rdfs:comment>
+	    <rdfs:comment xml:lang="en">MARC Map format projection code: ac</rdfs:comment>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Orthographic">
 		<skos:prefLabel xml:lang="en">Orthographic</skos:prefLabel>
+	    <skos:prefLabel xml:lang="fr">Projection orthographique</skos:prefLabel>
+	    <skos:prefLabel xml:lang="es">Proyección ortográfica</skos:prefLabel>
+	    <skos:altfLabel xml:lang="en">Orthogonal map projection</skos:altfLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
-        <skos:definition xml:lang="en">Orthographic</skos:definition>
+	    <skos:definition xml:lang="en">View from an infinite distance. A perspective azimuthal projection (Wikipedia, List of Map Projections; Dict. of Mapping)</skos:definition>
+	    <projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/Perspective"/>
+	    <rdfs:comment>Type: Azimuthal</rdfs:comment>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: ad</rdfs:comment>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/AzimuthalEquidistant">
 		<skos:prefLabel xml:lang="en">Azimuthal Equidistant</skos:prefLabel>
+	    <skos:prefLabel xml:lang="fr">Projection de Guillaume Postel</skos:prefLabel>
+	    <skos:prefLabel xml:lang="es">Proyección acimutal equidistante de Postel</skos:prefLabel>
+	    <skos:altfLabel xml:lang="en">Postel’s projection</skos:altfLabel>
+	    <skos:altfLabel xml:lang="fr">Projection zénithale équidistante</skos:altfLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
-        <skos:definition xml:lang="en">Azimuthal equidistant</skos:definition>
+	    <skos:definition xml:lang="en">Distances from centre are conserved. Used as the emblem of the United Nations, extending to 60° S. Used by the USGS in the National Atlas of the United States of America. Neither equal-area nor conformal (Wikipedia, List of Map Projections; Dict. of Mapping)</skos:definition>
+	    <projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/Equidistant"/>
+	    <rdfs:comment>Type: Azimuthal</rdfs:comment>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: ae</rdfs:comment>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Stereographic">
 		<skos:prefLabel xml:lang="en">Stereographic</skos:prefLabel>
+	    <skos:prefLabel xml:lang="fr">Projection stéréographique</skos:prefLabel>
+	    <skos:prefLabel xml:lang="es">Proyección estereográfica</skos:prefLabel>
+	    <skos:altfLabel xml:lang="en">Azimuthal orthomorphic map projection</skos:altfLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
-        <skos:definition xml:lang="en">Stereographic</skos:definition>
-		<rdfs:comment xml:lang="en">MARC Map format projection code: af</rdfs:comment>
+	    <skos:definition xml:lang="en">Map is infinite in extent with outer hemisphere inflating severely, so it is often used as two hemispheres. Maps all small circles to circles, which is useful for planetary mapping to preserve the shapes of craters (Wikipedia, List of Map Projections)</skos:definition>
+	    <projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/Conformal"/>
+	    <rdfs:comment>Type: Azimuthal</rdfs:comment>
+	    <rdfs:comment xml:lang="en">MARC Map format projection code: af</rdfs:comment>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/GeneralVerticalNearSided">
 		<skos:prefLabel xml:lang="en">General Vertical Near-Sided</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
         <skos:definition xml:lang="en">General vertical near-sided</skos:definition>
+	    <rdfs:comment>Type: Azimuthal</rdfs:comment>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: ag</rdfs:comment>
     </owl:Class>
 	
@@ -911,206 +958,343 @@ Non-English language terms taken from: Multilingual dictionary of technical term
 		<skos:prefLabel xml:lang="en">Modified Stereographic For Alaska</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
         <skos:definition xml:lang="en">Modified stereographic for Alaska</skos:definition>
+	    <rdfs:comment>Type: Azimuthal</rdfs:comment>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: am</rdfs:comment>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ChamberlinTrimetric">
 		<skos:prefLabel xml:lang="en">Chamberlin Trimetric</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
-        <skos:definition xml:lang="en">Chamberlin trimetric</skos:definition>
-		<rdfs:comment xml:lang="en">MARC Map format projection code: an</rdfs:comment>
+	    <skos:definition xml:lang="en">A map projection where three points are fixed on the globe and the points on the sphere are mapped onto a plane by triangulation. The Chamberlin trimetric projection is neither conformal nor equal-area. Rather, the projection was conceived to minimize distortion of distances everywhere with the side-effect of balancing between areal equivalence and conformality. This projection is not appropriate for mapping the entire sphere because the outer boundary would loop and overlap itself in most configurations (Wikipedia, Chamberlin Trimetric)</skos:definition>
+	    <rdfs:comment>Type: Azimuthal</rdfs:comment>
+	    <rdfs:comment xml:lang="en">MARC Map format projection code: an</rdfs:comment>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/PolarStereographic">
 		<skos:prefLabel xml:lang="en">Polar Stereographic</skos:prefLabel>
+	    <skos:altfLabel xml:lang="en">Universal polar stereographic (UPS)</skos:altfLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
-        <skos:definition xml:lang="en">Polar stereographic</skos:definition>
-		<rdfs:comment xml:lang="en">MARC Map format projection code: ap</rdfs:comment>
+	    <skos:definition xml:lang="en">The universal polar stereographic (UPS) coordinate system is used in conjunction with the universal transverse Mercator (UTM) coordinate system to locate positions on the surface of the earth. Like the UTM coordinate system, the UPS coordinate system uses a metric-based cartesian grid laid out on a conformally projected surface (Wikipedia, List of Map Projections)</skos:definition>
+	    <rdfs:comment>Type: Azimuthal</rdfs:comment>
+	    <rdfs:comment xml:lang="en">MARC Map format projection code: ap</rdfs:comment>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/AzimuthalSpecificTypeUnknown">
-		<skos:prefLabel xml:lang="en">Azimuthal Specific Type Unknown</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">Azimuthal, Specific Type Unknown</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
-        <skos:definition xml:lang="en">Only the projection type (azimuthal) is known, not the specific projection</skos:definition>
-		<rdfs:comment xml:lang="en">MARC Map format projection code: au</rdfs:comment>
+	    <skos:definition xml:lang="en">Only the projection type (azimuthal) is known, not the specific projection. In standard presentation, azimuthal projections map meridians as straight lines and parallels as complete, concentric circles. They are radially symmetrical. In any presentation (or aspect), they preserve directions from the center point. This means great circles through the central point are represented by straight lines on the map (MARC21; Wikipedia, List of Map Projections)</skos:definition>
+	    <rdfs:comment>Type: Azimuthal</rdfs:comment>
+	    <rdfs:comment xml:lang="en">MARC Map format projection code: au</rdfs:comment>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/AzimuthalOther">
 		<skos:prefLabel xml:lang="en">Azimuthal Other</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
         <skos:definition xml:lang="en">Azimuthal projection for which none of the other defined codes are appropriate</skos:definition>
-		<rdfs:comment xml:lang="en">MARC Map format projection code: az</rdfs:comment>
+	    <rdfs:comment>Type: Azimuthal</rdfs:comment>
+	    <rdfs:comment xml:lang="en">MARC Map format projection code: az</rdfs:comment>
     </owl:Class>
 	
 	<!--Subclasses of CylindricalProjection -->
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Gall">
 		<skos:prefLabel xml:lang="en">Gall</skos:prefLabel>
+	    <skos:prefLabel xml:lang="es">Proyecciones de Gall</skos:prefLabel>
+	    <skos:altfLabel xml:lang="en">Gall stereographic</skos:altfLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
-        <skos:definition xml:lang="en">Gall</skos:definition>
+	    <skos:definition xml:lang="en">(Similar to Braun). Intended to resemble the Mercator while also displaying the poles. Standard parallels at 45°N/S. Braun is horizontally stretched version with scale correct at equator (Wikipedia, List of Map Projections)</skos:definition>
+	    <projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/Compromise"/>
+	    <rdfs:comment>Type: Cylindrical</rdfs:comment>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: ba</rdfs:comment>
     </owl:Class>
+    
+    <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/GallPeters">
+        <skos:prefLabel xml:lang="en">Gall-Peters</skos:prefLabel>
+        <skos:altfLabel xml:lang="en">Gall orthographic</skos:altfLabel>
+        <skos:altfLabel xml:lang="en">Peters</skos:altfLabel>
+        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
+        <skos:definition xml:lang="en">Horizontally compressed version of the Lambert equal-area. Standard parallels at 45°N/S. Aspect ratio of ~1.6. Similar is Balthasart projection with standard parallels at 50°N/S (Wikipedia, List of Map Projections)</skos:definition>
+        <projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/EqualArea"/>
+        <rdfs:comment>Type: Cylindrical</rdfs:comment>
+        <rdfs:comment xml:lang="en">Not included in MARC21</rdfs:comment>
+    </owl:Class>  
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/GoodesHomolographic">
 		<skos:prefLabel xml:lang="en">Goode's Homolographic</skos:prefLabel>
+	    <skos:prefLabel xml:lang="fr">Projection homalographique de Goode</skos:prefLabel>
+	    <skos:prefLabel xml:lang="es">Proyección homalográfica</skos:prefLabel>
+	    <skos:altfLabel xml:lang="en">Goode's homalographic</skos:altfLabel>
+	    <skos:altfLabel xml:lang="en">Goode homolosine</skos:altfLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
-        <skos:definition xml:lang="en">Goode's homalographic</skos:definition>
+	    <skos:definition xml:lang="en">Hybrid of Sinusoidal and Mollweide projections. Usually used in interrupted form (Wikipedia, List of Map Projections)</skos:definition>
+	    <projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/EqualArea"/>
+	    <rdfs:comment>Type: Pseudocylindrical</rdfs:comment>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: bb</rdfs:comment>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/LambertsCylindricalEqualArea">
 		<skos:prefLabel xml:lang="en">Lambert's Cylindrical Equal Area</skos:prefLabel>
+	    <skos:prefLabel xml:lang="fr">Projection cylindrique équivalente de Lambert</skos:prefLabel>
+	    <skos:prefLabel xml:lang="es">Proyección cilíndrica de Lambert</skos:prefLabel>
+	    <skos:altfLabel xml:lang="en">Lambert cylindrical equal area</skos:altfLabel>
+	    <skos:altfLabel xml:lang="fr">Projection isocylindrique</skos:altfLabel>
+	    <skos:altfLabel xml:lang="sp">Proyección isocilíndrica</skos:altfLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
-        <skos:definition xml:lang="en">Lambert's cylindrical equal area</skos:definition>
+	    <skos:definition xml:lang="en">Standard parallel at the equator. Aspect ratio of π (3.14). Base projection of the cylindrical equal-area family (Wikipedia, List of Map Projections)</skos:definition>
+	    <projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/EqualArea"/>
+	    <rdfs:comment>Type: Cylindrical</rdfs:comment>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: bc</rdfs:comment>
     </owl:Class>
     
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Mercator">
 		<skos:prefLabel xml:lang="en">Mercator</skos:prefLabel>
+	    <skos:prefLabel xml:lang="fr">Projection de Mercator</skos:prefLabel>
+	    <skos:prefLabel xml:lang="es">Proyección conforme de Mercator</skos:prefLabel>
+	    <skos:altfLabel xml:lang="en">Equatorial cylindrical orthomorphic map projection</skos:altfLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
-        <skos:definition xml:lang="en">Mercator</skos:definition>
+	    <skos:definition xml:lang="en">Lines of constant bearing (rhumb lines) are straight, aiding navigation. Areas inflate with latitude, becoming so extreme that the map cannot show the poles. The equator is represented by a straight line true to scale; the geographic meridians are represented by parallel straight lines perpendicular to the line representing the equator; they are spaced according to their distance apart at the equator (Wikipedia, List of Map Projections; Dict. of Mapping)</skos:definition>
+	    <projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/Conformal"/>
+	    <rdfs:comment>Type: Cylindrical</rdfs:comment>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: bd</rdfs:comment>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Miller">
 		<skos:prefLabel xml:lang="en">Miller</skos:prefLabel>
+	    <skos:prefLabel xml:lang="fr">Projections cylindriques de Miller</skos:prefLabel>
+	    <skos:prefLabel xml:lang="es">Proyecciones cilíndricas de Miller</skos:prefLabel>
+	    <skos:altfLabel xml:lang="en">Miller’s cylindrical projections</skos:altfLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
-        <skos:definition xml:lang="en">Miller</skos:definition>
+	    <skos:definition xml:lang="en">Intended to resemble the Mercator while also displaying the poles (Wikipedia, List of Map Projections)</skos:definition>
+	    <projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/Compromise"/>
+	    <rdfs:comment>Type: Cylindrical</rdfs:comment>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: be</rdfs:comment>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Mollweide">
 		<skos:prefLabel xml:lang="en">Mollweide</skos:prefLabel>
+	    <skos:prefLabel xml:lang="fr">Projection de Mollweide</skos:prefLabel>
+	    <skos:prefLabel xml:lang="es">Proyección de Mollweide</skos:prefLabel>
+	    <skos:altfLabel xml:lang="en">Elliptical</skos:altfLabel>
+	    <skos:altfLabel xml:lang="en">Babinet</skos:altfLabel>
+	    <skos:altfLabel xml:lang="en">Homolographic</skos:altfLabel>
+	    <skos:altfLabel xml:lang="en">Mollweide homolographic map projection</skos:altfLabel>
+	    <skos:altfLabel xml:lang="fr">Projection homalographique de Babinet</skos:altfLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
-        <skos:definition xml:lang="en">Mollweide</skos:definition>
+	    <skos:definition xml:lang="en">Meridians are ellipses. Central meridian is represented by a straight line, and the meridian 90 degrees from the center is shown as a full circle (Wikipedia, List of Map Projections; Dict. of Mapping)</skos:definition>
+	    <projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/EqualArea"/>
+	    <rdfs:comment>Type: Pseudocylindrical</rdfs:comment>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: bf</rdfs:comment>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Sinusoidal">
 		<skos:prefLabel xml:lang="en">Sinusoidal</skos:prefLabel>
+	    <skos:prefLabel xml:lang="fr">Projection sinusoïdale de Sanson ou de Flamsteed</skos:prefLabel>
+	    <skos:prefLabel xml:lang="es">Proyección sinusoidal de Sanson o de Flamsteed</skos:prefLabel>
+	    <skos:altfLabel xml:lang="en">Sanson-Flamsteed</skos:altfLabel>
+	    <skos:altfLabel xml:lang="en">Mercator equal-area</skos:altfLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
-        <skos:definition xml:lang="en">Sinusoidal</skos:definition>
+	    <skos:definition xml:lang="en">Meridians are sinusoids; parallels are equally spaced. Aspect ratio of 2:1. Distances along parallels are conserved (Wikipedia, List of Map Projections)</skos:definition>
+	    <projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/EqualArea"/>
+	    <projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/Equidistant"/>
+	    <rdfs:comment>Type: Pseudocylindrical</rdfs:comment>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: bg</rdfs:comment>  
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/TransverseMercator">
-		<skos:prefLabel xml:lang="en">Transverse Mercator></skos:prefLabel>
+		<skos:prefLabel xml:lang="en">Transverse Mercator</skos:prefLabel>
+	    <skos:prefLabel xml:lang="fr">Projection de Mercator transverse</skos:prefLabel>
+	    <skos:prefLabel xml:lang="es">Proyección Mercator transversa</skos:prefLabel>
+	    <skos:altfLabel xml:lang="fr">Projection cylindrique conforme de Lambert</skos:altfLabel>
+	    <skos:altfLabel xml:lang="fr">Projection de Gauss</skos:altfLabel>
+	    <skos:altfLabel xml:lang="fr">Projection de Gauss-Krüger</skos:altfLabel>
+	    <skos:altfLabel xml:lang="fr">Projection de Gauss-Schreiber</skos:altfLabel>
+	    <skos:altfLabel xml:lang="fr">Projection de Gauss-Boaga</skos:altfLabel>
+	    <skos:altfLabel xml:lang="es">Proyección de Gauss-Krüger</skos:altfLabel>
+	    <owl:sameAs>GaussKruger</owl:sameAs>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
-        <skos:definition xml:lang="en">Transverse Mercator</skos:definition>
+	    <skos:definition xml:lang="en">This transverse, ellipsoidal form of the Mercator is finite, unlike the equatorial Mercator. Forms the basis of the Universal Transverse Mercator coordinate system (Wikipedia, List of Map Projections)</skos:definition>
+	    <projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/Conformal"/>
+	    <rdfs:comment>Type: Cylindrical</rdfs:comment>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: bh</rdfs:comment>    
     </owl:Class>
-	
-	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/GaussKruger">
-		<skos:prefLabel xml:lang="en">Gauss-Kruger</skos:prefLabel>
+    
+    <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/GaussKruger">
+        <skos:prefLabel xml:lang="en">Gauss-Kruger</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Projection de Mercator transverse</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">Proyección Mercator transversa</skos:prefLabel>
+        <skos:altfLabel xml:lang="fr">Projection cylindrique conforme de Lambert</skos:altfLabel>
+        <skos:altfLabel xml:lang="fr">Projection de Gauss</skos:altfLabel>
+        <skos:altfLabel xml:lang="fr">Projection de Gauss-Krüger</skos:altfLabel>
+        <skos:altfLabel xml:lang="fr">Projection de Gauss-Schreiber</skos:altfLabel>
+        <skos:altfLabel xml:lang="fr">Projection de Gauss-Boaga</skos:altfLabel>
+        <skos:altfLabel xml:lang="es">Proyección de Gauss-Krüger</skos:altfLabel>
+        <owl:sameAs>TransverseMercator</owl:sameAs>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
-        <skos:definition xml:lang="en">Gauss-Kruger</skos:definition>
-		<rdfs:comment xml:lang="en">MARC Map format projection code: bi</rdfs:comment>  
+        <skos:definition xml:lang="en">This transverse, ellipsoidal form of the Mercator is finite, unlike the equatorial Mercator. Forms the basis of the Universal Transverse Mercator coordinate system (Wikipedia, List of Map Projections)</skos:definition>
+        <projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/Conformal"/>
+        <rdfs:comment>Type: Cylindrical</rdfs:comment>
+        <rdfs:comment xml:lang="en">MARC Map format projection code: bi</rdfs:comment>    
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Equirectangular">
 		<skos:prefLabel xml:lang="en">Equirectangular</skos:prefLabel>
+	    <skos:prefLabel xml:lang="fr">Projection des cartes plates carrées</skos:prefLabel>
+	    <skos:prefLabel xml:lang="es">Proyección plana cuadrada</skos:prefLabel>
+	    <skos:altfLabel xml:lang="en">Equidistant cylindrical</skos:altfLabel>
+	    <skos:altfLabel xml:lang="en">Rectangular</skos:altfLabel>
+	    <skos:altfLabel xml:lang="en">Cylindrical equidistant</skos:altfLabel>
+	    <skos:altfLabel xml:lang="fr">La carte parallélogrammatique</skos:altfLabel>
+	    <skos:altfLabel xml:lang="fr">Plate carrée</skos:altfLabel>
+	    <skos:altfLabel xml:lang="fr">Cylindrique équidistante carrée</skos:altfLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
-        <skos:definition xml:lang="en">Equirectangular></skos:definition>
+	    <skos:definition xml:lang="en">Simplest geometry; distances along meridians are conserved. Plate carrée: special case having the equator as the standard parallel (Wikipedia, List of Map Projections)</skos:definition>
+	    <projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/Equidistant"/>
+	    <rdfs:comment>Type: Cylindrical</rdfs:comment>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: bj</rdfs:comment> 
-    </owl:Class>
-	
-	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Krovak">
-		<skos:prefLabel xml:lang="en">Krovak</skos:prefLabel>
-        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
-        <skos:definition xml:lang="en">Krovak</skos:definition>
-		<rdfs:comment xml:lang="en">MARC Map format projection code: bk</rdfs:comment>  
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/CassiniSoldner">
 		<skos:prefLabel xml:lang="en">Cassini-Soldner</skos:prefLabel>
+	    <skos:prefLabel xml:lang="fr">Projection de Cassini</skos:prefLabel>
+	    <skos:prefLabel xml:lang="es">Proyección de Cassini</skos:prefLabel>
+	    <skos:altfLabel xml:lang="en">Cassini</skos:altfLabel>
+	    <skos:altfLabel xml:lang="fr">Projection des cartes plates carrées transverses</skos:altfLabel>
+	    <skos:altfLabel xml:lang="fr">Projection de Soldner</skos:altfLabel>
+	    <skos:altfLabel xml:lang="fr">Coordonnées orthogonales de Hatt</skos:altfLabel>
+	    <skos:altfLabel xml:lang="es">Proyección de mapas planos</skos:altfLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
-        <skos:definition xml:lang="en">Cassini-Soldner</skos:definition>
+	    <skos:definition xml:lang="en">Transverse of equidistant projection; distances along central meridian are conserved. Distances perpendicular to central meridian are preserved (Wikipedia, List of Map Projections)</skos:definition>
+	    <projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/Equidistant"/>
+	    <rdfs:comment>Type: Cylindrical</rdfs:comment>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: bl</rdfs:comment>  
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ObliqueMercator">
 		<skos:prefLabel xml:lang="en">Oblique Mercator</skos:prefLabel>
+	    <skos:altfLabel xml:lang="en">Oblique cylindrical orthomorphic projection</skos:altfLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
-        <skos:definition xml:lang="en">Oblique Mercator</skos:definition>
+	    <skos:definition xml:lang="en">Points on the surface of a sphere or spheroid are conceived as developed by Mercator principles on a cylindrical tangent along an oblique great circle (Wikipedia, List of Map Projections)</skos:definition>
+	    <projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/Conformal"/>
+	    <rdfs:comment>Type: Cylindrical</rdfs:comment>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: bo</rdfs:comment>   
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Robinson">
 		<skos:prefLabel xml:lang="en">Robinson</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
-        <skos:definition xml:lang="en">Robinson</skos:definition>
+	    <skos:definition xml:lang="en">Computed by interpolation of tabulated values. Used by Rand McNally since inception and used by NGS 1988–98 (Wikipedia, List of Map Projections)</skos:definition>
+	    <projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/Compromise"/>
+	    <rdfs:comment>Type: Pseudocylindrical</rdfs:comment>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: br</rdfs:comment>  
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/SpaceObliqueMercator">
 		<skos:prefLabel xml:lang="en">Space Oblique Mercator</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
-        <skos:definition xml:lang="en">Space oblique Mercator</skos:definition>
+	    <skos:definition xml:lang="en">The space-oblique Mercator projection provides continual conformal mapping of the swath sensed by a satellite. Scale is true along the ground track, varying 0.01 percent within the normal sensing range of the satellite. Conformality is correct within a few parts per million for the sensing range. Distortion is essentially constant along lines of constant distance parallel to the ground track. SOM is the only projection presented that takes the rotation of Earth into account (Wikipedia, Space-oblique Mercator projection)</skos:definition>
+	    <projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/Conformal"/>
+	    <rdfs:comment>Type: Modified cylindrical</rdfs:comment>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: bs</rdfs:comment>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/CylindricalSpecificTypeUnknown">
 		<skos:prefLabel xml:lang="en">Cylindrical Specific Type Unknown</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
-        <skos:definition xml:lang="en">Only the projection type (cylindrical) is known, not the specific projection</skos:definition>
+	    <skos:definition xml:lang="en">Only the projection type (cylindrical) is known, not the specific projection. In standard presentation, these map regularly-spaced meridians to equally spaced vertical lines, and parallels to horizontal lines. A map projection produced by projecting the geographic meridians and parallels onto a cylinder which is tangent to (or intersects) the surface of a sphere, and then developing the cylinder into a plane (MARC21; Wikipedia, List of Map Projections; Dict. of Mapping)</skos:definition>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: bu</rdfs:comment> 
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/CylindricalOther">
 		<skos:prefLabel xml:lang="en">Cylindrical Other</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
-        <skos:definition xml:lang="en">Cylindrical projection for which none of the other defined codes are appropriate</skos:definition>
+        <skos:definition xml:lang="en">Cylindrical projection for which none of the other defined codes are appropriate (MARC21)</skos:definition>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: bz</rdfs:comment>   
     </owl:Class>
 	
 	<!--Subclasses of ConicalProjection -->
 	
-	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/AlbersEqualArea">
+		<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/AlbersEqualArea">
 		<skos:prefLabel xml:lang="en">Albers Equal Area</skos:prefLabel>
+		<skos:prefLabel xml:lang="fr">projection conique équivalente d'Albers</skos:prefLabel>
+		<skos:prefLabel xml:lang="es">proyección cónica secante equivalente de Albers</skos:prefLabel>
+		<skos:altLabel xml:lang="en">Albers conic</skos:altLabel>
+		<skos:altLabel xml:lang="en">Albers conical equal-area map projection</skos:altLabel>
+		<skos:altLabel xml:lang="fr">projection d’Albers</skos:altLabel>
+		<skos:altLabel xml:lang="fr">tronconique  équivalente</skos:altLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/ConicalProjection"/>
-        <skos:definition xml:lang="en">Albers equal area</skos:definition>
+        <skos:definition xml:lang="en">Two standard parallels with low distortion between them (Wikipedia, List of Map Projections). The meridians are straight lines that meet in a common point beyond the limits of the map, and the parallels are concentric circles whose center is at the point of intersection of the meridians (Dict. of Mapping)</skos:definition>
+		<projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/EqualArea"/>
+		<rdfs:comment>Type: Conic</rdfs:comment>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: ca</rdfs:comment> 
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Bonne">
 		<skos:prefLabel xml:lang="en">Bonne</skos:prefLabel>
+		<skos:altLabel xml:lang="en">Bonne’s projection</skos:altLabel>
+		<skos:altLabel xml:lang="fr">projection de Bonne</skos:altLabel>
+		<skos:altLabel xml:lang="fr">projection dite de Bonne</skos:altLabel>
+		<skos:altLabel xml:lang="fr">projection du Dépôt de la Guerre</skos:altLabel>
+		<skos:altLabel xml:lang="fr">projection de la Carte de France</skos:altLabel>
+		<skos:altLabel xml:lang="fr">projection de Flamsteed modifiée</skos:altLabel>
+		<skos:altLabel xml:lang="es">proyección de Bonne</skos:altLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/ConicalProjection"/>
-        <skos:definition xml:lang="en">Bonne</skos:definition>
+		<rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Cordiform"/>
+        <skos:definition xml:lang="en">Parallels are equally spaced circular arcs and standard lines. Appearance depends on reference parallel. General case of both Werner and sinusoidal (Wikipedia List of Map Projections)</skos:definition>
+		<projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/EqualArea"/>
+		<rdfs:comment>Type: Pseudoconical, cordiform</rdfs:comment>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: cb</rdfs:comment>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/LambertsConformalConic">
 		<skos:prefLabel xml:lang="en">Lambert's Conformal Conic</skos:prefLabel>
+		<skos:altLabel xml:lang="en">Lambert conformal conic</skos:altLabel>
+		<skos:altLabel xml:lang="en">Conformal conical projection with one standard parallel (Lambert)</skos:altLabel>
+		<skos:altLabel xml:lang="en">Conformal conical projection with two standard parallels (Lambert)</skos:altLabel>
+		<skos:altLabel xml:lang="fr">projection conique conforme de Lambert (projection à cône tangent)</skos:altLabel>
+		<skos:altLabel xml:lang="fr">projection conique conforme de Lambert (projection à cône sécant)</skos:altLabel>
+		<skos:altLabel xml:lang="es">proyección cónica tangente conforme de Lambert</skos:altLabel>
+		<skos:altLabel xml:lang="es">proyección cónica secamte conforme de Lambert</skos:altLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/ConicalProjection"/>
-        <skos:definition xml:lang="en">Lambert's conformal conic</skos:definition>
+        <skos:definition xml:lang="en">All geographic meridians are represented by straight lines which meet in a common point outside the limits of the map, and the geographic parallels are represented by a series of arcs of circles having this common point for a center (Dict. of Mapping). Used in aviation charts (Wikipedia, List of Map Projections)</skos:definition>
+		<projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/Conformal"/>
+		<rdfs:comment>Type: Conic</rdfs:comment>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: cc</rdfs:comment>    
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/EquidistantConic">
 		<skos:prefLabel xml:lang="en">Equidistant Conic</skos:prefLabel>
+		<skos:altLabel xml:lang="en">Simple conic</skos:altLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/ConicalProjection"/>
-        <skos:definition xml:lang="en">Equidistant conic</skos:definition>
+        <skos:definition xml:lang="en">Distances along meridians are conserved, as is distance along one or two standard parallels (Wikipedia, List of Map Projections)</skos:definition>
+		<projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/Equidistant"/>
+		<rdfs:comment>Type: Conic</rdfs:comment>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: ce</rdfs:comment>    
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Polyconic">
 		<skos:prefLabel xml:lang="en">Polyconic</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/ConicalProjection"/>
-        <skos:definition xml:lang="en">Polyconic</skos:definition>
+        <skos:definition xml:lang="en">A map projection having the central geographic meridian represented by a straight line, along which the spacing for lines representing the geographic parallels is proportional to the distances between the parallels: the parallels are represented by arcs of circles which are not concentric, but whose centers lie on the line representing the central meridian, and whose radii are determined by the lengths of the elements of cones which are tangent along the parallels.  All meridians except the central ones are curved.  The projection is neither conformal nor equal area, but it has been widely used for maps of small areas because of the ease with which it can be constructed (Dict. of mapping)
+		</skos:definition>
+		<rdfs:comment>Type: Pseudoconical</rdfs:comment>
+		<projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/Compromise"/>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: cp</rdfs:comment>    
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ConicSpecificTypeUnknown">
 		<skos:prefLabel xml:lang="en">Conic Specific Type Unknown</skos:prefLabel>
+		<skos:altLabel xml:lang="en">Tangent conical map projection</skos:altLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/ConicalProjection"/>
-        <skos:definition xml:lang="en">Only the projection type (conic) is known, not the specific projection</skos:definition>
+        <skos:definition xml:lang="en">Only the projection type (conic) is known, not the specific projection (MARC21). A map projection produced by projecting the geographic meridians and parallels onto a cone which is tangent to (or intersects) the surface of a sphere, and then developing the cone into a plane (Dict. of mapping). In standard presentation, conic (or conical) projections map meridians as straight lines, and parallels as arcs of circles (Wikipedia, List of Map Projections).</skos:definition>
+		<rdfs:comment>Type: Pseudoconical</rdfs:comment>
+		<projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/Compromise"/>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: cu</rdfs:comment>    
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ConicOther">
 		<skos:prefLabel xml:lang="en">Conic Other</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/ConicalProjection"/>
-        <skos:definition xml:lang="en">Conic projection for which none of the other defined codes are appropriate</skos:definition>
+        <skos:definition xml:lang="en">Conic projection for which none of the other defined codes are appropriate (MARC21)</skos:definition>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: cz</rdfs:comment>    
     </owl:Class>
 	
@@ -1118,29 +1302,44 @@ Non-English language terms taken from: Multilingual dictionary of technical term
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Armadillo">
 		<skos:prefLabel xml:lang="en">Armadillo</skos:prefLabel>
+		<skos:altLabel xml:lang="es">proyección en forma de armadillo</skos:altLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/UnclassifiedProjection"/>
-        <skos:definition xml:lang="en">Armadillo</skos:definition>
+        <skos:definition xml:lang="en">A map projection used for world maps. It is neither conformal nor equal-area but instead affords a view evoking a perspective projection while showing most of the globe instead of the half or less that a perspective would (Wikipedia, Armadillo projection)</skos:definition>
+		<rdfs:comment>Type: Other</rdfs:comment>
+		<projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/Compromise"/>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: da</rdfs:comment>    
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Butterfly">
 		<skos:prefLabel xml:lang="en">Butterfly</skos:prefLabel>
+		<skos:altLabel xml:lang="en">Waterman butterfly projection</skos:altLabel>
+		<skos:altLabel xml:lang="en">Cahill's butterfly map</skos:altLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/UnclassifiedProjection"/>
-        <skos:definition xml:lang="en">Butterfly</skos:definition>
+        <skos:definition xml:lang="en">Projects the globe onto a truncated octahedron with symmetrical components and contiguous land masses that may be displayed in various arrangements. (Wikipedia, List of Map Projections)</skos:definition>
+		<rdfs:comment>Type: Polyhedral</rdfs:comment>
+		<projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/Compromise"/>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: db</rdfs:comment>    
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Eckert">
 		<skos:prefLabel xml:lang="en">Eckert</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/UnclassifiedProjection"/>
-        <skos:definition xml:lang="en">Eckert</skos:definition>
+        <skos:definition xml:lang="en">Eckert developed six projections. The latitudes are parallel lines in all six projections. The projections come in pairs; in the odd-numbered projections, the latitudes are equally spaced, while their even-numbered counterparts are equal-area.  The three pairs are distinguished by the shapes of the meridians. Eckert I and Eckert II have rectilinear (straight-line) meridians, meeting at the equator at an angle. In Eckert III and Eckert IV, meridians are elliptical, while in Eckert V and Eckert VI, they are sinusoidal (Wikipedia, Eckert projection)</skos:definition>
+		<rdfs:comment>Type: Pseudocylindrical</rdfs:comment>
+		<projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/EqualArea"/>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: dc</rdfs:comment>    
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/GoodesHomolosine">
 		<skos:prefLabel xml:lang="en">Goode's Homolosine</skos:prefLabel>
+		<skos:altLabel xml:lang="en">Goode’s homalographic projection</skos:altLabel>
+		<skos:altLabel xml:lang="en">Homalographic projection</skos:altLabel>
+		<skos:altLabel xml:lang="fr">projection homalographique de Goode</skos:altLabel>
+		<skos:altLabel xml:lang="es">proyección homalográfica de Goode</skos:altLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/UnclassifiedProjection"/>
-        <skos:definition xml:lang="en">Goode's homolosine</skos:definition>
+        <skos:definition xml:lang="en">Hybrid of Sinusoidal and Mollweide projections. Usually used in interrupted form (Wikipedia, List of Map Projections)</skos:definition>
+		<rdfs:comment>Type: Pseudocylindrical</rdfs:comment>
+		<projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/EqualArea"/>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: dd</rdfs:comment>    
     </owl:Class>
 	
@@ -1153,35 +1352,55 @@ Non-English language terms taken from: Multilingual dictionary of technical term
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/VanDerGrinten">
 		<skos:prefLabel xml:lang="en">Van Der Grinten</skos:prefLabel>
+		<skos:altLabel xml:lang="es">proyección de Van der Grinten</skos:altLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/UnclassifiedProjection"/>
-        <skos:definition xml:lang="en">Van Der Grinten</skos:definition>
+        <skos:definition xml:lang="en">Boundary is a circle. All parallels and meridians are circular arcs. Usually clipped near 80°N/S. Standard world projection of the NGS 1922–88 (Wikipedia, List of Map Projections). Van der Grinten has four projections: I, II, III, and IV</skos:definition>
+		<rdfs:comment>Type: Other</rdfs:comment>
+		<projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/Compromise"/>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: df</rdfs:comment>    
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Dimaxion">
 		<skos:prefLabel xml:lang="en">Dimaxion</skos:prefLabel>
+		<skos:altLabel xml:lang="en">Dimaxion map</skos:altLabel>
+		<skos:altLabel xml:lang="en">Fuller map</skos:altLabel>
+		<skos:altLabel xml:lang="en">Dymaxion projection</skos:altLabel>
+		<skos:altLabel xml:lang="es">proyección Dymaxion</skos:altLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/UnclassifiedProjection"/>
-        <skos:definition xml:lang="en">Dimaxion</skos:definition>
+        <skos:definition xml:lang="en">The Dymaxion map or Fuller map is a projection of a world map onto the surface of an icosahedron, which can be unfolded and flattened to two dimensions. The flat map is heavily interrupted in order to preserve shapes and sizes. The projection was invented by Buckminster Fuller. The Dymaxion projection is intended only for representations of the entire globe (Wikipedia, Dymaxion map)</skos:definition>
+		<rdfs:comment>Type: Polyhedral</rdfs:comment>
+		<projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/Compromise"/>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: dg</rdfs:comment>    
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Cordiform">
 		<skos:prefLabel xml:lang="en">Cordiform</skos:prefLabel>
+		<skos:altLabel xml:lang="en">Werner’s projection</skos:altLabel>
+		<skos:altLabel xml:lang="fr">projection de Werner</skos:altLabel>
+		<skos:altLabel xml:lang="es">proyección equivalente de Werner</skos:altLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/UnclassifiedProjection"/>
-        <skos:definition xml:lang="en">Cordiform</skos:definition>
+        <skos:definition xml:lang="en">Distances from the North Pole are correct as are the curved distances along parallels and distances along central meridian (Wikipedia, List of Map Projections). Heart-shaped.</skos:definition>
+		<rdfs:comment>Type: Pseudoconical</rdfs:comment>
+		<projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/EqualArea"/>
+		<projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/Equidistant"/>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: dh</rdfs:comment>    
     </owl:Class>
+
 	
-	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/LambertConformal">
-		<skos:prefLabel xml:lang="en">Lambert Conformal</skos:prefLabel>
-        <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/UnclassifiedProjection"/>
-        <skos:definition xml:lang="en">Lambert conformal</skos:definition>
-		<rdfs:comment xml:lang="en">MARC Map format projection code: dl</rdfs:comment>    
+	
+	
+	<!-- Class http://id.loc.gov/ontologies/bibframe/Projection
+    Adding classes related to projections -->
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ProjectionPreservationProperty">
+		<skos:prefLabel xml:lang="en">Projection Preservation Property</skos:prefLabel>
+        <skos:definition xml:lang="en">Projection Preservation Property</skos:definition>
     </owl:Class>
+	
 	
 	<!-- Subclass of http://id.loc.gov/ontologies/bibframe/Source -->
     
-    <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/CartSource">
+    <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/">
         <skos:prefLabel xml:lang="en">Cartographic Data Source</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
         <skos:definition xml:lang="en">Identifies the source for mathematical cartographic data,including scale, projection, and/or coordinates</skos:definition>
@@ -1198,6 +1417,13 @@ Non-English language terms taken from: Multilingual dictionary of technical term
         <skos:prefLabel xml:lang="en">Is Projection of</skos:prefLabel>
         <owl:inverseOf rdf:resource="http://id.loc.gov/ontologies/bibframe/projection"/>
     </owl:ObjectProperty>    
+	
+	<owl:ObjectProperty rdf:about="http://ontology.library.harvard.edu/geo/projectionPreservationProperty">
+        <skos:prefLabel xml:lang="en">Has projection preservation property</skos:prefLabel>
+        <skos:definition xml:lang="en">Geometric characteristic that the map projection attempts to preserve</skos:definition>
+		<rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
+		<rdfs:range rdf:resource="http://ontology.library.harvard.edu/geo/projectionPreservationProperty"/>
+    </owl:ObjectProperty>
 	
 	<owl:ObjectProperty rdf:about="http://ontology.library.harvard.edu/geo/scaleAccuracy">
 	    <skos:prefLabel xml:lang="en">Has scale accuracy</skos:prefLabel>
@@ -1415,6 +1641,56 @@ Non-English language terms taken from: Multilingual dictionary of technical term
 	    <dcterms:issued></dcterms:issued>
 	    <dcterms:modified></dcterms:modified>
     </owl:NamedIndividual>
+	
+	<!-- Type http://ontology.library.harvard.edu/geo/ProjectionPreservationProperty
+    Individuals of type  projectionPreservationProperty -->
+
+	<owl:NamedIndividual rdf:about="http://ontology.library.harvard.edu/geo/Compromise">
+        <rdf:type rdf:resource="http://ontology.library.harvard.edu/geo/ProjectionPreservationProperty"/>
+        <skos:prefLabel xml:lang="en">Compromise map projection</skos:prefLabel>
+        <skos:definition xml:lang="en">Neither conformal nor equal-area, but a balance intended to reduce overall distortion (Wikipedia, List of Map Projections)</skos:definition>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="http://ontology.library.harvard.edu/geo/Conformal">
+        <rdf:type rdf:resource="http://ontology.library.harvard.edu/geo/ProjectionPreservationProperty"/>
+        <skos:prefLabel xml:lang="en">Conformal map projection</skos:prefLabel>
+        <skos:definition xml:lang="en">Preserves angles locally, implying that local shapes are not distorted (Wikipedia, List of Map Projections)</skos:definition>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://ontology.library.harvard.edu/geo/EqualArea">
+        <rdf:type rdf:resource="http://ontology.library.harvard.edu/geo/ProjectionPreservationProperty"/>
+        <skos:prefLabel xml:lang="en">Equal area map projection</skos:prefLabel>
+        <skos:definition xml:lang="en">Areas are conserved (Wikipedia, List of Map Projections)</skos:definition>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:NamedIndividual>
+
+	<owl:NamedIndividual rdf:about="http://ontology.library.harvard.edu/geo/Equidistant">
+        <rdf:type rdf:resource="http://ontology.library.harvard.edu/geo/ProjectionPreservationProperty"/>
+        <skos:prefLabel xml:lang="en">Equidistant map projection</skos:prefLabel>
+        <skos:definition xml:lang="en">All distances from one (or two) points are correct. Other equidistant properties are mentioned in the notes (Wikipedia, List of Map Projections)</skos:definition>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://ontology.library.harvard.edu/geo/Gnomonic">
+        <rdf:type rdf:resource="http://ontology.library.harvard.edu/geo/ProjectionPreservationProperty"/>
+        <skos:prefLabel xml:lang="en">Gnomonic map projection</skos:prefLabel>
+        <skos:definition xml:lang="en">Displays all great circles as straight lines, resulting in any straight line segment on a gnomonic map showing a geodesic, the shortest route between the segment's two endpoints (Wikipedia, Gnomonic Projection)</skos:definition>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://ontology.library.harvard.edu/geo/Perspective">
+        <rdf:type rdf:resource="http://ontology.library.harvard.edu/geo/ProjectionPreservationProperty"/>
+        <skos:prefLabel xml:lang="en">Perspective map projection</skos:prefLabel>
+        <skos:definition xml:lang="en">When the Earth is photographed from space, the camera records the view as a perspective projection. If the camera precisely faces the center of the Earth, the projection is Vertical Perspective. Otherwise, a Tilted Perspective projection is obtained (Wikipedia, General Perspective projection)</skos:definition>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:NamedIndividual>
 		
 </rdf:RDF>
-
