@@ -1432,7 +1432,7 @@ Non-English language terms taken from: Multilingual dictionary of technical term
         <skos:prefLabel xml:lang="en">Has projection preservation property</skos:prefLabel>
         <skos:definition xml:lang="en">Geometric characteristic that the map projection attempts to preserve</skos:definition>
 		<rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
-		<rdfs:range rdf:resource="http://ontology.library.harvard.edu/geo/projectionPreservationProperty"/>
+		<rdfs:range rdf:resource="http://ontology.library.harvard.edu/geo/ProjectionPreservationProperty"/>
     </owl:ObjectProperty>
 	
 	<owl:ObjectProperty rdf:about="http://ontology.library.harvard.edu/geo/scaleAccuracy">
