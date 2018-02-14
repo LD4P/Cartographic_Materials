@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <!-- 
     WARNING:  THIS IS A WORKING DRAFT ONTOLOGY AND STILL UNDER DEVELOPMENT, this file will change frequently and significantly as development continues
@@ -46,6 +47,7 @@ LCGFT (Library of Congress Genre/Form Terms (fields 670 or 680))
 MARC21 (Format for Bibliographic Data: 008 Maps)
 MiniatureMaps.net
 NOAA (What is Bathymetry? https://oceanservice.noaa.gov/facts/bathymetry.html)
+RDA (Resource Description & Access)
 SWML (Sound Waves : Monthly Newsletter, October 2009, https://soundwaves.usgs.gov/2009/10/research.html)
 Wikimedia Commons
 Wikipedia
@@ -77,21 +79,21 @@ Non-English language terms taken from: Multilingual dictionary of technical term
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/CartographicModels">
-	    <skos:prefLabel xml:lang="en">Cartographic Models</skos:prefLabel>
+	    <skos:prefLabel xml:lang="en">Cartographic models</skos:prefLabel>
 	    <skos:altLabel xml:lang="en">Models, Cartographic</skos:altLabel>
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Cartography"/>
         <skos:definition xml:lang="en">A general category which denotes any three-dimensional representation of an object or geographic area, modeled in any size or medium [not including globes]</skos:definition>
     </owl:Class>
 		
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/AstronomicalModels">
-	    <skos:prefLabel xml:lang="en">Astronomical Models</skos:prefLabel>
+	    <skos:prefLabel xml:lang="en">Astronomical models</skos:prefLabel>
 	    <skos:altLabel xml:lang="en">Models, Astronomical</skos:altLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CartographicModels"/>
         <skos:definition xml:lang="en">Astronomical models</skos:definition>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ReliefModels">
-	    <skos:prefLabel xml:lang="en">Relief Models</skos:prefLabel>
+	    <skos:prefLabel xml:lang="en">Relief models</skos:prefLabel>
 	    <skos:altLabel xml:lang="en">3-D topographic maps</skos:altLabel>
 	    <skos:altLabel xml:lang="en">3-D topographical maps</skos:altLabel>
 	    <skos:altLabel xml:lang="en">3D topographic maps</skos:altLabel>
@@ -107,7 +109,7 @@ Non-English language terms taken from: Multilingual dictionary of technical term
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/CartographicProfiles">
-	    <skos:prefLabel xml:lang="en">Cartographic Profiles</skos:prefLabel>
+	    <skos:prefLabel xml:lang="en">Cartographic profiles</skos:prefLabel>
 	    <skos:altLabel xml:lang="en">Profiles</skos:altLabel>
 	    <skos:altLabel xml:lang="en">Profiles, Cartographic</skos:altLabel>
 	    <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Cartography"/>
@@ -115,14 +117,14 @@ Non-English language terms taken from: Multilingual dictionary of technical term
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/CartographicSections">
-	    <skos:prefLabel xml:lang="en">Cartographic Sections</skos:prefLabel>
+	    <skos:prefLabel xml:lang="en">Cartographic sections</skos:prefLabel>
 	    <skos:altLabel xml:lang="en">Sections, Cartographic</skos:altLabel>
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Cartography"/>
         <skos:definition xml:lang="en">A scale representation of a vertical surface (commonly a plane) displaying both the profile where it intersects the surface of the ground, or some conceptual model, and the underlying structures along the plane of intersection (e.g. a geologic section) (AACR2 mod.)</skos:definition>
     </owl:Class>
 		
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/GeologicalCrossSections">
-	    <skos:prefLabel xml:lang="en">Geological Cross-sections</skos:prefLabel>
+	    <skos:prefLabel xml:lang="en">Geological cross-sections</skos:prefLabel>
 	    <skos:altLabel xml:lang="en">Cross-sections, Geological</skos:altLabel>
 	    <skos:altLabel xml:lang="en">Geological cross-sections</skos:altLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CartographicSections"/>
@@ -130,14 +132,14 @@ Non-English language terms taken from: Multilingual dictionary of technical term
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/CartographicViews">
-	    <skos:prefLabel xml:lang="en">Cartographic Views</skos:prefLabel>
+	    <skos:prefLabel xml:lang="en">Cartographic views</skos:prefLabel>
 	    <skos:altLabel xml:lang="en">Views, Cartographic</skos:altLabel>
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Cartography"/>
         <skos:definition xml:lang="en">A perspective representation of cities or landscapes</skos:definition>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/AerialViews">
-	    <skos:prefLabel xml:lang="en">Aerial Views</skos:prefLabel>
+	    <skos:prefLabel xml:lang="en">Aerial views</skos:prefLabel>
 	    <skos:altLabel xml:lang="en">Bird's-eye views</skos:altLabel>
 	    <skos:altLabel xml:lang="en">Overhead views</skos:altLabel>
 	    <skos:altLabel xml:lang="en">Views, Aerial</skos:altLabel>
@@ -153,33 +155,33 @@ Non-English language terms taken from: Multilingual dictionary of technical term
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/WormsEyeViews">
-	    <skos:prefLabel xml:lang="en">Worm's Eye Views</skos:prefLabel>
-	    <skos:altLabel xml:lang="en">Views, Worm's Eye</skos:altLabel>
+	    <skos:prefLabel xml:lang="en">Worm's-eye views</skos:prefLabel>
+	    <skos:altLabel xml:lang="en">Views, Worm's-eye</skos:altLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CartographicViews"/>
         <skos:definition xml:lang="en">Representations of cities or landscapes portrayed as if viewed from a very low viewpoint (LCGFT)</skos:definition>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/DigitalCartographicResources">
-	    <skos:prefLabel xml:lang="en">Digital Cartographic Resources</skos:prefLabel>
+	    <skos:prefLabel xml:lang="en">Digital cartographic resources</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Cartography"/>
         <skos:definition xml:lang="en">Digital cartographic resource</skos:definition>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ScannedCartographicResources">
-	    <skos:prefLabel xml:lang="en">Scanned Cartographic Resources</skos:prefLabel>
+	    <skos:prefLabel xml:lang="en">Scanned cartographic resources</skos:prefLabel>
 	    <skos:altLabel xml:lang="en">Scanned maps</skos:altLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/DigitalCartographicResources"/>
         <skos:definition xml:lang="en">An analog resources that has been scanned for digital viewing as a static/non-interactive image</skos:definition>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/StaticDigitalCartographicResources">
-	    <skos:prefLabel xml:lang="en">Static Digital Cartographic Resources</skos:prefLabel>
+	    <skos:prefLabel xml:lang="en">Static digital cartographic resources</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/DigitalCartographicResources"/>
         <skos:definition xml:lang="en">Born-digital cartographic resource that is static</skos:definition>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/InteractiveDigitalCartographicResources">
-	    <skos:prefLabel xml:lang="en">Interactive Digital Cartographic Resources</skos:prefLabel>
+	    <skos:prefLabel xml:lang="en">Interactive digital cartographic resources</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/DigitalCartographicResources"/>
         <skos:definition xml:lang="en">Born-digital cartographic resource that is interactive</skos:definition>
     </owl:Class>
@@ -203,33 +205,33 @@ Non-English language terms taken from: Multilingual dictionary of technical term
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/GeospatialDigitalData">
-	    <skos:prefLabel xml:lang="en">Geospatial Digital Data</skos:prefLabel>
+	    <skos:prefLabel xml:lang="en">Geospatial digital data</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Cartography"/>
         <skos:definition xml:lang="en">Digital geospatial data</skos:definition>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/VectorData">
-	    <skos:prefLabel xml:lang="en">Vector Data</skos:prefLabel>
+	    <skos:prefLabel xml:lang="en">Vector data</skos:prefLabel>
 	    <skos:altLabel xml:lang="en">Vector maps</skos:altLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/GeospatialDigitalData"/>
         <skos:definition xml:lang="en">A data structure used to represent linear geographic features. Features are made of ordered lists of x, y or x, y, z coordinates and are represented by points, lines, or polygons; points connect to become lines, and lines connect to become polygons. Attributes are associated with each feature (LCGFT)</skos:definition>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/RasterData">
-	    <skos:prefLabel xml:lang="en">Raster Data</skos:prefLabel>
+	    <skos:prefLabel xml:lang="en">Raster data</skos:prefLabel>
 	    <skos:altLabel xml:lang="en">Raster maps</skos:altLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/GeospatialDigitalData"/>
         <skos:definition xml:lang="en">Data that are based on a cellular grid structure composed of rows and columns (a raster). Each grid cell or pixel is referenced by an x, y coordinate and is stored as an identifier to which additional attributes may be attached. Groups of cells with the same value represent map features (LCGFT)</skos:definition>
 	</owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/GeoreferencedCartographicResources">
-	    <skos:prefLabel xml:lang="en">Georeferenced Cartographic Resources</skos:prefLabel>
+	    <skos:prefLabel xml:lang="en">Georeferenced cartographic resources</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/GeospatialDigitalData"/>
         <skos:definition xml:lang="en">A scanned, paper map or cartographic resource that has been fit to real world coordinates using a GIS and is enabled for spatial display in a digital environment</skos:definition>
 	</owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/GeospatialDatabases">
-	    <skos:prefLabel xml:lang="en">Geospatial Databases</skos:prefLabel>
+	    <skos:prefLabel xml:lang="en">Geospatial databases</skos:prefLabel>
 	    <skos:altLabel xml:lang="en">Digital geographical databases</skos:altLabel>
 	    <skos:altLabel xml:lang="en">GDBs (Geodatabases)</skos:altLabel>
 	    <skos:altLabel xml:lang="en">Geographic databases</skos:altLabel>
@@ -252,14 +254,14 @@ Non-English language terms taken from: Multilingual dictionary of technical term
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/CelestialGlobes">
-	    <skos:prefLabel xml:lang="en">Celestial Globes</skos:prefLabel>
+	    <skos:prefLabel xml:lang="en">Celestial globes</skos:prefLabel>
 	    <skos:altLabel xml:lang="en">Globes, Celestial</skos:altLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Globes"/>
         <skos:definition xml:lang="en">A spherical representation of a celestial body, or the heavens</skos:definition>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/TerrestrialGlobes">
-	    <skos:prefLabel xml:lang="en">Terrestrial Globes</skos:prefLabel>
+	    <skos:prefLabel xml:lang="en">Terrestrial globes</skos:prefLabel>
 	    <skos:altLabel xml:lang="en">Globes, Terrestrial</skos:altLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Globes"/>
         <skos:definition xml:lang="en">A spherical representation of the earth</skos:definition>
@@ -277,166 +279,166 @@ Non-English language terms taken from: Multilingual dictionary of technical term
     <!-- Subclasses of Maps -->
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/AeronauticalCharts">
-        <skos:prefLabel xml:lang="en">Aeronautical Charts</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Aeronautical charts</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
-        <skos:altLabel xml:lang="en">Navigational Charts</skos:altLabel>
+        <skos:altLabel xml:lang="en">Navigational charts</skos:altLabel>
         <skos:definition xml:lang="en">Maps giving information intended for use in air navigation, such as compass rose, isogonic lines, location of landing fields, beacons, hazards to air navigation, etc. (LCGFT)</skos:definition>
     </owl:Class>
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/BottleCharts">
-        <skos:prefLabel xml:lang="en">Bottle-Charts</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Bottle-charts</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
         <skos:definition xml:lang="en">A chart of ocean surface currents to show the track of sealed bottles thrown from ships into the sea (LCGFT)</skos:definition>
     </owl:Class>
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/CadastralMaps">
-        <skos:prefLabel xml:lang="en">Cadastral Maps</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Cadastral maps</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
-        <skos:altLabel xml:lang="en">Plan Diagrams</skos:altLabel>
-        <skos:altLabel xml:lang="en">Plan Maps</skos:altLabel>
-        <skos:altLabel xml:lang="en">Plat Books</skos:altLabel>
-        <skos:altLabel xml:lang="en">Plat Diagrams</skos:altLabel>
-        <skos:altLabel xml:lang="en">Plot Diagrams</skos:altLabel>
-        <skos:altLabel xml:lang="en">Plot Maps</skos:altLabel>
-        <skos:altLabel xml:lang="en">Property Maps</skos:altLabel>
-        <skos:altLabel xml:lang="en">Protraction Maps</skos:altLabel>
+        <skos:altLabel xml:lang="en">Plan diagrams</skos:altLabel>
+        <skos:altLabel xml:lang="en">Plan maps</skos:altLabel>
+        <skos:altLabel xml:lang="en">Plat books</skos:altLabel>
+        <skos:altLabel xml:lang="en">Plat diagrams</skos:altLabel>
+        <skos:altLabel xml:lang="en">Plot diagrams</skos:altLabel>
+        <skos:altLabel xml:lang="en">Plot maps</skos:altLabel>
+        <skos:altLabel xml:lang="en">Property maps</skos:altLabel>
+        <skos:altLabel xml:lang="en">Protraction maps</skos:altLabel>
         <skos:definition xml:lang="en">A map showing the boundaries of subdivisions of land, usually with the bearings and lengths thereof and the areas of individual tracts, for purposes of describing and recording ownership. A cadastral map may also show culture, drainage, and other features affecting the value and use of the land; also known as property map (LCGFT)</skos:definition>
     </owl:Class>
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/CelestialCharts">
-        <skos:prefLabel xml:lang="en">Celestial Charts</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Celestial charts</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
         <skos:definition xml:lang="en">A map of representation of the celestial sphere, or of some part thereof (LCGFT)</skos:definition>
     </owl:Class>
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ComparativeMaps">
-        <skos:prefLabel xml:lang="en">Comparative Maps</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Comparative maps</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
-        <skos:altLabel xml:lang="en">Comparative Area Maps</skos:altLabel>
+        <skos:altLabel xml:lang="en">Comparative area maps</skos:altLabel>
         <skos:definition xml:lang="en">A map comparing the relative size of two or more geographic areas</skos:definition>
     </owl:Class>
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/EarlyMaps">
-        <skos:prefLabel xml:lang="en">Early Maps</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Early maps</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
         <skos:definition xml:lang="en">Generally refers to maps created before 1801</skos:definition>
     </owl:Class>
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/EthnographicMaps">
-        <skos:prefLabel xml:lang="en">Ethnographic Maps</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Ethnographic maps</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
-        <skos:altLabel xml:lang="en">Anthropological Maps</skos:altLabel>
-        <skos:altLabel xml:lang="en">Ethnographical Maps</skos:altLabel>
-        <skos:altLabel xml:lang="en">Ethnological Maps</skos:altLabel>
+        <skos:altLabel xml:lang="en">Anthropological maps</skos:altLabel>
+        <skos:altLabel xml:lang="en">Ethnographical maps</skos:altLabel>
+        <skos:altLabel xml:lang="en">Ethnological maps</skos:altLabel>
         <skos:definition xml:lang="en">Maps relating to ethnology, anthropology, and the diversity of humanity and human culture in general (Wikimedia Commons mod.)</skos:definition>
     </owl:Class>
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/FireInsuranceMaps">
-        <skos:prefLabel xml:lang="en">Fire Insurance Maps</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Fire insurance maps</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
-        <skos:altLabel xml:lang="en">Fire Insurance Risk Maps</skos:altLabel>
-        <skos:altLabel xml:lang="en">Risk Maps, Fire Insurance</skos:altLabel>
-        <skos:altLabel xml:lang="en">Sanborn Fire Insurance Maps</skos:altLabel>
-        <skos:altLabel xml:lang="en">Sanborn Maps</skos:altLabel>
+        <skos:altLabel xml:lang="en">Fire insurance risk maps</skos:altLabel>
+        <skos:altLabel xml:lang="en">Risk maps, Fire insurance</skos:altLabel>
+        <skos:altLabel xml:lang="en">Sanborn fire insurance maps</skos:altLabel>
+        <skos:altLabel xml:lang="en">Sanborn maps</skos:altLabel>
         <skos:definition xml:lang="en">Maps intended for use in calculating fire insurance risks prepared primarily for the use of fire insurance underwriters, which show detailed, accurate, and up-to-date information on potential fire hazards and risks for individual residences and commercial and industrial installations in urban and suburban areas.  Information shown includes the type of interior and exterior construction material, dimensions, and heights of buildings, block, lot and building numbers, occupancy of buildings, and such fire protection facilities as watermains, fire hydrants, and fire alarm boxes (LCGFT)</skos:definition>
     </owl:Class>
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/FlowMaps">
-        <skos:prefLabel xml:lang="en">Flow Maps</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Flow maps</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
         <skos:altLabel xml:lang="en">Cartograms, Linear</skos:altLabel>
-        <skos:altLabel xml:lang="en">Dynamic Maps</skos:altLabel>
-        <skos:altLabel xml:lang="en">Flow Line Maps</skos:altLabel>
-        <skos:altLabel xml:lang="en">Line Maps, Flow</skos:altLabel>
-        <skos:altLabel xml:lang="en">Linear Cartograms</skos:altLabel>
+        <skos:altLabel xml:lang="en">Dynamic maps</skos:altLabel>
+        <skos:altLabel xml:lang="en">Flow line maps</skos:altLabel>
+        <skos:altLabel xml:lang="en">Line maps, Flow</skos:altLabel>
+        <skos:altLabel xml:lang="en">Linear cartograms</skos:altLabel>
         <skos:definition xml:lang="en">Flow maps in cartography are by definition of Phan (2005) "a mix of maps and flow charts, that show the movement of objects from one location to another, such as the number of people in a migration, the amount of goods being traded, or the number of packets in a network." Flow maps according to Harris (1999) "can be used to show movement of almost anything, including tangible things such as people, products, natural resources, weather, etc, as well as intangible things such as know-how, talent, credit of goodwill" (LCGFT)</skos:definition>
     </owl:Class>
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/GeologicalMaps">
-        <skos:prefLabel xml:lang="en">Geological Maps</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Geological maps</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
-        <skos:altLabel xml:lang="en">Geologic Maps</skos:altLabel>
-        <skos:altLabel xml:lang="en">Geology Maps</skos:altLabel>
+        <skos:altLabel xml:lang="en">Geologic maps</skos:altLabel>
+        <skos:altLabel xml:lang="en">Geology maps</skos:altLabel>
         <skos:definition xml:lang="en">A map showing the structure and composition of the earth's crust (LCGFT)</skos:definition>
     </owl:Class>
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/GoresMaps">
         <skos:prefLabel xml:lang="en">Gores (Maps)</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
-        <skos:altLabel xml:lang="en">Globe Gores</skos:altLabel>
+        <skos:altLabel xml:lang="en">Globe gores</skos:altLabel>
         <skos:definition xml:lang="en">Triangular or lune-shaped segment that can be fitted to the surface of a sphere with little distortion or deformation (LCGFT)</skos:definition>
     </owl:Class>
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/GravityAnomalyMaps">
-        <skos:prefLabel xml:lang="en">Gravity Anomaly Maps</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Gravity anomaly maps</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
         <skos:altLabel xml:lang="en">Gravity maps</skos:altLabel>
         <skos:definition xml:lang="en">Gravity anomaly maps depict the difference between theoretical computed gravity values and observed gravity values for a region of the earth's crust (LCGFT)</skos:definition>
     </owl:Class>
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/IndexMaps">
-        <skos:prefLabel xml:lang="en">Index Maps</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Index maps</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
-        <skos:altLabel xml:lang="en">Key Maps</skos:altLabel>
+        <skos:altLabel xml:lang="en">Key maps</skos:altLabel>
         <skos:definition xml:lang="en">A map showing where to find collections of related data such as other maps, aerial photographs, statistical data, or descriptions of terrain. Also called a key map Index maps may be used to show references to the origin, place of deposit, or filing or other identifying characteristics of such data (LCGFT)</skos:definition>
     </owl:Class>
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ManuscriptMaps">
-        <skos:prefLabel xml:lang="en">Manuscript Maps</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Manuscript maps</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
         <skos:definition xml:lang="en">The original drawing of a map as compiled or constructed from various data such as ground surveys and photographs (LCGFT)</skos:definition>
     </owl:Class>
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/MappaeMundi">
-        <skos:prefLabel xml:lang="en">Mappae Mundi</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Mappae mundi</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
-        <skos:altLabel xml:lang="en">Mappa Mundi</skos:altLabel>
+        <skos:altLabel xml:lang="en">Mappa mundi</skos:altLabel>
         <skos:altLabel xml:lang="en">Mappamundi</skos:altLabel>
         <skos:definition xml:lang="en">Used for medieval (usually circular) world maps, made between the fall of the western Roman empire in the later years of the 5th century AD and the end of the 15th century (LCGFT)</skos:definition>
     </owl:Class>
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/MentalMaps">
-        <skos:prefLabel xml:lang="en">Mental Maps</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Mental maps</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
         <skos:definition xml:lang="en">A mental map can best be explained as a visual display, inside a person's head, showing where a person has traveled. A mental map shows what the person knows about the location and the uniqueness of a place. No mental map is alike. Every human has his or her own mental map (LCGFT)</skos:definition>
     </owl:Class>
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/MeteorologicalCharts">
-        <skos:prefLabel xml:lang="en">Meteorological Charts</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Meteorological charts</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
         <skos:definition xml:lang="en">A chart giving information about the weather (LCGFT)</skos:definition>
     </owl:Class>
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/MilitaryMaps">
-        <skos:prefLabel xml:lang="en">Military Maps</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Military maps</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
         <skos:definition xml:lang="en">A map designed particularly for military use (LCGFT)</skos:definition>
     </owl:Class>
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/MineMaps">
-        <skos:prefLabel xml:lang="en">Mine Maps</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Mine maps</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
         <skos:definition xml:lang="en">Maps recording mining activity, either specific mines or broader areas of mining. Maps can be topographic or cross-sectional in nature</skos:definition>
     </owl:Class>
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/MiniatureMaps">
-        <skos:prefLabel xml:lang="en">Miniature Maps</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Miniature maps</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
         <skos:definition xml:lang="en">Generally, any map with a size of 150 square centimeters or less (MiniatureMaps.net mod.)</skos:definition>
     </owl:Class>
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/NauticalCharts">
-        <skos:prefLabel xml:lang="en">Nautical Charts</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Nautical charts</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
-        <skos:altLabel xml:lang="en">Hydrographic Charts</skos:altLabel>
-        <skos:altLabel xml:lang="en">Navigation Charts</skos:altLabel>
-        <skos:altLabel xml:lang="en">Navigation Maps</skos:altLabel>
-        <skos:altLabel xml:lang="en">Pilot Charts</skos:altLabel>
+        <skos:altLabel xml:lang="en">Hydrographic charts</skos:altLabel>
+        <skos:altLabel xml:lang="en">Navigation charts</skos:altLabel>
+        <skos:altLabel xml:lang="en">Navigation maps</skos:altLabel>
+        <skos:altLabel xml:lang="en">Pilot charts</skos:altLabel>
         <skos:definition xml:lang="en">A chart designed for use in navigating ships, boats, or other watercraft (LCGFT)</skos:definition>
     </owl:Class>
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/OutlineMaps">
-        <skos:prefLabel xml:lang="en">Outline Maps</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Outline maps</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
         <skos:altLabel xml:lang="en">Base maps</skos:altLabel>
         <skos:definition xml:lang="en">A map showing just enough geographic information to permit the correct placement of additional details.  Outline maps correspond to what were at one time known as base maps; they usually show only cast lines, principal rivers, major civil boundaries, and large cities.  As much space as possible is left for placing the particular details or data desired.  An outline map presents less detail than what is now known as a base map (LCGFT)</skos:definition>
@@ -445,47 +447,47 @@ Non-English language terms taken from: Multilingual dictionary of technical term
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Photomaps">
         <skos:prefLabel xml:lang="en">Photomaps</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
-        <skos:altLabel xml:lang="en">Orthophoto Maps</skos:altLabel>
+        <skos:altLabel xml:lang="en">Orthophoto maps</skos:altLabel>
         <skos:altLabel xml:lang="en">Orthophotomaps</skos:altLabel>
-        <skos:altLabel xml:lang="en">Photo Maps</skos:altLabel>
-        <skos:altLabel xml:lang="en">Photographic Maps</skos:altLabel>
+        <skos:altLabel xml:lang="en">Photo maps</skos:altLabel>
+        <skos:altLabel xml:lang="en">Photographic maps</skos:altLabel>
         <skos:definition xml:lang="en">A map made from assembling photographs and adding appropriate information such as a reference system, grid, labels, scale, and so forth (LCGFT)</skos:definition>
     </owl:Class>
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/PhysicalMaps">
-        <skos:prefLabel xml:lang="en">Physical Maps</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Physical maps</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
         <skos:definition xml:lang="en">A map representing the surface of the land or the floor of the oceans. In addition to representing the relief, physical maps show some natural phenomena such as oceanic currents, swamps, sands and deserts. Man-made structures or vegetation are not shown (LCGFT)</skos:definition>
     </owl:Class>
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/PictorialMaps">
-        <skos:prefLabel xml:lang="en">Pictorial Maps</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Pictorial maps</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
         <skos:definition xml:lang="en">Maps that depict a given territory with a more artistic rather than technical style, usually showing an area as if viewed from above at an oblique angle (Wikipedia, Pictorial Maps)</skos:definition>
     </owl:Class>
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/PortolanCharts">
-        <skos:prefLabel xml:lang="en">Portolan Charts</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Portolan charts</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
         <skos:definition xml:lang="en">A class of early coastal charts capable of navigational use which feature a network of interconnected lines (usually termed rhumb lines); place names written inland at right angles to the coast; drawn in ink on one or more skins following established color conventions; with coastlines shown in a general fashion with bays and headlines exaggerated and navigational hazards marked with crosses and dots (LCGFT)</skos:definition>
     </owl:Class>
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/QuadrangleMaps">
-        <skos:prefLabel xml:lang="en">Quadrangle Maps</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Quadrangle maps</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
-        <skos:altLabel xml:lang="en">Quad Maps</skos:altLabel>
-        <skos:altLabel xml:lang="en">Quadrangular Maps</skos:altLabel>
+        <skos:altLabel xml:lang="en">Quad maps</skos:altLabel>
+        <skos:altLabel xml:lang="en">Quadrangular maps</skos:altLabel>
         <skos:definition xml:lang="en">Maps that cover a rectangular or nearly rectangular region defined by four specified points (LCGFT)</skos:definition>
     </owl:Class>
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/RemoteSensingMaps">
-        <skos:prefLabel xml:lang="en">Remote-sensing Maps</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Remote-sensing maps</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
         <skos:definition xml:lang="en">High-resolution topographic, bathymetric, or habitat maps created using remote-sensing applications which generate images by means of reflected or emitted electromagnetic energy (SWML mod.)</skos:definition>
     </owl:Class>
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/RoadMaps">
-        <skos:prefLabel xml:lang="en">Road Maps</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Road maps</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
         <skos:altLabel xml:lang="en">Roadmaps</skos:altLabel>
         <skos:altLabel xml:lang="en">Street maps</skos:altLabel>
@@ -493,7 +495,7 @@ Non-English language terms taken from: Multilingual dictionary of technical term
     </owl:Class>
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/StatisticalMaps">
-        <skos:prefLabel xml:lang="en">Statistical Maps</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Statistical maps</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
         <skos:altLabel xml:lang="en">Maps of residuals</skos:altLabel>
         <skos:altLabel xml:lang="en">Residuals, Maps of</skos:altLabel>
@@ -501,76 +503,76 @@ Non-English language terms taken from: Multilingual dictionary of technical term
     </owl:Class>
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/StickCharts">
-        <skos:prefLabel xml:lang="en">Stick Charts</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Stick charts</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
         <skos:definition xml:lang="en">Charts made by Pacific Islanders generally made of narrow strips of the center ribs of palm fronds lashed together with cord made from locally grown fiber plants. The arrangements of the sticks indicates the pattern of swells and wave masses caused by winds, rather than of currents. The positions of islands are marked approximately by shells or coral (LCGFT)</skos:definition>
     </owl:Class>
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/StripMaps">
-        <skos:prefLabel xml:lang="en">Strip Maps</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Strip naps</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
         <skos:definition xml:lang="en">A map (as for an aviator) showing only a narrow band of territory (as 500 miles long and ten miles wide (LCGFT)</skos:definition>
     </owl:Class>
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ThematicMaps">
-        <skos:prefLabel xml:lang="en">Thematic Maps</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Thematic maps</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
-        <skos:altLabel xml:lang="en">Chloropleth Maps</skos:altLabel>
-        <skos:altLabel xml:lang="en">Single-topic Maps</skos:altLabel>
-        <skos:altLabel xml:lang="en">Special-purpose Maps</skos:altLabel>
-        <skos:altLabel xml:lang="en">Topical Maps</skos:altLabel>
+        <skos:altLabel xml:lang="en">Chloropleth maps</skos:altLabel>
+        <skos:altLabel xml:lang="en">Single-topic maps</skos:altLabel>
+        <skos:altLabel xml:lang="en">Special-purpose maps</skos:altLabel>
+        <skos:altLabel xml:lang="en">Topical maps</skos:altLabel>
         <skos:definition xml:lang="en">A map whose principal purpose is depicting information other than that about the Earth's physical surface. Also called a topical map. Among the kinds of information shown on thematic maps are density of population, kind or amount of crops grown, types of soil, amount of rainfall and administrative subdivisions (LCGFT)</skos:definition>
     </owl:Class>
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/TopographicMaps">
-        <skos:prefLabel xml:lang="en">Topographic Maps</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Topographic maps</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
-        <skos:altLabel xml:lang="en">Hypsographic Maps</skos:altLabel>
-        <skos:altLabel xml:lang="en">Hypsometric Maps</skos:altLabel>
-        <skos:altLabel xml:lang="en">Relief Maps</skos:altLabel>
-        <skos:altLabel xml:lang="en">Topo Maps</skos:altLabel>
-        <skos:altLabel xml:lang="en">Topographical Maps</skos:altLabel>
+        <skos:altLabel xml:lang="en">Hypsographic maps</skos:altLabel>
+        <skos:altLabel xml:lang="en">Hypsometric maps</skos:altLabel>
+        <skos:altLabel xml:lang="en">Relief maps</skos:altLabel>
+        <skos:altLabel xml:lang="en">Topo maps</skos:altLabel>
+        <skos:altLabel xml:lang="en">Topographical maps</skos:altLabel>
         <skos:definition xml:lang="en">A map showing the horizontal and vertical locations of the natural and man-made features represented. Also called a relief map. Uses numbered contour lines or comparable symbols to show mountains, valleys and plains; a map whose principle purpose is to portray and identify the natural and artificial features on the Earth's surface as faithfully as possible within the limitations imposed by scale (LCGFT)</skos:definition>
     </owl:Class>
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/TouristMaps">
-        <skos:prefLabel xml:lang="en">Tourist Maps</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Tourist maps</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
         <skos:definition xml:lang="en">Maps designed for tourists (LCGFT)</skos:definition>
     </owl:Class>
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/UpsideDownMaps">
-        <skos:prefLabel xml:lang="en">Upside-down Maps</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Upside-down maps</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
-        <skos:altLabel xml:lang="en">Reversed Maps</skos:altLabel>
-        <skos:altLabel xml:lang="en">South-up Maps</skos:altLabel>
-        <skos:altLabel xml:lang="en">Upsidedown Maps</skos:altLabel>
+        <skos:altLabel xml:lang="en">Reversed maps</skos:altLabel>
+        <skos:altLabel xml:lang="en">South-up maps</skos:altLabel>
+        <skos:altLabel xml:lang="en">Upsidedown maps</skos:altLabel>
         <skos:definition xml:lang="en">Maps in which the orientation has been reversed and south appears at the top (LCGFT)</skos:definition>
     </owl:Class>
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/WallMaps">
-        <skos:prefLabel xml:lang="en">Wall Maps</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Wall maps</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
         <skos:definition xml:lang="en">A map designed to be mounted or displayed on a wall, generally has devices on map to assist in hanging (LCGFT)</skos:definition>
     </owl:Class>
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/WorldMaps">
-        <skos:prefLabel xml:lang="en">World Maps</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">World maps</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
         <skos:definition xml:lang="en">A world map is a map of most or all of the surface of the Earth. World maps form a distinctive category of maps due to the problem of projection. Maps by necessity distort the presentation of the earth's surface. These distortions reach extremes in a world map. The many ways of projecting the earth reflect diverse technical and aesthetic goals for world maps (Wikipedia, World Maps)</skos:definition>
     </owl:Class>
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ZoningMaps">
-        <skos:prefLabel xml:lang="en">Zoning Maps</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Zoning maps</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Maps"/>
-        <skos:altLabel xml:lang="en">Zoning District Maps</skos:altLabel>
+        <skos:altLabel xml:lang="en">Zoning district maps</skos:altLabel>
         <skos:definition xml:lang="en">Zoning maps show the boundaries of zoning districts throughout the city (LCGFT)</skos:definition>
     </owl:Class>
     
     <!-- / end of / Subclasses of Maps -->
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/RemoteSensingImages">
-	    <skos:prefLabel xml:lang="en">Remote-Sensing Images</skos:prefLabel>
+	    <skos:prefLabel xml:lang="en">Remote-sensing images</skos:prefLabel>
 	    <skos:altLabel xml:lang="en">Images, Remote-sensing</skos:altLabel>
 	    <skos:altLabel xml:lang="en">Multispectral scanning images</skos:altLabel>
 	    <skos:altLabel xml:lang="en">Satellite images</skos:altLabel>
@@ -581,7 +583,7 @@ Non-English language terms taken from: Multilingual dictionary of technical term
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/AerialPhotographs">
-	    <skos:prefLabel xml:lang="en">Aerial Photographs</skos:prefLabel>
+	    <skos:prefLabel xml:lang="en">Aerial photographs</skos:prefLabel>
 	    <skos:altLabel xml:lang="en">Photographs, Aerial</skos:altLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/RemoteSensingImages"/>
 	    <skos:definition xml:lang="en"> Any photograph taken from the air. When used in a cartographic context, this term normally refers to photographs of the surface of the Earth (or other celestial body) taken downwards, vertically, or at a predetermined angle from the vertical (LCGFT)</skos:definition>
@@ -591,51 +593,50 @@ Non-English language terms taken from: Multilingual dictionary of technical term
     Adding subclasses of cartographic scales -->
 	
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/HorizontalScale">
-        <skos:prefLabel xml:lang="en">Horizontal Scale</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Horizontal scale</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Scale"/>
-        <skos:prefLabel xml:lang="fr">Echelle des longueurs</skos:prefLabel>
-        <skos:prefLabel xml:lang="es">Escala horizontal</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">échelle des longueurs</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">escala horizontal</skos:prefLabel>
         <skos:definition xml:lang="en">The ratio of distances on a map to the corresponding horizontal distance in nature (Ency. Dict. of Cart.)</skos:definition>
     </owl:Class>
     
 	
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/VerticalScale">
-        <skos:prefLabel xml:lang="en">Vertical Scale</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Vertical scale</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Scale"/>
-        <skos:prefLabel xml:lang="fr">Echelle des hauteurs</skos:prefLabel>
-        <skos:prefLabel xml:lang="es">Escala vertical</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">échelle des hauteurs</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">escala vertical</skos:prefLabel>
         <skos:definition xml:lang="en">The ratio of vertical distances on Profiles, Sections, Block Diagrams or three-dimensional representations to the corresponding distances in nature (Ency. Dict. of Cart.)</skos:definition>
     </owl:Class>    
 	
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/NotDrawnToScale">
-        <skos:prefLabel xml:lang="en">Not Drawn to Scale</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Not drawn to scale</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Scale"/>
         <skos:definition xml:lang="en">Used to describe a cartographic resource when it is not drawn to scale</skos:definition>
     </owl:Class>    
 	
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ScaleIndeterminable">
-        <skos:prefLabel xml:lang="en">Scale Indeterminable</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Scale indeterminable</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Scale"/>
         <skos:definition xml:lang="en">Used to describe a cartographic resource when an effort to determine the scale of a resource is impossible, for example, when there is a bar scale but no units of measurement are given</skos:definition>
     </owl:Class>
     	
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ScaleNotDetermined">
-        <skos:prefLabel xml:lang="en">Scale Not Determined</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Scale not determined</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Scale"/>
         <skos:definition xml:lang="en">Use when scale is represented verbally or graphically in the material, but cannot be expressed as a representative fraction, e.g., because of lack of legibility or with unfamiliar units of measure</skos:definition>
     </owl:Class>
     	
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ScalesDiffer">
-        <skos:prefLabel xml:lang="en">Scales Differ</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Scales differ</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Scale"/>
         <skos:definition xml:lang="en">Used to describe a cartographic resource in which the main maps, etc., are of more than one scale</skos:definition>
     </owl:Class>
     	
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ScaleVaries">
-        <skos:prefLabel xml:lang="en">Scale Varies</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Scale varies</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Scale"/>
-        <skos:definition xml:lang="en">Used to describe one map/diagram/plan, etc. that is drawn on a variable scale</skos:definition>
-        <!-- RDA definition: A scale designation for a resource whose scale is variable across the resource, when the range of values cannot be determined -->
+        <skos:definition xml:lang="en">A scale designation for a resource whose scale is variable across the resource, when the range of values cannot be determined (RDA). Used to describe one map/diagram/plan, etc. that is drawn on a variable scale</skos:definition>
     </owl:Class>
     
 	
@@ -643,12 +644,12 @@ Non-English language terms taken from: Multilingual dictionary of technical term
     Adding classes related to cartographic scales -->
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ScaleAccuracy">
-	    <skos:prefLabel xml:lang="en">Scale Accuracy</skos:prefLabel>
+	    <skos:prefLabel xml:lang="en">Scale accuracy</skos:prefLabel>
         <skos:definition xml:lang="en">Scale accuracy</skos:definition>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ScaleSource">
-	    <skos:prefLabel xml:lang="en">Scale Source</skos:prefLabel>
+	    <skos:prefLabel xml:lang="en">Scale source</skos:prefLabel>
         <skos:definition xml:lang="en">Source of the map scale</skos:definition>
     </owl:Class>
 	
@@ -657,11 +658,11 @@ Non-English language terms taken from: Multilingual dictionary of technical term
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Relief">
         <skos:prefLabel xml:lang="en">Relief</skos:prefLabel>
-        <skos:definition xml:lang="en">Inequalities of elevation and the configuration of land features on the surface of the Earth that may be represented on maps or charts by contours, hypsometric tints, shading, spot elevations, or hachures. Also encompasses the depiction or indication of underwater topography, or the depths and shapes of underwater terrain (Cartographic Materials; NOAA)</skos:definition>
+	    <skos:definition xml:lang="en">Inequalities of elevation and the configuration of land features on the surface of the Earth that may be represented on maps or charts by contours, hypsometric tints, shading, spot elevations, or hachures (Cartographic Materials). Also encompasses the depiction or indication of underwater topography, or the depths and shapes of underwater terrain (NOAA)</skos:definition>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/LandRelief">
-        <skos:prefLabel xml:lang="en">Land Relief</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Land relief</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Relief"/>
         <skos:definition xml:lang="en">Inequalities of elevation and the configuration of land features on the surface of the Earth that may be represented on maps or charts by contours, hypsometric tints, shading, spot elevations, or hachures (Cartographic Materials)</skos:definition>
     </owl:Class>
@@ -670,136 +671,136 @@ Non-English language terms taken from: Multilingual dictionary of technical term
         <skos:prefLabel xml:lang="en">Contours</skos:prefLabel>
         <skos:altLabel xml:lang="en">Contour lines</skos:altLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/LandRelief"/>
-        <skos:definition xml:lang="en">Relief shown by contours. A contour is a line joining points of equal vertical distance above or below a datum. Such a line on a map is a type of isoline (MARC21; Cartographic Materials)</skos:definition>
+        <skos:definition xml:lang="en">Relief shown by contours (MARC21). A contour is a line joining points of equal vertical distance above or below a datum. Such a line on a map is a type of isoline (Cartographic Materials)</skos:definition>
         <rdfs:comment xml:lang="en">MARC Map format relief code: a</rdfs:comment>
     </owl:Class>
     	
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Shading">
         <skos:prefLabel xml:lang="en">Shading</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/LandRelief"/>
-        <skos:definition xml:lang="en">Relief shown by shading, generally of a single color. Shading is a relief method that provides an apparent three-dimensional configuration of the terrain by the use of shadows (MARC21; Cartographic Resources Manual)</skos:definition>
+        <skos:definition xml:lang="en">Relief shown by shading, generally of a single color (MARC21). Shading is a relief method that provides an apparent three-dimensional configuration of the terrain by the use of shadows (Cartographic Resources Manual)</skos:definition>
         <rdfs:comment xml:lang="en">MARC Map format relief code: b</rdfs:comment>
     </owl:Class>
     	
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/GradientTints">
-        <skos:prefLabel xml:lang="en">Gradient Tints</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Gradient tints</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/LandRelief"/>
-        <skos:altLabel xml:lang="en">Hypsometric Tints</skos:altLabel>
-        <skos:altLabel xml:lang="en">Altitude Tints</skos:altLabel>
-        <skos:definition xml:lang="en">Relief shown by gradient tints. Gradient tints, also known as hypsometric or altitude tints, are colors applied to the area between two selected contours when relief is depicted by a system of layers (MARC21; Cartographic Resources Manual)</skos:definition>
+        <skos:altLabel xml:lang="en">Hypsometric tints</skos:altLabel>
+        <skos:altLabel xml:lang="en">Altitude tints</skos:altLabel>
+        <skos:definition xml:lang="en">Relief shown by gradient tints (MARC21). Gradient tints, also known as hypsometric or altitude tints, are colors applied to the area between two selected contours when relief is depicted by a system of layers (Cartographic Resources Manual)</skos:definition>
         <rdfs:comment xml:lang="en">MARC Map format relief code: c</rdfs:comment>
     </owl:Class>
     	
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Hachures">
         <skos:prefLabel xml:lang="en">Hachures</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/LandRelief"/>
-        <skos:definition xml:lang="en">Relief shown by hachures, which are short lines which follow the direction of maximum slope (MARC21; Cartographic Resources Manual)</skos:definition>
+        <skos:definition xml:lang="en">Relief shown by hachures (MARC21). Hachures are short lines which follow the direction of maximum slope (Cartographic Resources Manual)</skos:definition>
         <rdfs:comment xml:lang="en">MARC Map format relief code: d</rdfs:comment>
     </owl:Class>
     	
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/FormLines">
-        <skos:prefLabel xml:lang="en">Form Lines</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Form lines</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/LandRelief"/>
         <skos:altLabel xml:lang="en">Formlines</skos:altLabel>
-        <skos:definition xml:lang="en">Land relief shown by form lines. Form lines, also called formlines, are lines, similar to contours, which depict the configuration of the ground without numerical indication of altitude (MARC21; Cartographic Resources Manual)</skos:definition>
+        <skos:definition xml:lang="en">Land relief shown by form lines (MARC21). Form lines, also called formlines, are lines, similar to contours, which depict the configuration of the ground without numerical indication of altitude (Cartographic Resources Manual)</skos:definition>
         <rdfs:comment xml:lang="en">MARC Map format relief code: f</rdfs:comment>
     </owl:Class>
     	
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/SpotHeights">
-        <skos:prefLabel xml:lang="en">Spot Heights</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Spot heights</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/LandRelief"/>
-        <skos:definition xml:lang="en">Relief shown by spot heights. Spot Heights are points on a cartographic resource which represent the position of an indicated altitude (MARC21; Cartographic Resources Manual)</skos:definition>
+        <skos:definition xml:lang="en">Relief shown by spot heights (MARC21). Spot Heights are points on a cartographic resource which represent the position of an indicated altitude (Cartographic Resources Manual)</skos:definition>
         <rdfs:comment xml:lang="en">MARC Map format relief code: g</rdfs:comment>
     </owl:Class>
     	
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Pictorially">
         <skos:prefLabel xml:lang="en">Pictorially</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/LandRelief"/>
-        <skos:definition xml:lang="en">Land forms and other topographic features shown in the correct planimetric position by pictorial symbols representing their appearance from a high oblique view. Pictorial relief is not truly physiographic but usually consists of generalized drawings of hills, mountains, and bluffs. It was widely used before 1800. (MARC21; Cartographic Resources Manual)</skos:definition>
+        <skos:definition xml:lang="en">Land forms and other topographic features shown in the correct planimetric position by pictorial symbols representing their appearance from a high oblique view (MARC21). Pictorial relief is not truly physiographic but usually consists of generalized drawings of hills, mountains, and bluffs. It was widely used before 1800. (Cartographic Resources Manual)</skos:definition>
         <rdfs:comment xml:lang="en">MARC Map format relief code: i</rdfs:comment>
     </owl:Class>
     	
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/LandForms">
-        <skos:prefLabel xml:lang="en">Land Forms</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Land forms</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/LandRelief"/>
-        <skos:altLabel xml:lang="en">Landform Drawings</skos:altLabel>
-        <skos:definition xml:lang="en">Relief shown by land form drawings, which is a method of relief that shows landforms by the systematic application of a standardized set of simplified pictorial symbols that represent the appearances such forms would have if viewed obliquely from the air at an angle of about 45º (MARC21; Cartographic Resources Manual)</skos:definition>
+        <skos:altLabel xml:lang="en">Landform drawings</skos:altLabel>
+        <skos:definition xml:lang="en">Relief shown by land forms (MARC21). Land form drawings are a method of relief that shows landforms by the systematic application of a standardized set of simplified pictorial symbols that represent the appearances such forms would have if viewed obliquely from the air at an angle of about 45º (Cartographic Resources Manual)</skos:definition>
         <rdfs:comment xml:lang="en">MARC Map format relief code: j</rdfs:comment>
     </owl:Class>
     	
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/RockDrawings">
-        <skos:prefLabel xml:lang="en">Rock Drawings</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Rock drawings</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/LandRelief"/>
-        <skos:definition xml:lang="en">Relief shown by rock drawings, which are the stylized representation of steep rock faces which cannot be portrayed by other methods of representing relief (MARC21; Cartographic Resources Manual)</skos:definition>
+        <skos:definition xml:lang="en">Relief shown by rock drawings (MARC21). Rock drawings are stylized representations of steep rock faces which cannot be portrayed by other methods of representing relief (Cartographic Resources Manual)</skos:definition>
         <rdfs:comment xml:lang="en">MARC Map format relief code: m</rdfs:comment>
     </owl:Class>
     	
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/WaterRelief">
-        <skos:prefLabel xml:lang="en">Water Relief</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Water relief</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Relief"/>
         <skos:definition xml:lang="en">The depiction or indication of underwater topography, or the depths and shapes of underwater terrain (NOAA)</skos:definition>
     </owl:Class>
     	
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/BathymetricTints">
-        <skos:prefLabel xml:lang="en">Bathymetric Tints</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Bathymetric tints</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/WaterRelief"/>
-        <skos:altLabel xml:lang="en">Hypsometric Tints</skos:altLabel>
-        <skos:definition xml:lang="en">Underwater relief shown by bathymetric tints, which is a color applied to the area between two selected contours where relief is depicted by a system of layers, specifically as applied to the depiction of water depth (MARC21; DCRM-C)</skos:definition>
+        <skos:altLabel xml:lang="en">Hypsometric tints</skos:altLabel>
+        <skos:definition xml:lang="en">Underwater relief shown by bathymetric tints (MARC21). Bathymetric tints are colors applied to the area between two selected contours where relief is depicted by a system of layers, specifically as applied to the depiction of water depth (DCRM-C)</skos:definition>
         <rdfs:comment xml:lang="en">MARC Map format relief code: c</rdfs:comment>
     </owl:Class>
     	
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/BathymetricIsolines">
-        <skos:prefLabel xml:lang="en">Bathymetric Isolines</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Bathymetric isolines</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/WaterRelief"/>
         <skos:definition xml:lang="en">Underwater relief (depth) shown by isolines (lines that represent constant depths) (MARC21)</skos:definition>
         <rdfs:comment xml:lang="en">MARC Map format relief code: k</rdfs:comment>
     </owl:Class>
     	
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/BathymetricSoundings">
-        <skos:prefLabel xml:lang="en">Bathymetric Soundings</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Bathymetric soundings</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/WaterRelief"/>
-        <skos:altLabel xml:lang="en">Bathymetry/Soundings</skos:altLabel>
+        <skos:altLabel xml:lang="en">Bathymetry/soundings</skos:altLabel>
         <skos:altLabel xml:lang="en">Soundings</skos:altLabel>
         <skos:altLabel xml:lang="en">Sounding</skos:altLabel>
-        <skos:definition xml:lang="en">Underwater depth shown by soundings. A sounding is a measurement of the depth of water, usually expressed in feet or fathoms (MARC21; Cartographic Materials)</skos:definition>
+        <skos:definition xml:lang="en">Underwater depth shown by soundings (MARC21). A sounding is a measurement of the depth of water, usually expressed in feet or fathoms (Cartographic Materials)</skos:definition>
         <rdfs:comment xml:lang="en">MARC Map format relief code: e</rdfs:comment>
     </owl:Class>
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/BathymetricFormLines">
-        <skos:prefLabel xml:lang="en">Bathymetric Form Lines</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Bathymetric form lines</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/WaterRelief"/>
-        <skos:definition xml:lang="en">Underwater relief shown by form lines, also called formlines, which are lines, similar to contours, which depict the configuration of the underwater land without numerical indication of altitude (MARC21; adapted from Cartographic Resources Manual)</skos:definition>
+        <skos:definition xml:lang="en">Underwater relief shown by form lines (MARC21). These are also called formlines, which are lines, similar to contours, which depict the configuration of the underwater land without numerical indication of altitude (Adapted from Cartographic Resources Manual)</skos:definition>
         <rdfs:comment xml:lang="en">MARC Map format relief code: f</rdfs:comment>
     </owl:Class>
     	
-	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/NoRelief">
-        <skos:prefLabel xml:lang="en">No Relief</skos:prefLabel>
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/NoReliefShown">
+        <skos:prefLabel xml:lang="en">No relief shown</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Relief"/>
         <skos:definition xml:lang="en">No relief shown</skos:definition>
 		<rdfs:comment xml:lang="en">MARC Map format relief code: #</rdfs:comment>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/NoLandRelief">
-        <skos:prefLabel xml:lang="en">No Land Relief</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">No land relief</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/NoRelief"/>
         <skos:definition xml:lang="en">No land relief shown</skos:definition>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/NoWaterRelief">
-        <skos:prefLabel xml:lang="en">No Water Relief</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">No water relief</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/NoRelief"/>
         <skos:definition xml:lang="en">No underwater relief shown</skos:definition>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/OtherRelief">
-        <skos:prefLabel xml:lang="en">Other Relief</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Other relief</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Relief"/>
         <skos:definition xml:lang="en">None of the other defined codes are appropriate</skos:definition>
 		<rdfs:comment xml:lang="en">MARC Map format relief code: z</rdfs:comment>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/NoAttemptToCode">
-        <skos:prefLabel xml:lang="en">No Attempt To Code</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">No attempt to code</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Relief"/>
         <skos:definition xml:lang="en">Relief not determined</skos:definition>
 		<rdfs:comment xml:lang="en">MARC Map format relief code: ||||</rdfs:comment>
@@ -809,56 +810,56 @@ Non-English language terms taken from: Multilingual dictionary of technical term
     Adding subclasses of projection (based primarily on MARC Map format projection codes (008/22-23) / (006/05-06) -->
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/AzimuthalProjection">
-		<skos:prefLabel xml:lang="en">Azimuthal Projection</skos:prefLabel>
-		<skos:prefLabel xml:lang="fr">Projection azimutale</skos:prefLabel>
-		<skos:prefLabel xml:lang="es">Proyección acimutal</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">Azimuthal projection</skos:prefLabel>
+		<skos:prefLabel xml:lang="fr">projection azimutale</skos:prefLabel>
+		<skos:prefLabel xml:lang="es">proyección acimutal</skos:prefLabel>
 		<rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
 		<skos:definition xml:lang="en">In standard presentation, azimuthal projections map meridians as straight lines and parallels as complete, concentric circles. They are radially symmetrical. In any presentation (or aspect), they preserve directions from the center point. This means great circles through the central point are represented by straight lines on the map (Wikipedia, List of Map Projections)</skos:definition>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: a- (e.g. "aa," etc.)</rdfs:comment>
 	</owl:Class>
 
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/CylindricalProjection">
-		<skos:prefLabel xml:lang="en">Cylindrical Projection</skos:prefLabel>
-		<skos:prefLabel xml:lang="fr">Projection cylindrique</skos:prefLabel>
-		<skos:prefLabel xml:lang="es">Proyección cilíndrica</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">Cylindrical projection</skos:prefLabel>
+		<skos:prefLabel xml:lang="fr">projection cylindrique</skos:prefLabel>
+		<skos:prefLabel xml:lang="es">proyección cilíndrica</skos:prefLabel>
 		<rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
 		<skos:definition xml:lang="en">In standard presentation, these map regularly-spaced meridians to equally spaced vertical lines, and parallels to horizontal lines (Wikipedia, List of Map Projections)</skos:definition>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: b- (e.g. "ba," etc.)</rdfs:comment>
 	</owl:Class>
 
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ConicalProjection">
-		<skos:prefLabel xml:lang="en">Conical Projection</skos:prefLabel>
-		<skos:prefLabel xml:lang="fr">Projection conique</skos:prefLabel>
-		<skos:prefLabel xml:lang="es">Proyección cónica</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">Conical projection</skos:prefLabel>
+		<skos:prefLabel xml:lang="fr">projection conique</skos:prefLabel>
+		<skos:prefLabel xml:lang="es">proyección cónica</skos:prefLabel>
+	    <skos:altLabel xml:lang="en">Conic projection</skos:altLabel>
 		<rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
-		<skos:altLabel xml:lang="en">Conic Projection</skos:altLabel>
 		<skos:definition xml:lang="en">In standard presentation, conic (or conical) projections map meridians as straight lines, and parallels as arcs of circles (Wikipedia, List of Map Projections)</skos:definition>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: c- (e.g. "ca," etc.)</rdfs:comment>
 	</owl:Class>
 
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/UnclassifiedProjection">
-		<skos:prefLabel xml:lang="en">Unclassified Projection</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">Unclassified projection</skos:prefLabel>
 		<rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
 		<skos:definition xml:lang="en">Named projections that are not azimuthal, cylindrical, or conic</skos:definition>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: d- (e.g. "da," etc.)</rdfs:comment>
 	</owl:Class>
 
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/OtherProjection">
-		<skos:prefLabel xml:lang="en">Other Projection</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">Other projection</skos:prefLabel>
 		<rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
 		<skos:definition xml:lang="en">None of the other named projections are appropriate (MARC 21)</skos:definition>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: zz</rdfs:comment>
 	</owl:Class>
 
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ProjectionNotSpecified">
-		<skos:prefLabel xml:lang="en">Projection Not Specified</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">Projection not specified</skos:prefLabel>
 		<rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
 		<skos:definition xml:lang="en">Used for most globes (MARC 21)</skos:definition>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: ##</rdfs:comment>
 	</owl:Class>
 
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/NoAttemptToCode">
-		<skos:prefLabel xml:lang="en">No Attempt To Code</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">No attempt to code</skos:prefLabel>
 		<rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
 		<skos:definition xml:lang="en">No attempt to assign a projection to the resource</skos:definition>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: ||</rdfs:comment>
@@ -872,8 +873,8 @@ Non-English language terms taken from: Multilingual dictionary of technical term
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Aitoff">
 	    <skos:prefLabel xml:lang="en">Aitoff</skos:prefLabel>
-	    <skos:prefLabel xml:lang="fr">Transformation d’Aitoff appliqué à la projection méridienne de G. Postel</skos:prefLabel>
-	    <skos:prefLabel xml:lang="es">Proyección de Aitoff</skos:prefLabel>
+	    <skos:prefLabel xml:lang="fr">transformation d’Aitoff appliqué à la projection méridienne de G. Postel</skos:prefLabel>
+	    <skos:prefLabel xml:lang="es">proyección de Aitoff</skos:prefLabel>
 	    <skos:altfLabel xml:lang="en">Aitoff's projection</skos:altfLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
 	    <skos:definition xml:lang="en">Stretching of modified equatorial azimuthal equidistant map. Boundary is 2:1 ellipse. Largely superseded by Hammer (Wikipedia, List of Map Projections)</skos:definition>
@@ -884,8 +885,8 @@ Non-English language terms taken from: Multilingual dictionary of technical term
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Gnomonic">
 	    <skos:prefLabel xml:lang="en">Gnomonic</skos:prefLabel>
-	    <skos:prefLabel xml:lang="fr">Projection gnomonique</skos:prefLabel>
-	    <skos:prefLabel xml:lang="es">Proyección gnomónica</skos:prefLabel>
+	    <skos:prefLabel xml:lang="fr">projection gnomonique</skos:prefLabel>
+	    <skos:prefLabel xml:lang="es">proyección gnomónica</skos:prefLabel>
 	    <skos:altfLabel xml:lang="en">Gnomic</skos:altfLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
 	    <skos:definition xml:lang="en">All great circles are straight lines (Wikipedia, List of Map Projections)</skos:definition>
@@ -896,12 +897,12 @@ Non-English language terms taken from: Multilingual dictionary of technical term
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/LambertsAzimuthalEqualArea">
-		<skos:prefLabel xml:lang="en">Lambert's Azimuthal Equal Area</skos:prefLabel>
-	    <skos:prefLabel xml:lang="fr">Projection de Lorgna</skos:prefLabel>
-	    <skos:prefLabel xml:lang="es">Proyección acimutal equivalente de Lambert</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">Lambert's azimuthal equal area</skos:prefLabel>
+	    <skos:prefLabel xml:lang="fr">projection de Lorgna</skos:prefLabel>
+	    <skos:prefLabel xml:lang="es">proyección acimutal equivalente de Lambert</skos:prefLabel>
 	    <skos:altfLabel xml:lang="en">Lambert azimuthal equal-area</skos:altfLabel>
 	    <skos:altfLabel xml:lang="en">Lambert zenithal equal-area</skos:altfLabel>
-	    <skos:altfLabel xml:lang="fr">Projection azimutale équivalente de Lambert</skos:altfLabel>
+	    <skos:altfLabel xml:lang="fr">projection azimutale équivalente de Lambert</skos:altfLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
 	    <skos:definition xml:lang="en">The straight-line distance between the central point on the map to any other point is the same as the straight-line 3D distance through the globe between the two points (Wikipedia, List of Map Projections)</skos:definition>
 	    <projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/EqualArea"/>
@@ -911,24 +912,24 @@ Non-English language terms taken from: Multilingual dictionary of technical term
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Orthographic">
 		<skos:prefLabel xml:lang="en">Orthographic</skos:prefLabel>
-	    <skos:prefLabel xml:lang="fr">Projection orthographique</skos:prefLabel>
-	    <skos:prefLabel xml:lang="es">Proyección ortográfica</skos:prefLabel>
+	    <skos:prefLabel xml:lang="fr">projection orthographique</skos:prefLabel>
+	    <skos:prefLabel xml:lang="es">proyección ortográfica</skos:prefLabel>
 	    <skos:altfLabel xml:lang="en">Orthogonal map projection</skos:altfLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
-	    <skos:definition xml:lang="en">View from an infinite distance. A perspective azimuthal projection (Wikipedia, List of Map Projections; Dict. of Mapping)</skos:definition>
+	    <skos:definition xml:lang="en">View from an infinite distance (Wikipedia, List of Map Projections). A perspective azimuthal projection (Dict. of Mapping)</skos:definition>
 	    <projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/Perspective"/>
 	    <rdfs:comment>Type: Azimuthal</rdfs:comment>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: ad</rdfs:comment>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/AzimuthalEquidistant">
-		<skos:prefLabel xml:lang="en">Azimuthal Equidistant</skos:prefLabel>
-	    <skos:prefLabel xml:lang="fr">Projection de Guillaume Postel</skos:prefLabel>
-	    <skos:prefLabel xml:lang="es">Proyección acimutal equidistante de Postel</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">Azimuthal equidistant</skos:prefLabel>
+	    <skos:prefLabel xml:lang="fr">projection de Guillaume Postel</skos:prefLabel>
+	    <skos:prefLabel xml:lang="es">proyección acimutal equidistante de Postel</skos:prefLabel>
 	    <skos:altfLabel xml:lang="en">Postel’s projection</skos:altfLabel>
-	    <skos:altfLabel xml:lang="fr">Projection zénithale équidistante</skos:altfLabel>
+	    <skos:altfLabel xml:lang="fr">projection zénithale équidistante</skos:altfLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
-	    <skos:definition xml:lang="en">Distances from centre are conserved. Used as the emblem of the United Nations, extending to 60° S. Used by the USGS in the National Atlas of the United States of America. Neither equal-area nor conformal (Wikipedia, List of Map Projections; Dict. of Mapping)</skos:definition>
+	    <skos:definition xml:lang="en">Distances from centre are conserved. Used as the emblem of the United Nations, extending to 60° S. (Wikipedia, List of Map Projections). Used by the USGS in the National Atlas of the United States of America. Neither equal-area nor conformal (Dict. of Mapping)</skos:definition>
 	    <projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/Equidistant"/>
 	    <rdfs:comment>Type: Azimuthal</rdfs:comment>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: ae</rdfs:comment>
@@ -936,8 +937,8 @@ Non-English language terms taken from: Multilingual dictionary of technical term
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Stereographic">
 		<skos:prefLabel xml:lang="en">Stereographic</skos:prefLabel>
-	    <skos:prefLabel xml:lang="fr">Projection stéréographique</skos:prefLabel>
-	    <skos:prefLabel xml:lang="es">Proyección estereográfica</skos:prefLabel>
+	    <skos:prefLabel xml:lang="fr">projection stéréographique</skos:prefLabel>
+	    <skos:prefLabel xml:lang="es">proyección estereográfica</skos:prefLabel>
 	    <skos:altfLabel xml:lang="en">Azimuthal orthomorphic map projection</skos:altfLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
 	    <skos:definition xml:lang="en">Map is infinite in extent with outer hemisphere inflating severely, so it is often used as two hemispheres. Maps all small circles to circles, which is useful for planetary mapping to preserve the shapes of craters (Wikipedia, List of Map Projections)</skos:definition>
@@ -947,7 +948,7 @@ Non-English language terms taken from: Multilingual dictionary of technical term
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/GeneralVerticalNearSided">
-		<skos:prefLabel xml:lang="en">General Vertical Near-Sided</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">General vertical near-sided</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
         <skos:definition xml:lang="en">General vertical near-sided</skos:definition>
 	    <rdfs:comment>Type: Azimuthal</rdfs:comment>
@@ -955,7 +956,7 @@ Non-English language terms taken from: Multilingual dictionary of technical term
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ModifiedStereographicForAlaska">
-		<skos:prefLabel xml:lang="en">Modified Stereographic For Alaska</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">Modified stereographic for Alaska</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
         <skos:definition xml:lang="en">Modified stereographic for Alaska</skos:definition>
 	    <rdfs:comment>Type: Azimuthal</rdfs:comment>
@@ -963,7 +964,7 @@ Non-English language terms taken from: Multilingual dictionary of technical term
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ChamberlinTrimetric">
-		<skos:prefLabel xml:lang="en">Chamberlin Trimetric</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">Chamberlin trimetric</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
 	    <skos:definition xml:lang="en">A map projection where three points are fixed on the globe and the points on the sphere are mapped onto a plane by triangulation. The Chamberlin trimetric projection is neither conformal nor equal-area. Rather, the projection was conceived to minimize distortion of distances everywhere with the side-effect of balancing between areal equivalence and conformality. This projection is not appropriate for mapping the entire sphere because the outer boundary would loop and overlap itself in most configurations (Wikipedia, Chamberlin Trimetric)</skos:definition>
 	    <rdfs:comment>Type: Azimuthal</rdfs:comment>
@@ -971,7 +972,7 @@ Non-English language terms taken from: Multilingual dictionary of technical term
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/PolarStereographic">
-		<skos:prefLabel xml:lang="en">Polar Stereographic</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">Polar stereographic</skos:prefLabel>
 	    <skos:altfLabel xml:lang="en">Universal polar stereographic (UPS)</skos:altfLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
 	    <skos:definition xml:lang="en">The universal polar stereographic (UPS) coordinate system is used in conjunction with the universal transverse Mercator (UTM) coordinate system to locate positions on the surface of the earth. Like the UTM coordinate system, the UPS coordinate system uses a metric-based cartesian grid laid out on a conformally projected surface (Wikipedia, List of Map Projections)</skos:definition>
@@ -980,15 +981,15 @@ Non-English language terms taken from: Multilingual dictionary of technical term
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/AzimuthalSpecificTypeUnknown">
-		<skos:prefLabel xml:lang="en">Azimuthal, Specific Type Unknown</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">Azimuthal, specific type unknown</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
-	    <skos:definition xml:lang="en">Only the projection type (azimuthal) is known, not the specific projection. In standard presentation, azimuthal projections map meridians as straight lines and parallels as complete, concentric circles. They are radially symmetrical. In any presentation (or aspect), they preserve directions from the center point. This means great circles through the central point are represented by straight lines on the map (MARC21; Wikipedia, List of Map Projections)</skos:definition>
+	    <skos:definition xml:lang="en">Only the projection type (azimuthal) is known, not the specific projection (MARC21). In standard presentation, azimuthal projections map meridians as straight lines and parallels as complete, concentric circles. They are radially symmetrical. In any presentation (or aspect), they preserve directions from the center point. This means great circles through the central point are represented by straight lines on the map (Wikipedia, List of Map Projections)</skos:definition>
 	    <rdfs:comment>Type: Azimuthal</rdfs:comment>
 	    <rdfs:comment xml:lang="en">MARC Map format projection code: au</rdfs:comment>
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/AzimuthalOther">
-		<skos:prefLabel xml:lang="en">Azimuthal Other</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">Azimuthal, other</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/AzimuthalProjection"/>
         <skos:definition xml:lang="en">Azimuthal projection for which none of the other defined codes are appropriate</skos:definition>
 	    <rdfs:comment>Type: Azimuthal</rdfs:comment>
@@ -999,7 +1000,7 @@ Non-English language terms taken from: Multilingual dictionary of technical term
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Gall">
 		<skos:prefLabel xml:lang="en">Gall</skos:prefLabel>
-	    <skos:prefLabel xml:lang="es">Proyecciones de Gall</skos:prefLabel>
+	    <skos:prefLabel xml:lang="es">proyecciones de Gall</skos:prefLabel>
 	    <skos:altfLabel xml:lang="en">Gall stereographic</skos:altfLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
 	    <skos:definition xml:lang="en">(Similar to Braun). Intended to resemble the Mercator while also displaying the poles. Standard parallels at 45°N/S. Braun is horizontally stretched version with scale correct at equator (Wikipedia, List of Map Projections)</skos:definition>
@@ -1020,9 +1021,9 @@ Non-English language terms taken from: Multilingual dictionary of technical term
     </owl:Class>  
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/GoodesHomolographic">
-		<skos:prefLabel xml:lang="en">Goode's Homolographic</skos:prefLabel>
-	    <skos:prefLabel xml:lang="fr">Projection homalographique de Goode</skos:prefLabel>
-	    <skos:prefLabel xml:lang="es">Proyección homalográfica</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">Goode's homolographic</skos:prefLabel>
+	    <skos:prefLabel xml:lang="fr">projection homalographique de Goode</skos:prefLabel>
+	    <skos:prefLabel xml:lang="es">proyección homalográfica</skos:prefLabel>
 	    <skos:altfLabel xml:lang="en">Goode's homalographic</skos:altfLabel>
 	    <skos:altfLabel xml:lang="en">Goode homolosine</skos:altfLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
@@ -1033,12 +1034,12 @@ Non-English language terms taken from: Multilingual dictionary of technical term
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/LambertsCylindricalEqualArea">
-		<skos:prefLabel xml:lang="en">Lambert's Cylindrical Equal Area</skos:prefLabel>
-	    <skos:prefLabel xml:lang="fr">Projection cylindrique équivalente de Lambert</skos:prefLabel>
-	    <skos:prefLabel xml:lang="es">Proyección cilíndrica de Lambert</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">Lambert's cylindrical equal area</skos:prefLabel>
+	    <skos:prefLabel xml:lang="fr">projection cylindrique équivalente de Lambert</skos:prefLabel>
+	    <skos:prefLabel xml:lang="es">proyección cilíndrica de Lambert</skos:prefLabel>
 	    <skos:altfLabel xml:lang="en">Lambert cylindrical equal area</skos:altfLabel>
-	    <skos:altfLabel xml:lang="fr">Projection isocylindrique</skos:altfLabel>
-	    <skos:altfLabel xml:lang="sp">Proyección isocilíndrica</skos:altfLabel>
+	    <skos:altfLabel xml:lang="fr">projection isocylindrique</skos:altfLabel>
+	    <skos:altfLabel xml:lang="sp">proyección isocilíndrica</skos:altfLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
 	    <skos:definition xml:lang="en">Standard parallel at the equator. Aspect ratio of π (3.14). Base projection of the cylindrical equal-area family (Wikipedia, List of Map Projections)</skos:definition>
 	    <projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/EqualArea"/>
@@ -1048,11 +1049,11 @@ Non-English language terms taken from: Multilingual dictionary of technical term
     
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Mercator">
 		<skos:prefLabel xml:lang="en">Mercator</skos:prefLabel>
-	    <skos:prefLabel xml:lang="fr">Projection de Mercator</skos:prefLabel>
-	    <skos:prefLabel xml:lang="es">Proyección conforme de Mercator</skos:prefLabel>
+	    <skos:prefLabel xml:lang="fr">projection de Mercator</skos:prefLabel>
+	    <skos:prefLabel xml:lang="es">proyección conforme de Mercator</skos:prefLabel>
 	    <skos:altfLabel xml:lang="en">Equatorial cylindrical orthomorphic map projection</skos:altfLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
-	    <skos:definition xml:lang="en">Lines of constant bearing (rhumb lines) are straight, aiding navigation. Areas inflate with latitude, becoming so extreme that the map cannot show the poles. The equator is represented by a straight line true to scale; the geographic meridians are represented by parallel straight lines perpendicular to the line representing the equator; they are spaced according to their distance apart at the equator (Wikipedia, List of Map Projections; Dict. of Mapping)</skos:definition>
+	    <skos:definition xml:lang="en">Lines of constant bearing (rhumb lines) are straight, aiding navigation. Areas inflate with latitude, becoming so extreme that the map cannot show the poles (Wikipedia, List of Map Projections). The equator is represented by a straight line true to scale; the geographic meridians are represented by parallel straight lines perpendicular to the line representing the equator; they are spaced according to their distance apart at the equator (Dict. of Mapping)</skos:definition>
 	    <projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/Conformal"/>
 	    <rdfs:comment>Type: Cylindrical</rdfs:comment>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: bd</rdfs:comment>
@@ -1060,8 +1061,8 @@ Non-English language terms taken from: Multilingual dictionary of technical term
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Miller">
 		<skos:prefLabel xml:lang="en">Miller</skos:prefLabel>
-	    <skos:prefLabel xml:lang="fr">Projections cylindriques de Miller</skos:prefLabel>
-	    <skos:prefLabel xml:lang="es">Proyecciones cilíndricas de Miller</skos:prefLabel>
+	    <skos:prefLabel xml:lang="fr">projections cylindriques de Miller</skos:prefLabel>
+	    <skos:prefLabel xml:lang="es">proyecciones cilíndricas de Miller</skos:prefLabel>
 	    <skos:altfLabel xml:lang="en">Miller’s cylindrical projections</skos:altfLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
 	    <skos:definition xml:lang="en">Intended to resemble the Mercator while also displaying the poles (Wikipedia, List of Map Projections)</skos:definition>
@@ -1072,15 +1073,15 @@ Non-English language terms taken from: Multilingual dictionary of technical term
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Mollweide">
 		<skos:prefLabel xml:lang="en">Mollweide</skos:prefLabel>
-	    <skos:prefLabel xml:lang="fr">Projection de Mollweide</skos:prefLabel>
-	    <skos:prefLabel xml:lang="es">Proyección de Mollweide</skos:prefLabel>
+	    <skos:prefLabel xml:lang="fr">projection de Mollweide</skos:prefLabel>
+	    <skos:prefLabel xml:lang="es">proyección de Mollweide</skos:prefLabel>
 	    <skos:altfLabel xml:lang="en">Elliptical</skos:altfLabel>
 	    <skos:altfLabel xml:lang="en">Babinet</skos:altfLabel>
 	    <skos:altfLabel xml:lang="en">Homolographic</skos:altfLabel>
 	    <skos:altfLabel xml:lang="en">Mollweide homolographic map projection</skos:altfLabel>
-	    <skos:altfLabel xml:lang="fr">Projection homalographique de Babinet</skos:altfLabel>
+	    <skos:altfLabel xml:lang="fr">projection homalographique de Babinet</skos:altfLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
-	    <skos:definition xml:lang="en">Meridians are ellipses. Central meridian is represented by a straight line, and the meridian 90 degrees from the center is shown as a full circle (Wikipedia, List of Map Projections; Dict. of Mapping)</skos:definition>
+	    <skos:definition xml:lang="en">Meridians are ellipses (Wikipedia, List of Map Projections). Central meridian is represented by a straight line, and the meridian 90 degrees from the center is shown as a full circle (Dict. of Mapping)</skos:definition>
 	    <projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/EqualArea"/>
 	    <rdfs:comment>Type: Pseudocylindrical</rdfs:comment>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: bf</rdfs:comment>
@@ -1088,8 +1089,8 @@ Non-English language terms taken from: Multilingual dictionary of technical term
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Sinusoidal">
 		<skos:prefLabel xml:lang="en">Sinusoidal</skos:prefLabel>
-	    <skos:prefLabel xml:lang="fr">Projection sinusoïdale de Sanson ou de Flamsteed</skos:prefLabel>
-	    <skos:prefLabel xml:lang="es">Proyección sinusoidal de Sanson o de Flamsteed</skos:prefLabel>
+	    <skos:prefLabel xml:lang="fr">projection sinusoïdale de Sanson ou de Flamsteed</skos:prefLabel>
+	    <skos:prefLabel xml:lang="es">proyección sinusoidal de Sanson o de Flamsteed</skos:prefLabel>
 	    <skos:altfLabel xml:lang="en">Sanson-Flamsteed</skos:altfLabel>
 	    <skos:altfLabel xml:lang="en">Mercator equal-area</skos:altfLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
@@ -1102,14 +1103,14 @@ Non-English language terms taken from: Multilingual dictionary of technical term
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/TransverseMercator">
 		<skos:prefLabel xml:lang="en">Transverse Mercator</skos:prefLabel>
-	    <skos:prefLabel xml:lang="fr">Projection de Mercator transverse</skos:prefLabel>
-	    <skos:prefLabel xml:lang="es">Proyección Mercator transversa</skos:prefLabel>
-	    <skos:altfLabel xml:lang="fr">Projection cylindrique conforme de Lambert</skos:altfLabel>
-	    <skos:altfLabel xml:lang="fr">Projection de Gauss</skos:altfLabel>
-	    <skos:altfLabel xml:lang="fr">Projection de Gauss-Krüger</skos:altfLabel>
-	    <skos:altfLabel xml:lang="fr">Projection de Gauss-Schreiber</skos:altfLabel>
-	    <skos:altfLabel xml:lang="fr">Projection de Gauss-Boaga</skos:altfLabel>
-	    <skos:altfLabel xml:lang="es">Proyección de Gauss-Krüger</skos:altfLabel>
+	    <skos:prefLabel xml:lang="fr">projection de Mercator transverse</skos:prefLabel>
+	    <skos:prefLabel xml:lang="es">proyección Mercator transversa</skos:prefLabel>
+	    <skos:altfLabel xml:lang="fr">projection cylindrique conforme de Lambert</skos:altfLabel>
+	    <skos:altfLabel xml:lang="fr">projection de Gauss</skos:altfLabel>
+	    <skos:altfLabel xml:lang="fr">projection de Gauss-Krüger</skos:altfLabel>
+	    <skos:altfLabel xml:lang="fr">projection de Gauss-Schreiber</skos:altfLabel>
+	    <skos:altfLabel xml:lang="fr">projection de Gauss-Boaga</skos:altfLabel>
+	    <skos:altfLabel xml:lang="es">proyección de Gauss-Krüger</skos:altfLabel>
 	    <owl:sameAs>GaussKruger</owl:sameAs>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
 	    <skos:definition xml:lang="en">This transverse, ellipsoidal form of the Mercator is finite, unlike the equatorial Mercator. Forms the basis of the Universal Transverse Mercator coordinate system (Wikipedia, List of Map Projections)</skos:definition>
@@ -1120,14 +1121,14 @@ Non-English language terms taken from: Multilingual dictionary of technical term
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/GaussKruger">
         <skos:prefLabel xml:lang="en">Gauss-Kruger</skos:prefLabel>
-        <skos:prefLabel xml:lang="fr">Projection de Mercator transverse</skos:prefLabel>
-        <skos:prefLabel xml:lang="es">Proyección Mercator transversa</skos:prefLabel>
-        <skos:altfLabel xml:lang="fr">Projection cylindrique conforme de Lambert</skos:altfLabel>
-        <skos:altfLabel xml:lang="fr">Projection de Gauss</skos:altfLabel>
-        <skos:altfLabel xml:lang="fr">Projection de Gauss-Krüger</skos:altfLabel>
-        <skos:altfLabel xml:lang="fr">Projection de Gauss-Schreiber</skos:altfLabel>
-        <skos:altfLabel xml:lang="fr">Projection de Gauss-Boaga</skos:altfLabel>
-        <skos:altfLabel xml:lang="es">Proyección de Gauss-Krüger</skos:altfLabel>
+        <skos:prefLabel xml:lang="fr">projection de Mercator transverse</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">proyección Mercator transversa</skos:prefLabel>
+        <skos:altfLabel xml:lang="fr">projection cylindrique conforme de Lambert</skos:altfLabel>
+        <skos:altfLabel xml:lang="fr">projection de Gauss</skos:altfLabel>
+        <skos:altfLabel xml:lang="fr">projection de Gauss-Krüger</skos:altfLabel>
+        <skos:altfLabel xml:lang="fr">projection de Gauss-Schreiber</skos:altfLabel>
+        <skos:altfLabel xml:lang="fr">projection de Gauss-Boaga</skos:altfLabel>
+        <skos:altfLabel xml:lang="es">proyección de Gauss-Krüger</skos:altfLabel>
         <owl:sameAs>TransverseMercator</owl:sameAs>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
         <skos:definition xml:lang="en">This transverse, ellipsoidal form of the Mercator is finite, unlike the equatorial Mercator. Forms the basis of the Universal Transverse Mercator coordinate system (Wikipedia, List of Map Projections)</skos:definition>
@@ -1138,14 +1139,14 @@ Non-English language terms taken from: Multilingual dictionary of technical term
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Equirectangular">
 		<skos:prefLabel xml:lang="en">Equirectangular</skos:prefLabel>
-	    <skos:prefLabel xml:lang="fr">Projection des cartes plates carrées</skos:prefLabel>
-	    <skos:prefLabel xml:lang="es">Proyección plana cuadrada</skos:prefLabel>
+	    <skos:prefLabel xml:lang="fr">projection des cartes plates carrées</skos:prefLabel>
+	    <skos:prefLabel xml:lang="es">proyección plana cuadrada</skos:prefLabel>
 	    <skos:altfLabel xml:lang="en">Equidistant cylindrical</skos:altfLabel>
 	    <skos:altfLabel xml:lang="en">Rectangular</skos:altfLabel>
 	    <skos:altfLabel xml:lang="en">Cylindrical equidistant</skos:altfLabel>
-	    <skos:altfLabel xml:lang="fr">La carte parallélogrammatique</skos:altfLabel>
-	    <skos:altfLabel xml:lang="fr">Plate carrée</skos:altfLabel>
-	    <skos:altfLabel xml:lang="fr">Cylindrique équidistante carrée</skos:altfLabel>
+	    <skos:altfLabel xml:lang="fr">la carte parallélogrammatique</skos:altfLabel>
+	    <skos:altfLabel xml:lang="fr">plate carrée</skos:altfLabel>
+	    <skos:altfLabel xml:lang="fr">cylindrique équidistante carrée</skos:altfLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
 	    <skos:definition xml:lang="en">Simplest geometry; distances along meridians are conserved. Plate carrée: special case having the equator as the standard parallel (Wikipedia, List of Map Projections)</skos:definition>
 	    <projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/Equidistant"/>
@@ -1155,13 +1156,13 @@ Non-English language terms taken from: Multilingual dictionary of technical term
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/CassiniSoldner">
 		<skos:prefLabel xml:lang="en">Cassini-Soldner</skos:prefLabel>
-	    <skos:prefLabel xml:lang="fr">Projection de Cassini</skos:prefLabel>
-	    <skos:prefLabel xml:lang="es">Proyección de Cassini</skos:prefLabel>
+	    <skos:prefLabel xml:lang="fr">projection de Cassini</skos:prefLabel>
+	    <skos:prefLabel xml:lang="es">proyección de Cassini</skos:prefLabel>
 	    <skos:altfLabel xml:lang="en">Cassini</skos:altfLabel>
-	    <skos:altfLabel xml:lang="fr">Projection des cartes plates carrées transverses</skos:altfLabel>
-	    <skos:altfLabel xml:lang="fr">Projection de Soldner</skos:altfLabel>
-	    <skos:altfLabel xml:lang="fr">Coordonnées orthogonales de Hatt</skos:altfLabel>
-	    <skos:altfLabel xml:lang="es">Proyección de mapas planos</skos:altfLabel>
+	    <skos:altfLabel xml:lang="fr">projection des cartes plates carrées transverses</skos:altfLabel>
+	    <skos:altfLabel xml:lang="fr">projection de Soldner</skos:altfLabel>
+	    <skos:altfLabel xml:lang="fr">coordonnées orthogonales de Hatt</skos:altfLabel>
+	    <skos:altfLabel xml:lang="es">proyección de mapas planos</skos:altfLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
 	    <skos:definition xml:lang="en">Transverse of equidistant projection; distances along central meridian are conserved. Distances perpendicular to central meridian are preserved (Wikipedia, List of Map Projections)</skos:definition>
 	    <projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/Equidistant"/>
@@ -1189,7 +1190,7 @@ Non-English language terms taken from: Multilingual dictionary of technical term
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/SpaceObliqueMercator">
-		<skos:prefLabel xml:lang="en">Space Oblique Mercator</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">Space oblique Mercator</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
 	    <skos:definition xml:lang="en">The space-oblique Mercator projection provides continual conformal mapping of the swath sensed by a satellite. Scale is true along the ground track, varying 0.01 percent within the normal sensing range of the satellite. Conformality is correct within a few parts per million for the sensing range. Distortion is essentially constant along lines of constant distance parallel to the ground track. SOM is the only projection presented that takes the rotation of Earth into account (Wikipedia, Space-oblique Mercator projection)</skos:definition>
 	    <projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/Conformal"/>
@@ -1198,14 +1199,14 @@ Non-English language terms taken from: Multilingual dictionary of technical term
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/CylindricalSpecificTypeUnknown">
-		<skos:prefLabel xml:lang="en">Cylindrical Specific Type Unknown</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">Cylindrical, specific type unknown</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
-	    <skos:definition xml:lang="en">Only the projection type (cylindrical) is known, not the specific projection. In standard presentation, these map regularly-spaced meridians to equally spaced vertical lines, and parallels to horizontal lines. A map projection produced by projecting the geographic meridians and parallels onto a cylinder which is tangent to (or intersects) the surface of a sphere, and then developing the cylinder into a plane (MARC21; Wikipedia, List of Map Projections; Dict. of Mapping)</skos:definition>
+	    <skos:definition xml:lang="en">Only the projection type (cylindrical) is known, not the specific projection (MARC21). In standard presentation, these map regularly-spaced meridians to equally spaced vertical lines, and parallels to horizontal lines (Wikipedia, List of Map Projections). A map projection produced by projecting the geographic meridians and parallels onto a cylinder which is tangent to (or intersects) the surface of a sphere, and then developing the cylinder into a plane (Dict. of Mapping)</skos:definition>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: bu</rdfs:comment> 
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/CylindricalOther">
-		<skos:prefLabel xml:lang="en">Cylindrical Other</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">Cylindrical, other</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/CylindricalProjection"/>
         <skos:definition xml:lang="en">Cylindrical projection for which none of the other defined codes are appropriate (MARC21)</skos:definition>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: bz</rdfs:comment>   
@@ -1214,13 +1215,13 @@ Non-English language terms taken from: Multilingual dictionary of technical term
 	<!--Subclasses of ConicalProjection -->
 	
 		<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/AlbersEqualArea">
-		<skos:prefLabel xml:lang="en">Albers Equal Area</skos:prefLabel>
-		<skos:prefLabel xml:lang="fr">projection conique équivalente d'Albers</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">Albers equal area</skos:prefLabel>
+		<skos:prefLabel xml:lang="fr">projection conique équivalente d'Albers</skos:prefLabel>
 		<skos:prefLabel xml:lang="es">proyección cónica secante equivalente de Albers</skos:prefLabel>
 		<skos:altLabel xml:lang="en">Albers conic</skos:altLabel>
 		<skos:altLabel xml:lang="en">Albers conical equal-area map projection</skos:altLabel>
 		<skos:altLabel xml:lang="fr">projection d’Albers</skos:altLabel>
-		<skos:altLabel xml:lang="fr">tronconique  équivalente</skos:altLabel>
+		<skos:altLabel xml:lang="fr">tronconique équivalente</skos:altLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/ConicalProjection"/>
         <skos:definition xml:lang="en">Two standard parallels with low distortion between them (Wikipedia, List of Map Projections). The meridians are straight lines that meet in a common point beyond the limits of the map, and the parallels are concentric circles whose center is at the point of intersection of the meridians (Dict. of Mapping)</skos:definition>
 		<projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/EqualArea"/>
@@ -1256,14 +1257,14 @@ Non-English language terms taken from: Multilingual dictionary of technical term
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/LambertsConformalConic">
-		<skos:prefLabel xml:lang="en">Lambert's Conformal Conic</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">Lambert's conformal conic</skos:prefLabel>
 		<skos:altLabel xml:lang="en">Lambert conformal conic</skos:altLabel>
 		<skos:altLabel xml:lang="en">Conformal conical projection with one standard parallel (Lambert)</skos:altLabel>
 		<skos:altLabel xml:lang="en">Conformal conical projection with two standard parallels (Lambert)</skos:altLabel>
 		<skos:altLabel xml:lang="fr">projection conique conforme de Lambert (projection à cône tangent)</skos:altLabel>
 		<skos:altLabel xml:lang="fr">projection conique conforme de Lambert (projection à cône sécant)</skos:altLabel>
 		<skos:altLabel xml:lang="es">proyección cónica tangente conforme de Lambert</skos:altLabel>
-		<skos:altLabel xml:lang="es">proyección cónica secamte conforme de Lambert</skos:altLabel>
+		<skos:altLabel xml:lang="es">proyección cónica secante conforme de Lambert</skos:altLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/ConicalProjection"/>
         <skos:definition xml:lang="en">All geographic meridians are represented by straight lines which meet in a common point outside the limits of the map, and the geographic parallels are represented by a series of arcs of circles having this common point for a center (Dict. of Mapping). Used in aviation charts (Wikipedia, List of Map Projections)</skos:definition>
 		<projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/Conformal"/>
@@ -1272,7 +1273,7 @@ Non-English language terms taken from: Multilingual dictionary of technical term
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/EquidistantConic">
-		<skos:prefLabel xml:lang="en">Equidistant Conic</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">Equidistant conic</skos:prefLabel>
 		<skos:altLabel xml:lang="en">Simple conic</skos:altLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/ConicalProjection"/>
         <skos:definition xml:lang="en">Distances along meridians are conserved, as is distance along one or two standard parallels (Wikipedia, List of Map Projections)</skos:definition>
@@ -1284,15 +1285,14 @@ Non-English language terms taken from: Multilingual dictionary of technical term
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/Polyconic">
 		<skos:prefLabel xml:lang="en">Polyconic</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/ConicalProjection"/>
-        <skos:definition xml:lang="en">A map projection having the central geographic meridian represented by a straight line, along which the spacing for lines representing the geographic parallels is proportional to the distances between the parallels: the parallels are represented by arcs of circles which are not concentric, but whose centers lie on the line representing the central meridian, and whose radii are determined by the lengths of the elements of cones which are tangent along the parallels.  All meridians except the central ones are curved.  The projection is neither conformal nor equal area, but it has been widely used for maps of small areas because of the ease with which it can be constructed (Dict. of mapping)
-		</skos:definition>
+        <skos:definition xml:lang="en">A map projection having the central geographic meridian represented by a straight line, along which the spacing for lines representing the geographic parallels is proportional to the distances between the parallels: the parallels are represented by arcs of circles which are not concentric, but whose centers lie on the line representing the central meridian, and whose radii are determined by the lengths of the elements of cones which are tangent along the parallels.  All meridians except the central ones are curved.  The projection is neither conformal nor equal area, but it has been widely used for maps of small areas because of the ease with which it can be constructed (Dict. of mapping)</skos:definition>
 		<rdfs:comment>Type: Pseudoconical</rdfs:comment>
 		<projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/Compromise"/>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: cp</rdfs:comment>    
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ConicSpecificTypeUnknown">
-		<skos:prefLabel xml:lang="en">Conic Specific Type Unknown</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">Conic, specific type unknown</skos:prefLabel>
 		<skos:altLabel xml:lang="en">Tangent conical map projection</skos:altLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/ConicalProjection"/>
         <skos:definition xml:lang="en">Only the projection type (conic) is known, not the specific projection (MARC21). A map projection produced by projecting the geographic meridians and parallels onto a cone which is tangent to (or intersects) the surface of a sphere, and then developing the cone into a plane (Dict. of mapping). In standard presentation, conic (or conical) projections map meridians as straight lines, and parallels as arcs of circles (Wikipedia, List of Map Projections).</skos:definition>
@@ -1302,7 +1302,7 @@ Non-English language terms taken from: Multilingual dictionary of technical term
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ConicOther">
-		<skos:prefLabel xml:lang="en">Conic Other</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">Conic, other</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/ConicalProjection"/>
         <skos:definition xml:lang="en">Conic projection for which none of the other defined codes are appropriate (MARC21)</skos:definition>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: cz</rdfs:comment>    
@@ -1325,7 +1325,7 @@ Non-English language terms taken from: Multilingual dictionary of technical term
 		<skos:altLabel xml:lang="en">Waterman butterfly projection</skos:altLabel>
 		<skos:altLabel xml:lang="en">Cahill's butterfly map</skos:altLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/UnclassifiedProjection"/>
-        <skos:definition xml:lang="en">Projects the globe onto a truncated octahedron with symmetrical components and contiguous land masses that may be displayed in various arrangements. (Wikipedia, List of Map Projections)</skos:definition>
+        <skos:definition xml:lang="en">Projects the globe onto a truncated octahedron with symmetrical components and contiguous land masses that may be displayed in various arrangements (Wikipedia, List of Map Projections)</skos:definition>
 		<rdfs:comment>Type: Polyhedral</rdfs:comment>
 		<projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/Compromise"/>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: db</rdfs:comment>    
@@ -1341,7 +1341,7 @@ Non-English language terms taken from: Multilingual dictionary of technical term
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/GoodesHomolosine">
-		<skos:prefLabel xml:lang="en">Goode's Homolosine</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">Goode's homolosine</skos:prefLabel>
 		<skos:altLabel xml:lang="en">Goode’s homalographic projection</skos:altLabel>
 		<skos:altLabel xml:lang="en">Homalographic projection</skos:altLabel>
 		<skos:altLabel xml:lang="fr">projection homalographique de Goode</skos:altLabel>
@@ -1354,7 +1354,7 @@ Non-English language terms taken from: Multilingual dictionary of technical term
     </owl:Class>
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/MillersBipolarObliqueConformalConic">
-		<skos:prefLabel xml:lang="en">Miller's Bipolar Oblique Conformal Conic</skos:prefLabel>
+		<skos:prefLabel xml:lang="en">Miller's bipolar oblique conformal conic</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/UnclassifiedProjection"/>
         <skos:definition xml:lang="en">Miller's bipolar oblique conformal conic</skos:definition>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: de</rdfs:comment>    
@@ -1389,29 +1389,27 @@ Non-English language terms taken from: Multilingual dictionary of technical term
 		<skos:altLabel xml:lang="fr">projection de Werner</skos:altLabel>
 		<skos:altLabel xml:lang="es">proyección equivalente de Werner</skos:altLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/UnclassifiedProjection"/>
-        <skos:definition xml:lang="en">Distances from the North Pole are correct as are the curved distances along parallels and distances along central meridian (Wikipedia, List of Map Projections). Heart-shaped.</skos:definition>
+        <skos:definition xml:lang="en">Distances from the North Pole are correct as are the curved distances along parallels and distances along central meridian (Wikipedia, List of Map Projections). Heart-shaped</skos:definition>
 		<rdfs:comment>Type: Pseudoconical</rdfs:comment>
 		<projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/EqualArea"/>
 		<projectionPreservationProperty rdf:resource="http://ontology.library.harvard.edu/geo/Equidistant"/>
 		<rdfs:comment xml:lang="en">MARC Map format projection code: dh</rdfs:comment>    
     </owl:Class>
-
-	
 	
 	
 	<!-- Class http://id.loc.gov/ontologies/bibframe/Projection
     Adding classes related to projections -->
 	
 	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ProjectionPreservationProperty">
-		<skos:prefLabel xml:lang="en">Projection Preservation Property</skos:prefLabel>
-        <skos:definition xml:lang="en">Projection Preservation Property</skos:definition>
+		<skos:prefLabel xml:lang="en">Projection preservation property</skos:prefLabel>
+	    <skos:definition xml:lang="en">Geometric characteristic that the map projection attempts to preserve</skos:definition>
     </owl:Class>
 	
 	
 	<!-- Subclass of http://id.loc.gov/ontologies/bibframe/Source -->
     
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/">
-        <skos:prefLabel xml:lang="en">Cartographic Data Source</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Cartographic data source</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
         <skos:definition xml:lang="en">Identifies the source for mathematical cartographic data,including scale, projection, and/or coordinates</skos:definition>
     </owl:Class>
@@ -1419,12 +1417,12 @@ Non-English language terms taken from: Multilingual dictionary of technical term
     <!-- OBJECT PROPERTIES -->
     
     <owl:ObjectProperty rdf:about="http://ontology.library.harvard.edu/geo/isGeometryOf">
-        <skos:prefLabel xml:lang="en">Is Geometry of</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Is geometry of</skos:prefLabel>
         <owl:inverseOf rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
     </owl:ObjectProperty>
     
     <owl:ObjectProperty rdf:about="http://ontology.library.harvard.edu/geo/isProjectionOf">
-        <skos:prefLabel xml:lang="en">Is Projection of</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Is projection of</skos:prefLabel>
         <owl:inverseOf rdf:resource="http://id.loc.gov/ontologies/bibframe/projection"/>
     </owl:ObjectProperty>    
 	
@@ -1443,7 +1441,7 @@ Non-English language terms taken from: Multilingual dictionary of technical term
     </owl:ObjectProperty>
 	
 	<owl:ObjectProperty rdf:about="http://ontology.library.harvard.edu/geo/scaleSource">
-	    <skos:prefLabel xml:lang="en">Scale source</skos:prefLabel>
+	    <skos:prefLabel xml:lang="en">Has scale source</skos:prefLabel>
         <skos:definition xml:lang="en">Has scale source</skos:definition>
         <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Scale"/> 
 		<rdfs:range rdf:resource="http://ontology.library.harvard.edu/geo/ScaleSource"/>
@@ -1540,7 +1538,7 @@ Non-English language terms taken from: Multilingual dictionary of technical term
     
     <owl:NamedIndividual rdf:about="http://ontology.library.harvard.edu/geo/RepresentativeFraction">
         <rdf:type rdf:resource="http://ontology.library.harvard.edu/geo/ScaleSource"/>
-        <skos:prefLabel xml:lang="en">Representative Fraction</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Representative fraction</skos:prefLabel>
         <skos:definition xml:lang="en">Source of scale is the representative fraction</skos:definition>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
@@ -1548,7 +1546,7 @@ Non-English language terms taken from: Multilingual dictionary of technical term
 	
 	<owl:NamedIndividual rdf:about="http://ontology.library.harvard.edu/geo/VerbalStatement">
         <rdf:type rdf:resource="http://ontology.library.harvard.edu/geo/ScaleSource"/>
-	    <skos:prefLabel xml:lang="en">Verbal Statement</skos:prefLabel>
+	    <skos:prefLabel xml:lang="en">Verbal statement</skos:prefLabel>
 	    <skos:definition xml:lang="en">Source of scale is a verbal statement</skos:definition>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
@@ -1556,7 +1554,7 @@ Non-English language terms taken from: Multilingual dictionary of technical term
 	
 	<owl:NamedIndividual rdf:about="http://ontology.library.harvard.edu/geo/ScaleBar">
         <rdf:type rdf:resource="http://ontology.library.harvard.edu/geo/ScaleSource"/>
-	    <skos:prefLabel xml:lang="en">Scale Bar</skos:prefLabel>
+	    <skos:prefLabel xml:lang="en">Scale bar</skos:prefLabel>
 	    <skos:definition xml:lang="en">Source of scale is the scale bar</skos:definition>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
