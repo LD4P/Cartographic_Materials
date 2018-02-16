@@ -617,19 +617,19 @@ Non-English language terms taken from: Multilingual dictionary of technical term
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ScaleIndeterminable">
         <skos:prefLabel xml:lang="en">Scale indeterminable</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Scale"/>
-        <skos:definition xml:lang="en">Used to describe a cartographic resource when an effort to determine the scale of a resource is impossible, for example, when there is a bar scale but no units of measurement are given</skos:definition>
+        <skos:definition xml:lang="en">Used to describe a cartographic resource when an effort to determine the scale of a resource is impossible, for example, when there is a bar scale but no units of measurement are given (Cartographic Resources Manual)</skos:definition>
     </owl:Class>
     	
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ScaleNotDetermined">
         <skos:prefLabel xml:lang="en">Scale not determined</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Scale"/>
-        <skos:definition xml:lang="en">Use when scale is represented verbally or graphically in the material, but cannot be expressed as a representative fraction, e.g., because of lack of legibility or with unfamiliar units of measure</skos:definition>
+        <skos:definition xml:lang="en">Use when scale is represented verbally or graphically in the material, but cannot be expressed as a representative fraction, e.g., because of lack of legibility or with unfamiliar units of measure (DCRM-C)</skos:definition>
     </owl:Class>
     	
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ScalesDiffer">
         <skos:prefLabel xml:lang="en">Scales differ</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Scale"/>
-        <skos:definition xml:lang="en">Used to describe a cartographic resource in which the main maps, etc., are of more than one scale</skos:definition>
+        <skos:definition xml:lang="en">Used to describe a cartographic resource in which the main maps, etc., are of more than one scale (Adapted from Cartographic Resources Manual)</skos:definition>
     </owl:Class>
     	
     <owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ScaleVaries">
