@@ -1650,7 +1650,7 @@ Non-English language terms taken from: Multilingual dictionary of technical term
     </owl:NamedIndividual>
 	
 	<!-- Type http://ontology.library.harvard.edu/geo/ProjectionPreservationProperty
-    Individuals of type  projectionPreservationProperty -->
+    Individuals of type  ProjectionPreservationProperty -->
 
 	<owl:NamedIndividual rdf:about="http://ontology.library.harvard.edu/geo/Compromise">
         <rdf:type rdf:resource="http://ontology.library.harvard.edu/geo/ProjectionPreservationProperty"/>
