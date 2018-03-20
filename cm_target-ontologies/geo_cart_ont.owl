@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- 
-    WARNING:  THIS IS A WORKING DRAFT ONTOLOGY AND STILL UNDER DEVELOPMENT, this file will change frequently and significantly as development continues
+    WARNING:  THIS IS A WORKING DRAFT ONTOLOGY AND STILL UNDER DEVELOPMENT; this file is considered to be in BETA testing as of 3/26/2018 and may change significantly depending on results of testing
     
     Note:  http://ontology.library.harvard.edu/geo/ is a placeholder (inactive) namespace for the LD4P/L Cartographic Materials "Geospatial and Cartographic Resources Ontology" extension until a proper home is found
 	
-	last revised: 2018-03-08
+	last revised: 2018-03-19
   -->
 
 <rdf:RDF
@@ -25,7 +25,7 @@
     <!-- ONTOLOGY DECLARATION -->
     
     <owl:Ontology rdf:about="http://ontology.library.harvard.edu/geo/">
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Version 0.0</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Version 0.1</owl:versionInfo>
 		<dcterms:issued>2018-03-26</dcterms:issued>
         <skos:prefLabel xml:lang="en">Geospatial and Cartographic Resources Ontology: extension ontology for describing cartographic materials</skos:prefLabel>
         <vann:preferredNamespacePrefix>gcro</vann:preferredNamespacePrefix>
@@ -697,6 +697,13 @@ Non-English language terms taken from: Multilingual dictionary of technical term
         <skos:prefLabel xml:lang="en">Scale not determined</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Scale"/>
         <skos:definition xml:lang="en">Use when scale is represented verbally or graphically in the material, but cannot be expressed as a representative fraction, e.g., because of lack of legibility or with unfamiliar units of measure (DCRM-C)</skos:definition>
+		<dcterms:issued>2018-03-26</dcterms:issued>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ScaleNotGiven">
+        <skos:prefLabel xml:lang="en">Scale not given</skos:prefLabel>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Scale"/>
+        <skos:definition xml:lang="en">If no scale is found in the material (whether as a representative fraction, verbally, or graphically), give the statement "Scale not given" (DCRM-C)</skos:definition>
 		<dcterms:issued>2018-03-26</dcterms:issued>
     </owl:Class>
     	
