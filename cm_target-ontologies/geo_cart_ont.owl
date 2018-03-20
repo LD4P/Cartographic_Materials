@@ -874,7 +874,7 @@ Non-English language terms taken from: Multilingual dictionary of technical term
 		<dcterms:issued>2018-03-26</dcterms:issued>
     </owl:Class>
     	
-	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/NoReliefShown">
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/NoRelief">
         <skos:prefLabel xml:lang="en">No relief shown</skos:prefLabel>
         <rdfs:subClassOf rdf:resource="http://ontology.library.harvard.edu/geo/Relief"/>
         <skos:definition xml:lang="en">No relief shown</skos:definition>
