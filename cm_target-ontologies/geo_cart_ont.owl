@@ -5,7 +5,7 @@
     
     Note:  http://ontology.library.harvard.edu/geo/ is a placeholder (inactive) namespace for the LD4P/L Cartographic Materials "Geospatial and Cartographic Resources Ontology" extension until a proper home is found
 	
-	last revised: 2018-03-19
+	last revised: 2018-03-30
   -->
 
 <rdf:RDF
@@ -1611,23 +1611,7 @@ Non-English language terms taken from: Multilingual dictionary of technical term
 		<rdfs:range rdf:resource="http://ontology.library.harvard.edu/geo/ScaleSource"/>
 		<dcterms:issued>2018-03-26</dcterms:issued>
     </owl:ObjectProperty>
-	
-	<owl:ObjectProperty rdf:about="http://ontology.library.harvard.edu/geo/relief">
-        <skos:prefLabel xml:lang="en">Has relief</skos:prefLabel>
-        <skos:definition xml:lang="en">Depicts or indicates relief</skos:definition>
-		<rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Cartography"/>
-		<rdfs:range rdf:resource="http://ontology.library.harvard.edu/geo/Relief"/>
-		<dcterms:issued>2018-03-26</dcterms:issued>
-    </owl:ObjectProperty>	
-	
-	<owl:ObjectProperty rdf:about="http://ontology.library.harvard.edu/geo/primeMeridian">
-        <skos:prefLabel xml:lang="en">Has prime meridian</skos:prefLabel>
-        <skos:definition xml:lang="en">The meridian on the Earth’s surface from which longitude is measured. Since 1884, the meridian of Greenwich, England, has, by general consent, been recognized as the prime meridian (DCRM-C). The prime meridian is the north-south reference line on the earth’s surface (i.e., 0º longitude) from which longitude is measured.
-		For resources produced prior to 1884, meridians other than Greenwich were often adopted. Resources published in the United States frequently used Philadelphia, Washington, or New York as the prime meridian. In some instances resources identify two different prime meridians (Cartographic Resources Manual)</skos:definition>
-		<rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Cartography"/>
-		<dcterms:issued>2018-03-26</dcterms:issued>
-    </owl:ObjectProperty>
-	
+
 	<!-- DATA PROPERTIES -->
     
 	<owl:DatatypeProperty rdf:about="http://ontology.library.harvard.edu/geo/representativeFractionDenominator">
