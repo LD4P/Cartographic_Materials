@@ -970,7 +970,7 @@ Non-English language terms taken from: Multilingual dictionary of technical term
 		<dcterms:issued>2018-03-26</dcterms:issued>
 	</owl:Class>
 
-	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/NoAttemptToCode">
+	<owl:Class rdf:about="http://ontology.library.harvard.edu/geo/ProjNoAttemptToCode">
 		<skos:prefLabel xml:lang="en">No attempt to code</skos:prefLabel>
 		<rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Projection"/>
 		<skos:definition xml:lang="en">No attempt to assign a projection to the resource</skos:definition>
