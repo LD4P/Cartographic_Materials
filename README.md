@@ -1,3 +1,3 @@
-# LD4L Geographic/Cartographic Ontology Extension Work
+# LD4P/L Geographic and Cartographic Resources Ontology Extension Work
 
-Repository for managing Harvard ITS's LD4L work on ontology extensions for geographic data and cartographic materials.
+Repository for managing LD4P/L work on ontology extensions for geographic data and cartographic materials.
