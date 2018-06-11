@@ -61,11 +61,6 @@ June 2018
 
 ### Involved Properties
 
-**bf:dimensions**
-> - **Label:** Dimensions
-> - **IRI:** [*http://id.loc.gov/ontologies/bibframe/dimensions*](http://id.loc.gov/ontologies/bibframe/dimensions)
-> - **Range:** Literal
-> - **Definition:** Measurements of the carrier or carriers and/or the container of a resource.
 
 <a name="recommended_approach">LD4P-CM Recommended Approach to Scale</a>
 ------------------------------------
