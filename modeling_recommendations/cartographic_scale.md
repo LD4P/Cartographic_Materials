@@ -66,7 +66,7 @@ June 2018
 ------------------------------------
 ### Model Diagram
 
-![Diagram](/modeling_diagrams/Scale.png)
+![Diagram](/modeling_recommendations/modeling_diagrams/Scale.png)
 
 ### Involved Classes
 
