@@ -9,7 +9,7 @@ June 2018
 > - [Summary of Recommendations](#recommendations)
 > - [BIBFRAME Approach to Scale](#bibframe)
 > - [GCRO Approach to Scale](#recommended_approach)
-> - [Side-by-side rdf examples](#examples)
+> - [BIBFRAME vs. GCRO rdf examples](#examples)
 > - [Discussion/Future Work](#future-work)
 
 <a name="overview">Overview</a>
@@ -67,6 +67,12 @@ June 2018
 ### Model Diagram
 
 ![Diagram](/modeling_recommendations/modeling_diagrams/Scale.png)
+
+
+### Involved Ontologies
+**BIBFRAME** (bf:) http://id.loc.gov/ontologies/bibframe/  
+**Geospatial and Cartographic Resources Ontology** (gcro:) http://http://ontology.library.harvard.edu/geo/  
+**RDA Unconstrained** (rdau:) http://rdaregistry.info/Elements/u/  
 
 ### Involved Classes
 
@@ -167,8 +173,33 @@ If no scale is found in the material (whether as a representative fraction, verb
 
 
 
-<a name="examples">Side-by-side rdf examples</a>
----------------------
+<a name="examples">BIBFRAME vs. GCRO rdf examples</a>
+---------------------  
+--------
+### Example 1 - "Scale 1:24,000."
+**BIBFRAME**
+```
+:Work1 bf:scale :Scale1, :Scale2 .
+
+:Scale1 a bf:Scale ;
+    rdfs:label "24000." ;
+    bf:note :Note1 .
+
+:Scale2 a bf:Scale ;
+    rdfs:label "Scale 1:24,000." .
+
+:Note1 a bf Note ;
+    rdfs:label "linear horizontal" .  
+ ```  
+**GCRO**
+```
+:Work1 bf:scale :Scale1 .
+
+:Scale1 a gcro:HorizontalScale ;
+    gcro:representativeFractionDenominator “24000”^^xsd:integer ;
+    gcro:scaleAccuracy gcro:ExplicitScale ;  
+    gcro:scaleSource gcro:RepresentativeFraction .
+ ```
 
 
 <a name="future-work">Discussion/Future Work</a>
